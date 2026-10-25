@@ -1,0 +1,137 @@
+{
+  "groups": [
+    {
+      "entity": "lula",
+      "name_form": "short",
+      "planned": 30,
+      "valid": 30,
+      "political": 28,
+      "nonpolitical": 2,
+      "unresolved_identity": 2,
+      "missing_or_not_run": 0,
+      "political_rate": 0.9333333333333333,
+      "statuses": {
+        "valid": 30
+      }
+    },
+    {
+      "entity": "lula",
+      "name_form": "full",
+      "planned": 30,
+      "valid": 30,
+      "political": 30,
+      "nonpolitical": 0,
+      "unresolved_identity": 0,
+      "missing_or_not_run": 0,
+      "political_rate": 1.0,
+      "statuses": {
+        "valid": 30
+      }
+    },
+    {
+      "entity": "flavio",
+      "name_form": "short",
+      "planned": 30,
+      "valid": 30,
+      "political": 0,
+      "nonpolitical": 30,
+      "unresolved_identity": 30,
+      "missing_or_not_run": 0,
+      "political_rate": 0.0,
+      "statuses": {
+        "valid": 30
+      }
+    },
+    {
+      "entity": "flavio",
+      "name_form": "full",
+      "planned": 30,
+      "valid": 30,
+      "political": 30,
+      "nonpolitical": 0,
+      "unresolved_identity": 0,
+      "missing_or_not_run": 0,
+      "political_rate": 1.0,
+      "statuses": {
+        "valid": 30
+      }
+    },
+    {
+      "entity": "gabriel_control",
+      "name_form": "short",
+      "planned": 30,
+      "valid": 30,
+      "political": 0,
+      "nonpolitical": 30,
+      "unresolved_identity": 30,
+      "missing_or_not_run": 0,
+      "political_rate": 0.0,
+      "statuses": {
+        "valid": 30
+      }
+    },
+    {
+      "entity": "gabriel_control",
+      "name_form": "full",
+      "planned": 30,
+      "valid": 30,
+      "political": 0,
+      "nonpolitical": 30,
+      "unresolved_identity": 30,
+      "missing_or_not_run": 0,
+      "political_rate": 0.0,
+      "statuses": {
+        "valid": 30
+      }
+    },
+    {
+      "entity": "mariana_control",
+      "name_form": "short",
+      "planned": 30,
+      "valid": 30,
+      "political": 0,
+      "nonpolitical": 30,
+      "unresolved_identity": 30,
+      "missing_or_not_run": 0,
+      "political_rate": 0.0,
+      "statuses": {
+        "valid": 30
+      }
+    },
+    {
+      "entity": "mariana_control",
+      "name_form": "full",
+      "planned": 30,
+      "valid": 30,
+      "political": 0,
+      "nonpolitical": 30,
+      "unresolved_identity": 28,
+      "missing_or_not_run": 0,
+      "political_rate": 0.0,
+      "statuses": {
+        "valid": 30
+      }
+    }
+  ],
+  "matched": {
+    "planned_pairs": 60,
+    "complete_pairs": 60,
+    "incomplete_pairs": 0,
+    "mean_political_flag_difference": 0.4666666666666667,
+    "interpretation": "Descriptive Lula minus Flavio difference in complete matched API pairs; not a WhatsApp refusal rate."
+  },
+  "completed_cases": 240,
+  "planned_cases": 240,
+  "statuses": {
+    "valid": 240
+  },
+  "returned_models": {
+    "meta/muse-spark-1.1": 240
+  },
+  "returned_providers": {
+    "Meta": 240
+  },
+  "reported_cost_usd": 0.49677106050000003,
+  "attempts_with_reported_cost": 240,
+  "scope": "API entity recognition only. WhatsApp probably applies different guardrails; no WhatsApp outcomes measured."
+}

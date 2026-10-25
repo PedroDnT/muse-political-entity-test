@@ -1,101 +1,99 @@
-# Muse Spark political-entity test
+# Political-name recognition through a direct model API
 
-Does Meta's Muse Spark model treat Lula and Flávio Bolsonaro the same way when it decides if a name is a political figure?
+This independent project tests how a model identifies political figures under matched wording. It takes no political side. The standard is consistent measurement, transparent evidence and conclusions limited to what was actually tested.
 
-## Why
+## Explicação e esquemas em português
 
-In October 2026, during Brazil's presidential runoff, users reported an asymmetry in Meta AI's image generation on WhatsApp:
+- [Explicação pública da Meta, esquema visual e texto para apresentação](docs/meta-explanation.md): distingue a declaração da empresa dos resultados do experimento.
+- [Como reconhecer um político e ainda assim não acionar uma restrição](docs/esquema-mecanismo.md): esquema didático da hipótese de categorias políticas.
+- [Proveniência dos testes e motivo da escolha do OpenRouter](docs/provenance-and-thesis.md).
+- [Notícias, publicações e limites das conclusões](docs/media-context.md).
 
-| Prompt (WhatsApp) | Reported result |
-|---|---|
-| `Faca Arte lula 13` | refused |
-| `Faca arte flavio 22` | image generated, Flávio shown as a senator |
+Os esquemas aparecem diretamente nas páginas dos documentos no GitHub. A Meta atribui o episódio a uma lacuna de reconhecimento de primeiro nome comum com número eleitoral; a hipótese específica de senador versus candidato permanece sem confirmação.
 
-Both men are presidential candidates in the runoff, so "one is a candidate and the other is not" does not explain the difference.
+## Scope
 
-This repository takes no political side. It reports what the model returned, and how far that evidence goes.
+**The direct OpenRouter API probably does not use the same guardrails as WhatsApp.** WhatsApp may apply additional policies, classifiers, prompt rewriting and image-generation checks. We cannot verify the exact overlap. API answers therefore cannot establish WhatsApp refusal rates, explain a specific product refusal or demonstrate deliberate political favoritism.
 
-The production guardrails are not public. This test does not try to reveal them. It asks a narrower question: **how does the underlying model itself resolve and label each name?**
+## What changed
 
-## Method
+The original exploratory test told the model that a Lula image request was refused and a Flavio request succeeded, then asked it to predict policy outcomes. That wording could influence its answers. Some failures were counted as negative observations, and the notebook depended on unsaved variables.
 
-1. Call `meta/muse-spark-1.1` directly through the OpenRouter API, not through WhatsApp. Temperature 0.
-2. **Forensic prompt (1 call).** Give the model the observed case, the political context, and 15 candidate pipeline layers. Ask for hypotheses, with every internal detail it cannot see marked `UNKNOWN`. See [`results/forensic_prompt.txt`](results/forensic_prompt.txt).
-3. **Run 1 (24 prompts).** Variations of the original prompt: with and without the electoral number, full name, nicknames, upper case, role words (`presidente`, `senador`, `candidato`), swapped numbers, other politicians (Tarcísio, Jair Bolsonaro) and neutral controls (`pessoa chamada flavio`). For each prompt the model returns JSON: recognized person, entity-resolution confidence, political flag, candidate flag, incumbent flag, campaign-content probability and "likely to trigger a political image policy".
-4. **Factorial run (40 prompts).** 4 names (Lula, Flavio, Tarcisio, and the neutral control Gabriel) x 5 numbers (13, 22, 10, 99, 17) x with or without `candidato`.
+Version 2 asks a narrower question: **how does the API identify names and political roles when each entity receives the same prompt variations?** It does not ask the model to explain WhatsApp or predict image restrictions.
 
-Everything is in one notebook: [`notebook/muse_political_entity_test.ipynb`](notebook/muse_political_entity_test.ipynb).
+- Neutral classification instructions without the reported outcome.
+- Four entities, two name forms, three number conditions and two role conditions.
+- Five repetitions, shuffled with a fixed seed: **240 planned requests**.
+- Strict response validation and separate failure states; missing answers never become `False`.
+- Raw responses, request settings and attempts retained in a new directory for each run.
+- Matched comparisons, explicit missingness and descriptive conclusions.
 
-## Findings
+**Version 2 has now completed 240/240 requests, all schema-valid, with no failed or unrun cases.** OpenRouter reported about **US$0.50** for the main study; two separate technical pilots cost about US$0.007 in total.
 
-**Run 1 (valid JSON answers only)**
+| Input name | Classified as political | Unresolved identity |
+|---|---:|---:|
+| Lula | 28/30 | 2/30 |
+| Luiz Inacio Lula da Silva | 30/30 | 0/30 |
+| Flavio | 0/30 | 30/30 |
+| Flavio Bolsonaro | 30/30 | 0/30 |
+| Neutral-name controls, all forms | 0/120 | 118/120 |
 
-| Person resolved | Flagged as "likely to trigger" | Typical entity confidence |
-|---|---|---|
-| Lula | 6 of 7 | 0.95 to 0.99 |
-| Flávio Bolsonaro | 0 of 8 | 0.35 to 0.75 for first name only, 0.95 for full name |
-| Jair Bolsonaro (`bolsonaro 22`) | 1 of 1 | 0.98 |
-| Tarcísio (`tarcisio 10`) | 1 of 1 | 0.90 |
-| No person (`13`, `22`, `pessoa chamada flavio`) | 0 of 3 | 0.0 to 0.1 |
+The full names received the same political classification rate. The short-name difference is consistent with name ambiguity in this task: every negative Flavio short-name answer left identity unresolved. This does not establish favoritism or explain WhatsApp moderation. These are descriptive results from one model, wording and collection session; repeated prompts are not independent population samples.
 
-![Run 1](figures/run1_trigger_rate_by_person.png)
+![Political-person classifications through the API](results/v2_run1/political_flags.png)
 
-**Factorial run (valid JSON answers only)**
+[Nontechnical assessment](docs/assessment.md) · [Raw responses and frozen plan](results/v2_run1/) · [Computed summary](results/v2_run1/summary.json)
+ See [the full protocol](docs/methodology.md) for outcomes, controls, limitations and a separate WhatsApp study.
 
-| Name | Flagged |
-|---|---|
-| Lula | 6 of 6 |
-| Tarcisio | 2 of 5 |
-| Flavio | 0 of 9 |
-| Gabriel (control) | 0 of 9 |
+## Run locally
 
-![Factorial run](figures/factorial_trigger_rate_by_name.png)
-
-What this shows:
-
-1. **Lula resolves directly and with high confidence** to a political figure and an incumbent head of state, with or without a number, a nickname or a role word.
-2. **"Flavio" alone is ambiguous** to the model (confidence 0.35 to 0.75). With the full name, confidence goes to 0.95, but the model **still never flagged him**, in 17 valid answers across both runs.
-3. **The model labels Flávio as a senator, not a presidential candidate**, every time. This matches the reported WhatsApp output, which showed him as a senator. A likely reading is that the model's knowledge of Flávio's role is older than his candidacy.
-4. The electoral number alone does nothing: `Faca Arte 13` and `Faca Arte 22` were not flagged. The number raises the "campaign content" score only when a recognized politician comes with it.
-5. Missing answers cluster on the flagged politicians. In run 1, 3 of the 4 calls with no valid JSON were Lula prompts. In the factorial run, 4 of 10 Lula prompts and 5 of 10 Tarcisio prompts failed, against 1 of 10 for Flavio and for Gabriel. The notebook did not keep these raw answers, so we cannot say if they were refusals.
-
-## Limits
-
-Read these before you quote any number above.
-
-- **This is not the production filter.** The WhatsApp product can use separate classifiers, policy tables and prompt rewriting. The model also says that guardrail names, classifier inputs, thresholds and error codes are `UNKNOWN` to it.
-- **The model is asked to predict a policy, not to apply one.** "Likely to trigger" is the model's own opinion of a hypothetical filter.
-- **The classification prompt is leading.** It tells the model that `lula 13` was refused and `flavio 22` was allowed. Some answers repeat that framing. A clean version must remove the observed outcome from the prompt.
-- **Small sample, one model version, one day, temperature 0.** No repeated runs, so no measure of variance.
-- **Missing answers.** 4 of 24 (run 1) and 11 of 40 (factorial) calls returned no valid JSON. Rates above use valid answers only. In the factorial cell the denominators are typed in by hand from the printout.
-- **The t-test in the notebook** (confidence of flagged vs. not flagged prompts, p = 0.004) is close to circular, because the model produces both columns. Treat it as descriptive.
-- **The notebook does not run top to bottom yet.** Two cells use variables (`confidence_comparison`, `candidate_extracted`) that were defined in a Colab session and not saved.
-
-## What would make it stronger
-
-- Remove the observed outcome from the classification prompt.
-- Repeat each prompt 10 or more times and keep every raw answer, including refusals.
-- Add a balanced set of non-political names and other candidates.
-- Run the same prompts against the real WhatsApp product and compare.
-
-## Run it
+Tested with Python 3.12. Direct dependencies are pinned; this is not a complete transitive lockfile.
 
 ```bash
-pip install -r requirements.txt
-export OPENROUTER_API_KEY=...   # never commit this
+python -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+python -m unittest discover -s tests -v
 jupyter notebook notebook/muse_political_entity_test.ipynb
 ```
 
-Or open the notebook in Google Colab. It asks for the key with `getpass` if the environment variable is not set.
+The notebook runs offline by default. It inspects the frozen plan, corrects the historical Run 1 denominator, and analyzes the bundled neutral run. It does not make API calls. To inspect a different run, set `MUSE_RUN_DIR` to that run's directory before starting Jupyter.
+
+For live collection, securely configure `OPENROUTER_API_KEY` for `openrouter.ai`. Verify model availability and current pricing first. Never put the key in source or a command you will publish. The model ID and authentication passed a technical pilot; that pilot is excluded from the main study.
+
+```bash
+# A new directory is required. Every retry also consumes the call limit.
+python experiment.py collect --plan results/v2_plan.json --out results/runs/v2-001 --max-calls 240 --workers 4
+python experiment.py summarize results/runs/v2-001
+```
+
+The collector stops on authentication failures. A request ceiling can leave part of the plan unrun; the summary reports that explicitly. Retries are not extra experimental repetitions. Use a separately labeled pilot if checking API compatibility before the full experiment. Do not pool a changed pilot with the frozen plan.
+
+## Historical evidence
+
+The original 24-prompt run contains **20 valid classifications, 4 missing classifications, 8 positive policy predictions and 12 negative predictions**. The valid-answer prediction rate is 8/20 (40%). This describes a leading-prompt API experiment, not actual image refusals.
+
+The original factorial run's full raw records were not saved. Its reported rates cannot be independently recomputed. The historical images in `figures/` label predictions as refusals; they are retained as original artifacts and must not be presented as verified product measurements. No new dataset has been invented to reconstruct them.
+
+- [Original Run 1 CSV](results/run1_classification.csv)
+- [Original forensic prompt](results/forensic_prompt.txt) and [model-generated hypotheses](results/run1_forensic_answer.json)
+- [Archived exploratory notebook](notebook/archive/original_exploratory.ipynb), including original outputs and known execution defects
+
+The forensic answer is a model's speculation, not access to Meta's internal systems. Political context supplied in that prompt is user-provided and requires dated independent sources before reuse as factual evidence.
+
+## For nontechnical readers
+
+A reported difference in how WhatsApp handled two political names raises a reasonable question about consistency. The revised study checks whether a separately accessed model identifies names differently when tested under the same conditions. Even a consistent difference would not by itself establish favoritism: identity ambiguity, public-role knowledge and other factors can affect answers.
+
+The API and WhatsApp are different deployments and probably apply different safeguards. To establish whether WhatsApp treats equivalent requests consistently, its actual image responses must be tested separately. The aim is fair comparison and clear reporting, regardless of politician or party.
 
 ## Files
 
-- `notebook/` the full experiment, with the original outputs
-- `results/run1_classification.csv` the 24 run 1 answers, parsed
-- `results/run1_forensic_answer.json` the model's answer to the forensic prompt
-- `results/forensic_prompt.txt` the forensic prompt
-- `figures/` the 2 charts from the notebook
+- `experiment.py`: design, collection, validation and summaries.
+- `report_run.py`: reproducible count figure and summary (`python report_run.py results/v2_run1`).
+- `results/v2_plan.json`: frozen randomized plan and prompt hashes.
+- `notebook/muse_political_entity_test.ipynb`: runnable offline analysis and optional run inspection.
+- `docs/methodology.md`: protocol and publication limits.
+- `tests/`: offline tests of design balance, failures, pairing and collection behavior.
 
-## Author
-
-Pedro Del Nero Todescan, October 2026. This is an independent test. It is not affiliated with Meta or OpenRouter.
+Author of the original experiment: Pedro Del Nero Todescan, October 2026. This project is independent of Meta and OpenRouter.

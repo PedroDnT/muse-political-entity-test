@@ -12,3 +12,6 @@ venv/
 
 # os
 .DS_Store
+
+# Review and sanitize live responses before explicitly publishing a run.
+results/runs/

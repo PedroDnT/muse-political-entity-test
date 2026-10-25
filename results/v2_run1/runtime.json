@@ -1,0 +1,15 @@
+{
+  "recorded_at": "2026-10-25T07:35:49.327903+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.41",
+  "workers": 4,
+  "max_http_calls": 240,
+  "code_sha256": "b5a6a985385911408c599ab8577126d84a3759b3a6e91c1305e125698fdd4bf0",
+  "dependencies": {
+    "requests": "2.34.2",
+    "pandas": "2.2.3",
+    "nbformat": "5.11.1",
+    "nbclient": "0.11.0"
+  },
+  "pilot_excluded": true
+}
