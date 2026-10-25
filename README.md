@@ -2,6 +2,8 @@
 
 Como interpretar uma resposta de inteligência artificial sem confundir o resultado observado com sua causa ou com intenção política? Este estudo usa o episódio de imagens políticas no WhatsApp como caso de alfabetização algorítmica: apresenta mecanismos possíveis, as alegações públicas e um experimento de reconhecimento de nomes. Não mede o nível de compreensão do público; oferece evidências e conceitos para analisar o episódio. A explicação segue uma única sequência: **como o sistema funciona → o que foi alegado → por que e como testamos → resultados → interpretação das evidências**.
 
+**White paper:** [Da assimetria observada à atribuição de intenção](docs/white-paper-alfabetizacao-algoritmica.md), versão 1.0, com referências acadêmicas e tabela de limites inferenciais. [Registro e opção de depósito no Zenodo](docs/publicacao.md).
+
 ## 1. Como o modelo interpreta um pedido
 
 Um grande modelo de linguagem, ou **LLM**, aprende padrões a partir de exemplos de treinamento. O texto recebido é dividido em pequenas unidades chamadas *tokens*. O modelo combina essas unidades com o contexto para produzir uma resposta. Os **pesos** são os parâmetros numéricos aprendidos durante o treinamento; não são uma lista explícita de pessoas e regras.
