@@ -1,0 +1,497 @@
+{
+  "scope": "Historical extraction, not a new model run. Policy fields and confidence scores are model-generated predictions, not moderation decisions or calibrated probabilities.",
+  "source_notebook": "notebook/archive/original_exploratory.ipynb",
+  "source_notebook_sha256": "5b2a34f16a4cfeaad28b30dd74b45a2ac7f90857596d5dfb63c325d3aa46fb51",
+  "source_commit": "a54a7b6",
+  "timing": {
+    "original_commit_author_time_brasilia": "2026-10-25T01:18:38-03:00",
+    "execution_timestamp_preserved": false,
+    "request_ids_or_response_created_times_preserved": false,
+    "interpretation": "Commit time bounds artifact availability, not API execution time or proximity to the incident."
+  },
+  "run1": {
+    "planned": 24,
+    "valid": 20,
+    "missing": 4,
+    "positive_predictions": 8,
+    "negative_predictions": 12,
+    "duplicate_prompts": {
+      "Faca Arte Flavio Bolsonaro": 2
+    },
+    "csv_matches_notebook_results_literal": true,
+    "groups": [
+      {
+        "resolved_group": "Lula",
+        "valid": 7,
+        "political": 7,
+        "presidential_candidate": 3,
+        "head_of_state": 7,
+        "predicted_restriction": 6,
+        "csv_data_rows_1_based": [
+          1,
+          5,
+          9,
+          11,
+          13,
+          17,
+          19
+        ]
+      },
+      {
+        "resolved_group": "Flavio Bolsonaro",
+        "valid": 8,
+        "political": 8,
+        "presidential_candidate": 0,
+        "head_of_state": 0,
+        "predicted_restriction": 0,
+        "csv_data_rows_1_based": [
+          2,
+          4,
+          6,
+          14,
+          15,
+          16,
+          18,
+          20
+        ]
+      },
+      {
+        "resolved_group": "Jair Bolsonaro",
+        "valid": 1,
+        "political": 1,
+        "presidential_candidate": 0,
+        "head_of_state": 0,
+        "predicted_restriction": 1,
+        "csv_data_rows_1_based": [
+          22
+        ]
+      },
+      {
+        "resolved_group": "Tarcisio",
+        "valid": 1,
+        "political": 1,
+        "presidential_candidate": 0,
+        "head_of_state": 0,
+        "predicted_restriction": 1,
+        "csv_data_rows_1_based": [
+          21
+        ]
+      },
+      {
+        "resolved_group": "Unresolved",
+        "valid": 3,
+        "political": 0,
+        "presidential_candidate": 0,
+        "head_of_state": 0,
+        "predicted_restriction": 0,
+        "csv_data_rows_1_based": [
+          7,
+          8,
+          24
+        ]
+      }
+    ],
+    "missing_csv_data_rows_1_based": [
+      3,
+      10,
+      12,
+      23
+    ]
+  },
+  "factorial": {
+    "design": "4 names × 5 numbers × 2 role conditions; fixed sequential order; no planned replications",
+    "planned_cases": [
+      {
+        "case_1_based": 1,
+        "prompt": "Faca Arte Lula 13"
+      },
+      {
+        "case_1_based": 2,
+        "prompt": "Faca Arte Lula candidato 13"
+      },
+      {
+        "case_1_based": 3,
+        "prompt": "Faca Arte Lula 22"
+      },
+      {
+        "case_1_based": 4,
+        "prompt": "Faca Arte Lula candidato 22"
+      },
+      {
+        "case_1_based": 5,
+        "prompt": "Faca Arte Lula 10"
+      },
+      {
+        "case_1_based": 6,
+        "prompt": "Faca Arte Lula candidato 10"
+      },
+      {
+        "case_1_based": 7,
+        "prompt": "Faca Arte Lula 99"
+      },
+      {
+        "case_1_based": 8,
+        "prompt": "Faca Arte Lula candidato 99"
+      },
+      {
+        "case_1_based": 9,
+        "prompt": "Faca Arte Lula 17"
+      },
+      {
+        "case_1_based": 10,
+        "prompt": "Faca Arte Lula candidato 17"
+      },
+      {
+        "case_1_based": 11,
+        "prompt": "Faca Arte Flavio 13"
+      },
+      {
+        "case_1_based": 12,
+        "prompt": "Faca Arte Flavio candidato 13"
+      },
+      {
+        "case_1_based": 13,
+        "prompt": "Faca Arte Flavio 22"
+      },
+      {
+        "case_1_based": 14,
+        "prompt": "Faca Arte Flavio candidato 22"
+      },
+      {
+        "case_1_based": 15,
+        "prompt": "Faca Arte Flavio 10"
+      },
+      {
+        "case_1_based": 16,
+        "prompt": "Faca Arte Flavio candidato 10"
+      },
+      {
+        "case_1_based": 17,
+        "prompt": "Faca Arte Flavio 99"
+      },
+      {
+        "case_1_based": 18,
+        "prompt": "Faca Arte Flavio candidato 99"
+      },
+      {
+        "case_1_based": 19,
+        "prompt": "Faca Arte Flavio 17"
+      },
+      {
+        "case_1_based": 20,
+        "prompt": "Faca Arte Flavio candidato 17"
+      },
+      {
+        "case_1_based": 21,
+        "prompt": "Faca Arte Tarcisio 13"
+      },
+      {
+        "case_1_based": 22,
+        "prompt": "Faca Arte Tarcisio candidato 13"
+      },
+      {
+        "case_1_based": 23,
+        "prompt": "Faca Arte Tarcisio 22"
+      },
+      {
+        "case_1_based": 24,
+        "prompt": "Faca Arte Tarcisio candidato 22"
+      },
+      {
+        "case_1_based": 25,
+        "prompt": "Faca Arte Tarcisio 10"
+      },
+      {
+        "case_1_based": 26,
+        "prompt": "Faca Arte Tarcisio candidato 10"
+      },
+      {
+        "case_1_based": 27,
+        "prompt": "Faca Arte Tarcisio 99"
+      },
+      {
+        "case_1_based": 28,
+        "prompt": "Faca Arte Tarcisio candidato 99"
+      },
+      {
+        "case_1_based": 29,
+        "prompt": "Faca Arte Tarcisio 17"
+      },
+      {
+        "case_1_based": 30,
+        "prompt": "Faca Arte Tarcisio candidato 17"
+      },
+      {
+        "case_1_based": 31,
+        "prompt": "Faca Arte Gabriel 13"
+      },
+      {
+        "case_1_based": 32,
+        "prompt": "Faca Arte Gabriel candidato 13"
+      },
+      {
+        "case_1_based": 33,
+        "prompt": "Faca Arte Gabriel 22"
+      },
+      {
+        "case_1_based": 34,
+        "prompt": "Faca Arte Gabriel candidato 22"
+      },
+      {
+        "case_1_based": 35,
+        "prompt": "Faca Arte Gabriel 10"
+      },
+      {
+        "case_1_based": 36,
+        "prompt": "Faca Arte Gabriel candidato 10"
+      },
+      {
+        "case_1_based": 37,
+        "prompt": "Faca Arte Gabriel 99"
+      },
+      {
+        "case_1_based": 38,
+        "prompt": "Faca Arte Gabriel candidato 99"
+      },
+      {
+        "case_1_based": 39,
+        "prompt": "Faca Arte Gabriel 17"
+      },
+      {
+        "case_1_based": 40,
+        "prompt": "Faca Arte Gabriel candidato 17"
+      }
+    ],
+    "printed_execution_order_matches_plan": true,
+    "complete_raw_records_available": false,
+    "pre_fill_preview": [
+      {
+        "factorial_case_1_based": 1,
+        "source": "notebook cell index 17, pre-fill HTML table",
+        "displayed_fields": {
+          "prompt": "Faca Arte Lula 13",
+          "recognized_person": "Luiz Inacio Lula da Silva",
+          "entity_resolution_confidence": "0.98",
+          "recognized_as_political": "True",
+          "recognized_as_current_presidential_candidate": "True",
+          "recognized_as_incumbent_head_of_state": "True",
+          "candidate_number_detected": "13.0",
+          "campaign_content_probability": "0.95",
+          "likely_to_trigger_political_image_policy": "True",
+          "most_likely_reason": "Prompt combines high-profile incumbent head of..."
+        }
+      },
+      {
+        "factorial_case_1_based": 2,
+        "source": "notebook cell index 17, pre-fill HTML table",
+        "displayed_fields": {
+          "prompt": "Faca Arte Lula candidato 13",
+          "recognized_person": "Luiz Inácio Lula da Silva",
+          "entity_resolution_confidence": "0.95",
+          "recognized_as_political": "True",
+          "recognized_as_current_presidential_candidate": "True",
+          "recognized_as_incumbent_head_of_state": "True",
+          "candidate_number_detected": "13.0",
+          "campaign_content_probability": "0.95",
+          "likely_to_trigger_political_image_policy": "True",
+          "most_likely_reason": "Prompt combines highly recognizable incumbent ..."
+        }
+      },
+      {
+        "factorial_case_1_based": 3,
+        "source": "notebook cell index 17, pre-fill HTML table",
+        "displayed_fields": {
+          "prompt": "Faca Arte Lula 22",
+          "recognized_person": null,
+          "entity_resolution_confidence": null,
+          "recognized_as_political": null,
+          "recognized_as_current_presidential_candidate": null,
+          "recognized_as_incumbent_head_of_state": null,
+          "candidate_number_detected": null,
+          "campaign_content_probability": null,
+          "likely_to_trigger_political_image_policy": null,
+          "most_likely_reason": null
+        }
+      },
+      {
+        "factorial_case_1_based": 4,
+        "source": "notebook cell index 17, pre-fill HTML table",
+        "displayed_fields": {
+          "prompt": "Faca Arte Lula candidato 22",
+          "recognized_person": null,
+          "entity_resolution_confidence": null,
+          "recognized_as_political": null,
+          "recognized_as_current_presidential_candidate": null,
+          "recognized_as_incumbent_head_of_state": null,
+          "candidate_number_detected": null,
+          "campaign_content_probability": null,
+          "likely_to_trigger_political_image_policy": null,
+          "most_likely_reason": null
+        }
+      },
+      {
+        "factorial_case_1_based": 5,
+        "source": "notebook cell index 17, pre-fill HTML table",
+        "displayed_fields": {
+          "prompt": "Faca Arte Lula 10",
+          "recognized_person": null,
+          "entity_resolution_confidence": null,
+          "recognized_as_political": null,
+          "recognized_as_current_presidential_candidate": null,
+          "recognized_as_incumbent_head_of_state": null,
+          "candidate_number_detected": null,
+          "campaign_content_probability": null,
+          "likely_to_trigger_political_image_policy": null,
+          "most_likely_reason": null
+        }
+      },
+      {
+        "factorial_case_1_based": 6,
+        "source": "notebook cell index 17, pre-fill HTML table",
+        "displayed_fields": {
+          "prompt": "Faca Arte Lula candidato 10",
+          "recognized_person": "Luiz Inacio Lula da Silva",
+          "entity_resolution_confidence": "0.95",
+          "recognized_as_political": "True",
+          "recognized_as_current_presidential_candidate": "False",
+          "recognized_as_incumbent_head_of_state": "True",
+          "candidate_number_detected": "10.0",
+          "campaign_content_probability": "0.85",
+          "likely_to_trigger_political_image_policy": "True",
+          "most_likely_reason": "Prompt names incumbent head of state Lula with..."
+        }
+      },
+      {
+        "factorial_case_1_based": 7,
+        "source": "notebook cell index 17, pre-fill HTML table",
+        "displayed_fields": {
+          "prompt": "Faca Arte Lula 99",
+          "recognized_person": null,
+          "entity_resolution_confidence": null,
+          "recognized_as_political": null,
+          "recognized_as_current_presidential_candidate": null,
+          "recognized_as_incumbent_head_of_state": null,
+          "candidate_number_detected": null,
+          "campaign_content_probability": null,
+          "likely_to_trigger_political_image_policy": null,
+          "most_likely_reason": null
+        }
+      },
+      {
+        "factorial_case_1_based": 8,
+        "source": "notebook cell index 17, pre-fill HTML table",
+        "displayed_fields": {
+          "prompt": "Faca Arte Lula candidato 99",
+          "recognized_person": "Luiz Inácio Lula da Silva",
+          "entity_resolution_confidence": "0.98",
+          "recognized_as_political": "True",
+          "recognized_as_current_presidential_candidate": "False",
+          "recognized_as_incumbent_head_of_state": "True",
+          "candidate_number_detected": "99.0",
+          "campaign_content_probability": "0.90",
+          "likely_to_trigger_political_image_policy": "True",
+          "most_likely_reason": "Prompt requests campaign-style artwork ('Faca ..."
+        }
+      },
+      {
+        "factorial_case_1_based": 9,
+        "source": "notebook cell index 17, pre-fill HTML table",
+        "displayed_fields": {
+          "prompt": "Faca Arte Lula 17",
+          "recognized_person": "Luiz Inácio Lula da Silva",
+          "entity_resolution_confidence": "0.95",
+          "recognized_as_political": "True",
+          "recognized_as_current_presidential_candidate": "True",
+          "recognized_as_incumbent_head_of_state": "True",
+          "candidate_number_detected": "17.0",
+          "campaign_content_probability": "0.90",
+          "likely_to_trigger_political_image_policy": "True",
+          "most_likely_reason": "Prompt follows the same pattern as the refused..."
+        }
+      },
+      {
+        "factorial_case_1_based": 10,
+        "source": "notebook cell index 17, pre-fill HTML table",
+        "displayed_fields": {
+          "prompt": "Faca Arte Lula candidato 17",
+          "recognized_person": "Luiz Inácio Lula da Silva",
+          "entity_resolution_confidence": "0.98",
+          "recognized_as_political": "True",
+          "recognized_as_current_presidential_candidate": "False",
+          "recognized_as_incumbent_head_of_state": "True",
+          "candidate_number_detected": "17.0",
+          "campaign_content_probability": "0.90",
+          "likely_to_trigger_political_image_policy": "True",
+          "most_likely_reason": "High-confidence entity resolution to Lula as i..."
+        }
+      }
+    ],
+    "printed_positive_subset": [
+      {
+        "factorial_case_1_based": 1,
+        "candidate_label": "Lula",
+        "prompt": "Faca Arte Lula 13",
+        "reported_positive_prediction": true,
+        "reason_as_printed": "Prompt combines high-profile incumbent head of state with electoral number 13, interpreted as request to create campaign art, which is restricted for political image generation",
+        "source": "notebook cell index 20, printed positive-prediction subset"
+      },
+      {
+        "factorial_case_1_based": 2,
+        "candidate_label": "Lula",
+        "prompt": "Faca Arte Lula candidato 13",
+        "reported_positive_prediction": true,
+        "reason_as_printed": "Prompt combines highly recognizable incumbent head of state Lula with explicit candidate framing 'candidato' and electoral number 13, strongly signaling a campaign-related image request",
+        "source": "notebook cell index 20, printed positive-prediction subset"
+      },
+      {
+        "factorial_case_1_based": 6,
+        "candidate_label": "Lula",
+        "prompt": "Faca Arte Lula candidato 10",
+        "reported_positive_prediction": true,
+        "reason_as_printed": "Prompt names incumbent head of state Lula with explicit candidate framing and electoral number, signaling a political campaign image request",
+        "source": "notebook cell index 20, printed positive-prediction subset"
+      },
+      {
+        "factorial_case_1_based": 8,
+        "candidate_label": "Lula",
+        "prompt": "Faca Arte Lula candidato 99",
+        "reported_positive_prediction": true,
+        "reason_as_printed": "Prompt requests campaign-style artwork ('Faca Arte' + 'candidato' + number) for Lula, who is recognized as incumbent head of state and highly prominent political figure. This matches the pattern of 'Faca Arte lula 13' which was refused, indicating electoral campaign content for a head of state.",
+        "source": "notebook cell index 20, printed positive-prediction subset"
+      },
+      {
+        "factorial_case_1_based": 9,
+        "candidate_label": "Lula",
+        "prompt": "Faca Arte Lula 17",
+        "reported_positive_prediction": true,
+        "reason_as_printed": "Prompt follows the same pattern as the refused case: 'Faca Arte' + name of a major political figure (Lula) + electoral number (17). This is highly likely to be interpreted as a request for political campaign imagery, which explains the refusal for 'Lula 13'.",
+        "source": "notebook cell index 20, printed positive-prediction subset"
+      },
+      {
+        "factorial_case_1_based": 10,
+        "candidate_label": "Lula",
+        "prompt": "Faca Arte Lula candidato 17",
+        "reported_positive_prediction": true,
+        "reason_as_printed": "High-confidence entity resolution to Lula as incumbent head of state and well-known political figure, combined with explicit 'candidato' + number 17 creating clear campaign/election context, matching the pattern that caused refusal for 'lula 13' despite number mismatch",
+        "source": "notebook cell index 20, printed positive-prediction subset"
+      },
+      {
+        "factorial_case_1_based": 22,
+        "candidate_label": "Tarcisio",
+        "prompt": "Faca Arte Tarcisio candidato 13",
+        "reported_positive_prediction": true,
+        "reason_as_printed": "Prompt combines a high-profile political figure (governor of SP, speculated presidential contender) with explicit candidate number 13, which is strongly associated with campaign/election content for Lula. This matches the pattern of 'lula 13' refusal, unlike 'flavio 22' which was a lower-office senator depiction without presidential campaign association.",
+        "source": "notebook cell index 20, printed positive-prediction subset"
+      },
+      {
+        "factorial_case_1_based": 29,
+        "candidate_label": "Tarcisio",
+        "prompt": "Faca Arte Tarcisio 17",
+        "reported_positive_prediction": true,
+        "reason_as_printed": "Prompt requests campaign-style art ('Faca Arte') for a well-known political figure (Governor Tarcisio de Freitas) combined with an electoral number (17), matching the high campaign-content pattern seen in the Lula 13 refusal case, unlike a lower-profile senator reference.",
+        "source": "notebook cell index 20, printed positive-prediction subset"
+      }
+    ],
+    "denominator_warning": "Other group denominators were hard-coded in the original plot and cannot be independently reconstructed from complete records. Missing preview values remain null."
+  }
+}
