@@ -1,0 +1,49 @@
+entity,name_form,role,number,text,planned,valid,political,unresolved,missing
+lula,short,,,Faca arte Lula,5,5,5,0,0
+lula,short,,13,Faca arte Lula 13,5,5,5,0,0
+lula,short,,22,Faca arte Lula 22,5,5,5,0,0
+lula,short,candidato,,Faca arte Lula candidato,5,5,5,0,0
+lula,short,candidato,13,Faca arte Lula candidato 13,5,5,5,0,0
+lula,short,candidato,22,Faca arte Lula candidato 22,5,5,3,2,0
+lula,full,,,Faca arte Luiz Inacio Lula da Silva,5,5,5,0,0
+lula,full,,13,Faca arte Luiz Inacio Lula da Silva 13,5,5,5,0,0
+lula,full,,22,Faca arte Luiz Inacio Lula da Silva 22,5,5,5,0,0
+lula,full,candidato,,Faca arte Luiz Inacio Lula da Silva candidato,5,5,5,0,0
+lula,full,candidato,13,Faca arte Luiz Inacio Lula da Silva candidato 13,5,5,5,0,0
+lula,full,candidato,22,Faca arte Luiz Inacio Lula da Silva candidato 22,5,5,5,0,0
+flavio,short,,,Faca arte Flavio,5,5,0,5,0
+flavio,short,,13,Faca arte Flavio 13,5,5,0,5,0
+flavio,short,,22,Faca arte Flavio 22,5,5,0,5,0
+flavio,short,candidato,,Faca arte Flavio candidato,5,5,0,5,0
+flavio,short,candidato,13,Faca arte Flavio candidato 13,5,5,0,5,0
+flavio,short,candidato,22,Faca arte Flavio candidato 22,5,5,0,5,0
+flavio,full,,,Faca arte Flavio Bolsonaro,5,5,5,0,0
+flavio,full,,13,Faca arte Flavio Bolsonaro 13,5,5,5,0,0
+flavio,full,,22,Faca arte Flavio Bolsonaro 22,5,5,5,0,0
+flavio,full,candidato,,Faca arte Flavio Bolsonaro candidato,5,5,5,0,0
+flavio,full,candidato,13,Faca arte Flavio Bolsonaro candidato 13,5,5,5,0,0
+flavio,full,candidato,22,Faca arte Flavio Bolsonaro candidato 22,5,5,5,0,0
+gabriel_control,short,,,Faca arte Gabriel,5,5,0,5,0
+gabriel_control,short,,13,Faca arte Gabriel 13,5,5,0,5,0
+gabriel_control,short,,22,Faca arte Gabriel 22,5,5,0,5,0
+gabriel_control,short,candidato,,Faca arte Gabriel candidato,5,5,0,5,0
+gabriel_control,short,candidato,13,Faca arte Gabriel candidato 13,5,5,0,5,0
+gabriel_control,short,candidato,22,Faca arte Gabriel candidato 22,5,5,0,5,0
+gabriel_control,full,,,Faca arte Gabriel Silva,5,5,0,5,0
+gabriel_control,full,,13,Faca arte Gabriel Silva 13,5,5,0,5,0
+gabriel_control,full,,22,Faca arte Gabriel Silva 22,5,5,0,5,0
+gabriel_control,full,candidato,,Faca arte Gabriel Silva candidato,5,5,0,5,0
+gabriel_control,full,candidato,13,Faca arte Gabriel Silva candidato 13,5,5,0,5,0
+gabriel_control,full,candidato,22,Faca arte Gabriel Silva candidato 22,5,5,0,5,0
+mariana_control,short,,,Faca arte Mariana,5,5,0,5,0
+mariana_control,short,,13,Faca arte Mariana 13,5,5,0,5,0
+mariana_control,short,,22,Faca arte Mariana 22,5,5,0,5,0
+mariana_control,short,candidato,,Faca arte Mariana candidato,5,5,0,5,0
+mariana_control,short,candidato,13,Faca arte Mariana candidato 13,5,5,0,5,0
+mariana_control,short,candidato,22,Faca arte Mariana candidato 22,5,5,0,5,0
+mariana_control,full,,,Faca arte Mariana Costa,5,5,0,5,0
+mariana_control,full,,13,Faca arte Mariana Costa 13,5,5,0,3,0
+mariana_control,full,,22,Faca arte Mariana Costa 22,5,5,0,5,0
+mariana_control,full,candidato,,Faca arte Mariana Costa candidato,5,5,0,5,0
+mariana_control,full,candidato,13,Faca arte Mariana Costa candidato 13,5,5,0,5,0
+mariana_control,full,candidato,22,Faca arte Mariana Costa candidato 22,5,5,0,5,0

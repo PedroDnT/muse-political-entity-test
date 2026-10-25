@@ -1,5 +1,7 @@
 # Neutral entity-resolution protocol, version 2
 
+> Apêndice de conferência. A leitura principal está no [estudo completo](../README.md).
+
 ## What this can establish
 
 Measure how a specified OpenRouter model identifies names and political roles under matched wording. This is a text classification experiment. It does not generate images or measure political image restrictions.
@@ -18,7 +20,13 @@ The reported product changes support that motivation; independence of the API de
 
 The original code had already been run and exploratory evidence collected before v2. The original CSV, notebook outputs and forensic response are preserved in the initial repository commit. V2 extends that investigation with a different, neutral endpoint; it must not be described as the first evidence gathered. See [provenance and thesis](provenance-and-thesis.md).
 
-Different WhatsApp and OpenRouter guardrails are a plausible deployment hypothesis, not a confirmed architecture. Shared base-model identity would not establish identical product safeguards; identical underlying versions have also not been independently verified. This hypothesis supports caution about causal attribution without asserting that it explains the observed incident.
+Meta publicly announced Muse Spark deployment to Meta AI on WhatsApp in its [12 May launch-post update](https://about.fb.com/news/2026/04/introducing-muse-spark-meta-superintelligence-labs/). This supports the family-level connection; it does not identify the version or every component serving a particular image request. Different WhatsApp and OpenRouter guardrails are a plausible deployment hypothesis, not a confirmed architecture. Shared base-model identity would not establish identical product safeguards; identical underlying versions have also not been independently verified. This hypothesis supports caution about causal attribution without asserting that it explains the observed incident.
+
+## Behavioral classification and shared-weight assumptions
+
+Asking Muse to classify a supplied name measures the endpoint's behavior under a fixed instruction. It does not expose internal classifier states. No additional classifier is trained, but this does not establish that the WhatsApp guardrail shares this model's weights. Product rules, another classifier or a different model version may intervene; identical weights would also not imply identical outputs under different instructions or surrounding components.
+
+A post-collection descriptive breakdown of the planned number/role factors is provided in [the association and probability note](associacoes-e-probabilidades.md). It preserves all 48 strata and distinguishes observed response frequencies from token probabilities and moderation decisions. Public endpoint metadata did not advertise logprobs support at inspection; the original records contain no non-null logprobs. No model-generated confidence percentage is treated as a calibrated probability.
 
 ## Fixed design before collection
 

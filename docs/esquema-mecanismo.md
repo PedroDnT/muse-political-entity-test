@@ -1,5 +1,7 @@
 # Como reconhecer um político e ainda assim não acionar uma restrição
 
+> Apêndice de conferência. A leitura principal está no [estudo completo](../README.md).
+
 ## Atualização com fonte primária
 
 A [declaração pública da Meta](https://about.fb.com/br/news/2026/10/a-meta-nao-esta-interferindo-nas-eleicoes-brasileiras-estes-sao-os-fatos/) atribui a lacuna a algumas combinações de primeiro nome comum e número eleitoral, inclusive Flávio e Luiz. A empresa declara tê-la corrigido em 14 de outubro. Isso dá respaldo documental à direção geral de uma falha de reconhecimento; o mecanismo específico senador versus candidato abaixo continua hipotético. Veja [o esquema baseado na explicação declarada](meta-explanation.md).

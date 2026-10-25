@@ -1,0 +1,26 @@
+{
+  "source_url": "https://openrouter.ai/api/v1/models/meta/muse-spark-1.1/endpoints",
+  "recorded_at": "2026-10-25T13:10:50.984174+00:00",
+  "model_id": "meta/muse-spark-1.1",
+  "endpoints": [
+    {
+      "name": "Meta | meta/muse-spark-1.1-20260709",
+      "provider_name": "Meta",
+      "supported_parameters": [
+        "reasoning",
+        "include_reasoning",
+        "max_tokens",
+        "repetition_penalty",
+        "top_k",
+        "temperature",
+        "top_p",
+        "tools",
+        "tool_choice",
+        "structured_outputs",
+        "response_format",
+        "reasoning_effort"
+      ]
+    }
+  ],
+  "interpretation": "No listed endpoint advertises logprobs or top_logprobs. Capability metadata at inspection time, not proof of historical backend identity. No paid capability probe performed."
+}

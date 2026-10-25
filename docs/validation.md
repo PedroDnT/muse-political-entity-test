@@ -13,8 +13,29 @@
 
 Source: committed plan and raw case records in `results/v2_run1`. Measure: counts of valid positive/negative political flags and missing/unrun cases, by intended entity and name form. Denominator: 30 planned calls per row; five repetitions of six number/role conditions. No preferred direction, ranking or causal claim. Fixed entity order and identical scales; no uncertainty interval claimed for these descriptive counts.
 
-Form: horizontal stacked counts, 10 × 6.1 inches; exported PNG at 200 dpi and editable SVG. Teal encodes positive flags equally for all names; gray encodes negative flags; hatching reserves missingness. Caption explicitly separates the direct API from WhatsApp. Source: `report_run.py`.
+Form: horizontal stacked counts, 11 × 7.6 inches; exported PNG at 200 dpi and editable SVG. Teal encodes positive flags equally for all names; gray encodes negative flags; hatching reserves missingness. Caption identifies a text task through the API and distinguishes no political flag from an image refusal. Source: `report_run.py`.
 
 The figure uses a restrained palette, common zero baseline, direct counts, readable typography and an explicit denominator. The same visual encoding is applied to each political figure and control.
 
 Inspected the final color and grayscale PNGs: readable counts and captions, no clipped labels, sufficient contrast and no political-party color assignment. Counts reconcile to the raw records. The notebook contains the same reproducible figure; a full browser inspection of the notebook HTML was not performed.
+
+## Accessible visual guide
+
+- `render_guide.py` reads the frozen plan and raw answers; `figures/guide/example-records.json` maps every displayed example to all five case IDs and answers. The selected conditions are illustrative, not a replacement for aggregate results.
+- The displayed instruction summary is labeled as translated; the full English instruction in the consolidated `README.md` was checked against the collector, and both JSON examples against their raw records.
+- The timeline cites Meta's May launch-post update, its October incident statement and product reporting. It does not claim identical model versions or a paired image-generation experiment.
+- Figures were inspected at 960 px width in color and grayscale on 25 October 2026, with all labels and denominators readable and no clipped text. The renderer checks canvas text bounds. No information depends on color alone.
+- SVG and 2× PNG versions are preserved, along with editable source and `docs/visual-guide-spec.json`. Scientific review checked task differences, selected-example denominators and source attribution; visual review checked reading order, direct labels, contrast and spacing.
+
+## Number cues and probability availability
+
+- `analyze_number_cues.py` regenerated all 48 number/role/name-form strata from 240 unique preserved cases. Totals reconcile to 88 political flags and 150 unresolved identities; every stratum contains five valid responses and no missing cases.
+- The eight political-name rows in the detailed table were checked against the records. Only `Lula candidato 22` mixes political flags (3/5) within this set; the other short-Lula conditions and all full-name conditions are 5/5, and all short-Flavio conditions are 0/5 with unresolved identities.
+- No returned choice contains non-null logprobs. A dated public endpoint-capability snapshot lists supported parameters and does not advertise logprobs. This check made no paid model call and does not establish historical backend or guardrail weight identity.
+- Documentation links and code fences passed validation. The subgroup analysis is labeled descriptive and post-collection; original evidence and figures are unchanged.
+
+## Consolidated study page and count-chart labels
+
+The README now contains the complete reader-facing narrative, from model and guardrail concepts through allegations, methods, results and the evidence synthesis. Former overview pages retain their URLs and point to this single narrative; technical appendices are labeled as such.
+
+The count chart uses the exact input names from `experiment.ENTITIES`, Portuguese labels and the original counts. Unused missingness legend entries are hidden only when every case is valid; partial runs retain missingness bars. The 1100 × 760 px render was inspected in color and grayscale, and all text bounds were checked. SVG and 2× PNG exports and the notebook figure were refreshed. The saved numerical summary is unchanged.

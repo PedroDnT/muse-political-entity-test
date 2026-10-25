@@ -1,0 +1,922 @@
+{
+  "source_run": "results/v2_run1",
+  "scope": "Post-collection descriptive strata of the frozen factorial design; not internal probabilities or WhatsApp decisions.",
+  "logprob_availability_in_records": {
+    "returned_choices": 240,
+    "choices_with_nonnull_logprobs": 0
+  },
+  "groups": [
+    {
+      "entity": "lula",
+      "name_form": "short",
+      "role": "",
+      "number": "",
+      "text": "Faca arte Lula",
+      "planned": 5,
+      "valid": 5,
+      "political": 5,
+      "unresolved": 0,
+      "missing": 0,
+      "case_ids": [
+        "lula-0-none-none-r0",
+        "lula-0-none-none-r1",
+        "lula-0-none-none-r2",
+        "lula-0-none-none-r3",
+        "lula-0-none-none-r4"
+      ]
+    },
+    {
+      "entity": "lula",
+      "name_form": "short",
+      "role": "",
+      "number": "13",
+      "text": "Faca arte Lula 13",
+      "planned": 5,
+      "valid": 5,
+      "political": 5,
+      "unresolved": 0,
+      "missing": 0,
+      "case_ids": [
+        "lula-0-13-none-r0",
+        "lula-0-13-none-r1",
+        "lula-0-13-none-r2",
+        "lula-0-13-none-r3",
+        "lula-0-13-none-r4"
+      ]
+    },
+    {
+      "entity": "lula",
+      "name_form": "short",
+      "role": "",
+      "number": "22",
+      "text": "Faca arte Lula 22",
+      "planned": 5,
+      "valid": 5,
+      "political": 5,
+      "unresolved": 0,
+      "missing": 0,
+      "case_ids": [
+        "lula-0-22-none-r0",
+        "lula-0-22-none-r1",
+        "lula-0-22-none-r2",
+        "lula-0-22-none-r3",
+        "lula-0-22-none-r4"
+      ]
+    },
+    {
+      "entity": "lula",
+      "name_form": "short",
+      "role": "candidato",
+      "number": "",
+      "text": "Faca arte Lula candidato",
+      "planned": 5,
+      "valid": 5,
+      "political": 5,
+      "unresolved": 0,
+      "missing": 0,
+      "case_ids": [
+        "lula-0-none-candidato-r0",
+        "lula-0-none-candidato-r1",
+        "lula-0-none-candidato-r2",
+        "lula-0-none-candidato-r3",
+        "lula-0-none-candidato-r4"
+      ]
+    },
+    {
+      "entity": "lula",
+      "name_form": "short",
+      "role": "candidato",
+      "number": "13",
+      "text": "Faca arte Lula candidato 13",
+      "planned": 5,
+      "valid": 5,
+      "political": 5,
+      "unresolved": 0,
+      "missing": 0,
+      "case_ids": [
+        "lula-0-13-candidato-r0",
+        "lula-0-13-candidato-r1",
+        "lula-0-13-candidato-r2",
+        "lula-0-13-candidato-r3",
+        "lula-0-13-candidato-r4"
+      ]
+    },
+    {
+      "entity": "lula",
+      "name_form": "short",
+      "role": "candidato",
+      "number": "22",
+      "text": "Faca arte Lula candidato 22",
+      "planned": 5,
+      "valid": 5,
+      "political": 3,
+      "unresolved": 2,
+      "missing": 0,
+      "case_ids": [
+        "lula-0-22-candidato-r0",
+        "lula-0-22-candidato-r1",
+        "lula-0-22-candidato-r2",
+        "lula-0-22-candidato-r3",
+        "lula-0-22-candidato-r4"
+      ]
+    },
+    {
+      "entity": "lula",
+      "name_form": "full",
+      "role": "",
+      "number": "",
+      "text": "Faca arte Luiz Inacio Lula da Silva",
+      "planned": 5,
+      "valid": 5,
+      "political": 5,
+      "unresolved": 0,
+      "missing": 0,
+      "case_ids": [
+        "lula-1-none-none-r0",
+        "lula-1-none-none-r1",
+        "lula-1-none-none-r2",
+        "lula-1-none-none-r3",
+        "lula-1-none-none-r4"
+      ]
+    },
+    {
+      "entity": "lula",
+      "name_form": "full",
+      "role": "",
+      "number": "13",
+      "text": "Faca arte Luiz Inacio Lula da Silva 13",
+      "planned": 5,
+      "valid": 5,
+      "political": 5,
+      "unresolved": 0,
+      "missing": 0,
+      "case_ids": [
+        "lula-1-13-none-r0",
+        "lula-1-13-none-r1",
+        "lula-1-13-none-r2",
+        "lula-1-13-none-r3",
+        "lula-1-13-none-r4"
+      ]
+    },
+    {
+      "entity": "lula",
+      "name_form": "full",
+      "role": "",
+      "number": "22",
+      "text": "Faca arte Luiz Inacio Lula da Silva 22",
+      "planned": 5,
+      "valid": 5,
+      "political": 5,
+      "unresolved": 0,
+      "missing": 0,
+      "case_ids": [
+        "lula-1-22-none-r0",
+        "lula-1-22-none-r1",
+        "lula-1-22-none-r2",
+        "lula-1-22-none-r3",
+        "lula-1-22-none-r4"
+      ]
+    },
+    {
+      "entity": "lula",
+      "name_form": "full",
+      "role": "candidato",
+      "number": "",
+      "text": "Faca arte Luiz Inacio Lula da Silva candidato",
+      "planned": 5,
+      "valid": 5,
+      "political": 5,
+      "unresolved": 0,
+      "missing": 0,
+      "case_ids": [
+        "lula-1-none-candidato-r0",
+        "lula-1-none-candidato-r1",
+        "lula-1-none-candidato-r2",
+        "lula-1-none-candidato-r3",
+        "lula-1-none-candidato-r4"
+      ]
+    },
+    {
+      "entity": "lula",
+      "name_form": "full",
+      "role": "candidato",
+      "number": "13",
+      "text": "Faca arte Luiz Inacio Lula da Silva candidato 13",
+      "planned": 5,
+      "valid": 5,
+      "political": 5,
+      "unresolved": 0,
+      "missing": 0,
+      "case_ids": [
+        "lula-1-13-candidato-r0",
+        "lula-1-13-candidato-r1",
+        "lula-1-13-candidato-r2",
+        "lula-1-13-candidato-r3",
+        "lula-1-13-candidato-r4"
+      ]
+    },
+    {
+      "entity": "lula",
+      "name_form": "full",
+      "role": "candidato",
+      "number": "22",
+      "text": "Faca arte Luiz Inacio Lula da Silva candidato 22",
+      "planned": 5,
+      "valid": 5,
+      "political": 5,
+      "unresolved": 0,
+      "missing": 0,
+      "case_ids": [
+        "lula-1-22-candidato-r0",
+        "lula-1-22-candidato-r1",
+        "lula-1-22-candidato-r2",
+        "lula-1-22-candidato-r3",
+        "lula-1-22-candidato-r4"
+      ]
+    },
+    {
+      "entity": "flavio",
+      "name_form": "short",
+      "role": "",
+      "number": "",
+      "text": "Faca arte Flavio",
+      "planned": 5,
+      "valid": 5,
+      "political": 0,
+      "unresolved": 5,
+      "missing": 0,
+      "case_ids": [
+        "flavio-0-none-none-r0",
+        "flavio-0-none-none-r1",
+        "flavio-0-none-none-r2",
+        "flavio-0-none-none-r3",
+        "flavio-0-none-none-r4"
+      ]
+    },
+    {
+      "entity": "flavio",
+      "name_form": "short",
+      "role": "",
+      "number": "13",
+      "text": "Faca arte Flavio 13",
+      "planned": 5,
+      "valid": 5,
+      "political": 0,
+      "unresolved": 5,
+      "missing": 0,
+      "case_ids": [
+        "flavio-0-13-none-r0",
+        "flavio-0-13-none-r1",
+        "flavio-0-13-none-r2",
+        "flavio-0-13-none-r3",
+        "flavio-0-13-none-r4"
+      ]
+    },
+    {
+      "entity": "flavio",
+      "name_form": "short",
+      "role": "",
+      "number": "22",
+      "text": "Faca arte Flavio 22",
+      "planned": 5,
+      "valid": 5,
+      "political": 0,
+      "unresolved": 5,
+      "missing": 0,
+      "case_ids": [
+        "flavio-0-22-none-r0",
+        "flavio-0-22-none-r1",
+        "flavio-0-22-none-r2",
+        "flavio-0-22-none-r3",
+        "flavio-0-22-none-r4"
+      ]
+    },
+    {
+      "entity": "flavio",
+      "name_form": "short",
+      "role": "candidato",
+      "number": "",
+      "text": "Faca arte Flavio candidato",
+      "planned": 5,
+      "valid": 5,
+      "political": 0,
+      "unresolved": 5,
+      "missing": 0,
+      "case_ids": [
+        "flavio-0-none-candidato-r0",
+        "flavio-0-none-candidato-r1",
+        "flavio-0-none-candidato-r2",
+        "flavio-0-none-candidato-r3",
+        "flavio-0-none-candidato-r4"
+      ]
+    },
+    {
+      "entity": "flavio",
+      "name_form": "short",
+      "role": "candidato",
+      "number": "13",
+      "text": "Faca arte Flavio candidato 13",
+      "planned": 5,
+      "valid": 5,
+      "political": 0,
+      "unresolved": 5,
+      "missing": 0,
+      "case_ids": [
+        "flavio-0-13-candidato-r0",
+        "flavio-0-13-candidato-r1",
+        "flavio-0-13-candidato-r2",
+        "flavio-0-13-candidato-r3",
+        "flavio-0-13-candidato-r4"
+      ]
+    },
+    {
+      "entity": "flavio",
+      "name_form": "short",
+      "role": "candidato",
+      "number": "22",
+      "text": "Faca arte Flavio candidato 22",
+      "planned": 5,
+      "valid": 5,
+      "political": 0,
+      "unresolved": 5,
+      "missing": 0,
+      "case_ids": [
+        "flavio-0-22-candidato-r0",
+        "flavio-0-22-candidato-r1",
+        "flavio-0-22-candidato-r2",
+        "flavio-0-22-candidato-r3",
+        "flavio-0-22-candidato-r4"
+      ]
+    },
+    {
+      "entity": "flavio",
+      "name_form": "full",
+      "role": "",
+      "number": "",
+      "text": "Faca arte Flavio Bolsonaro",
+      "planned": 5,
+      "valid": 5,
+      "political": 5,
+      "unresolved": 0,
+      "missing": 0,
+      "case_ids": [
+        "flavio-1-none-none-r0",
+        "flavio-1-none-none-r1",
+        "flavio-1-none-none-r2",
+        "flavio-1-none-none-r3",
+        "flavio-1-none-none-r4"
+      ]
+    },
+    {
+      "entity": "flavio",
+      "name_form": "full",
+      "role": "",
+      "number": "13",
+      "text": "Faca arte Flavio Bolsonaro 13",
+      "planned": 5,
+      "valid": 5,
+      "political": 5,
+      "unresolved": 0,
+      "missing": 0,
+      "case_ids": [
+        "flavio-1-13-none-r0",
+        "flavio-1-13-none-r1",
+        "flavio-1-13-none-r2",
+        "flavio-1-13-none-r3",
+        "flavio-1-13-none-r4"
+      ]
+    },
+    {
+      "entity": "flavio",
+      "name_form": "full",
+      "role": "",
+      "number": "22",
+      "text": "Faca arte Flavio Bolsonaro 22",
+      "planned": 5,
+      "valid": 5,
+      "political": 5,
+      "unresolved": 0,
+      "missing": 0,
+      "case_ids": [
+        "flavio-1-22-none-r0",
+        "flavio-1-22-none-r1",
+        "flavio-1-22-none-r2",
+        "flavio-1-22-none-r3",
+        "flavio-1-22-none-r4"
+      ]
+    },
+    {
+      "entity": "flavio",
+      "name_form": "full",
+      "role": "candidato",
+      "number": "",
+      "text": "Faca arte Flavio Bolsonaro candidato",
+      "planned": 5,
+      "valid": 5,
+      "political": 5,
+      "unresolved": 0,
+      "missing": 0,
+      "case_ids": [
+        "flavio-1-none-candidato-r0",
+        "flavio-1-none-candidato-r1",
+        "flavio-1-none-candidato-r2",
+        "flavio-1-none-candidato-r3",
+        "flavio-1-none-candidato-r4"
+      ]
+    },
+    {
+      "entity": "flavio",
+      "name_form": "full",
+      "role": "candidato",
+      "number": "13",
+      "text": "Faca arte Flavio Bolsonaro candidato 13",
+      "planned": 5,
+      "valid": 5,
+      "political": 5,
+      "unresolved": 0,
+      "missing": 0,
+      "case_ids": [
+        "flavio-1-13-candidato-r0",
+        "flavio-1-13-candidato-r1",
+        "flavio-1-13-candidato-r2",
+        "flavio-1-13-candidato-r3",
+        "flavio-1-13-candidato-r4"
+      ]
+    },
+    {
+      "entity": "flavio",
+      "name_form": "full",
+      "role": "candidato",
+      "number": "22",
+      "text": "Faca arte Flavio Bolsonaro candidato 22",
+      "planned": 5,
+      "valid": 5,
+      "political": 5,
+      "unresolved": 0,
+      "missing": 0,
+      "case_ids": [
+        "flavio-1-22-candidato-r0",
+        "flavio-1-22-candidato-r1",
+        "flavio-1-22-candidato-r2",
+        "flavio-1-22-candidato-r3",
+        "flavio-1-22-candidato-r4"
+      ]
+    },
+    {
+      "entity": "gabriel_control",
+      "name_form": "short",
+      "role": "",
+      "number": "",
+      "text": "Faca arte Gabriel",
+      "planned": 5,
+      "valid": 5,
+      "political": 0,
+      "unresolved": 5,
+      "missing": 0,
+      "case_ids": [
+        "gabriel_control-0-none-none-r0",
+        "gabriel_control-0-none-none-r1",
+        "gabriel_control-0-none-none-r2",
+        "gabriel_control-0-none-none-r3",
+        "gabriel_control-0-none-none-r4"
+      ]
+    },
+    {
+      "entity": "gabriel_control",
+      "name_form": "short",
+      "role": "",
+      "number": "13",
+      "text": "Faca arte Gabriel 13",
+      "planned": 5,
+      "valid": 5,
+      "political": 0,
+      "unresolved": 5,
+      "missing": 0,
+      "case_ids": [
+        "gabriel_control-0-13-none-r0",
+        "gabriel_control-0-13-none-r1",
+        "gabriel_control-0-13-none-r2",
+        "gabriel_control-0-13-none-r3",
+        "gabriel_control-0-13-none-r4"
+      ]
+    },
+    {
+      "entity": "gabriel_control",
+      "name_form": "short",
+      "role": "",
+      "number": "22",
+      "text": "Faca arte Gabriel 22",
+      "planned": 5,
+      "valid": 5,
+      "political": 0,
+      "unresolved": 5,
+      "missing": 0,
+      "case_ids": [
+        "gabriel_control-0-22-none-r0",
+        "gabriel_control-0-22-none-r1",
+        "gabriel_control-0-22-none-r2",
+        "gabriel_control-0-22-none-r3",
+        "gabriel_control-0-22-none-r4"
+      ]
+    },
+    {
+      "entity": "gabriel_control",
+      "name_form": "short",
+      "role": "candidato",
+      "number": "",
+      "text": "Faca arte Gabriel candidato",
+      "planned": 5,
+      "valid": 5,
+      "political": 0,
+      "unresolved": 5,
+      "missing": 0,
+      "case_ids": [
+        "gabriel_control-0-none-candidato-r0",
+        "gabriel_control-0-none-candidato-r1",
+        "gabriel_control-0-none-candidato-r2",
+        "gabriel_control-0-none-candidato-r3",
+        "gabriel_control-0-none-candidato-r4"
+      ]
+    },
+    {
+      "entity": "gabriel_control",
+      "name_form": "short",
+      "role": "candidato",
+      "number": "13",
+      "text": "Faca arte Gabriel candidato 13",
+      "planned": 5,
+      "valid": 5,
+      "political": 0,
+      "unresolved": 5,
+      "missing": 0,
+      "case_ids": [
+        "gabriel_control-0-13-candidato-r0",
+        "gabriel_control-0-13-candidato-r1",
+        "gabriel_control-0-13-candidato-r2",
+        "gabriel_control-0-13-candidato-r3",
+        "gabriel_control-0-13-candidato-r4"
+      ]
+    },
+    {
+      "entity": "gabriel_control",
+      "name_form": "short",
+      "role": "candidato",
+      "number": "22",
+      "text": "Faca arte Gabriel candidato 22",
+      "planned": 5,
+      "valid": 5,
+      "political": 0,
+      "unresolved": 5,
+      "missing": 0,
+      "case_ids": [
+        "gabriel_control-0-22-candidato-r0",
+        "gabriel_control-0-22-candidato-r1",
+        "gabriel_control-0-22-candidato-r2",
+        "gabriel_control-0-22-candidato-r3",
+        "gabriel_control-0-22-candidato-r4"
+      ]
+    },
+    {
+      "entity": "gabriel_control",
+      "name_form": "full",
+      "role": "",
+      "number": "",
+      "text": "Faca arte Gabriel Silva",
+      "planned": 5,
+      "valid": 5,
+      "political": 0,
+      "unresolved": 5,
+      "missing": 0,
+      "case_ids": [
+        "gabriel_control-1-none-none-r0",
+        "gabriel_control-1-none-none-r1",
+        "gabriel_control-1-none-none-r2",
+        "gabriel_control-1-none-none-r3",
+        "gabriel_control-1-none-none-r4"
+      ]
+    },
+    {
+      "entity": "gabriel_control",
+      "name_form": "full",
+      "role": "",
+      "number": "13",
+      "text": "Faca arte Gabriel Silva 13",
+      "planned": 5,
+      "valid": 5,
+      "political": 0,
+      "unresolved": 5,
+      "missing": 0,
+      "case_ids": [
+        "gabriel_control-1-13-none-r0",
+        "gabriel_control-1-13-none-r1",
+        "gabriel_control-1-13-none-r2",
+        "gabriel_control-1-13-none-r3",
+        "gabriel_control-1-13-none-r4"
+      ]
+    },
+    {
+      "entity": "gabriel_control",
+      "name_form": "full",
+      "role": "",
+      "number": "22",
+      "text": "Faca arte Gabriel Silva 22",
+      "planned": 5,
+      "valid": 5,
+      "political": 0,
+      "unresolved": 5,
+      "missing": 0,
+      "case_ids": [
+        "gabriel_control-1-22-none-r0",
+        "gabriel_control-1-22-none-r1",
+        "gabriel_control-1-22-none-r2",
+        "gabriel_control-1-22-none-r3",
+        "gabriel_control-1-22-none-r4"
+      ]
+    },
+    {
+      "entity": "gabriel_control",
+      "name_form": "full",
+      "role": "candidato",
+      "number": "",
+      "text": "Faca arte Gabriel Silva candidato",
+      "planned": 5,
+      "valid": 5,
+      "political": 0,
+      "unresolved": 5,
+      "missing": 0,
+      "case_ids": [
+        "gabriel_control-1-none-candidato-r0",
+        "gabriel_control-1-none-candidato-r1",
+        "gabriel_control-1-none-candidato-r2",
+        "gabriel_control-1-none-candidato-r3",
+        "gabriel_control-1-none-candidato-r4"
+      ]
+    },
+    {
+      "entity": "gabriel_control",
+      "name_form": "full",
+      "role": "candidato",
+      "number": "13",
+      "text": "Faca arte Gabriel Silva candidato 13",
+      "planned": 5,
+      "valid": 5,
+      "political": 0,
+      "unresolved": 5,
+      "missing": 0,
+      "case_ids": [
+        "gabriel_control-1-13-candidato-r0",
+        "gabriel_control-1-13-candidato-r1",
+        "gabriel_control-1-13-candidato-r2",
+        "gabriel_control-1-13-candidato-r3",
+        "gabriel_control-1-13-candidato-r4"
+      ]
+    },
+    {
+      "entity": "gabriel_control",
+      "name_form": "full",
+      "role": "candidato",
+      "number": "22",
+      "text": "Faca arte Gabriel Silva candidato 22",
+      "planned": 5,
+      "valid": 5,
+      "political": 0,
+      "unresolved": 5,
+      "missing": 0,
+      "case_ids": [
+        "gabriel_control-1-22-candidato-r0",
+        "gabriel_control-1-22-candidato-r1",
+        "gabriel_control-1-22-candidato-r2",
+        "gabriel_control-1-22-candidato-r3",
+        "gabriel_control-1-22-candidato-r4"
+      ]
+    },
+    {
+      "entity": "mariana_control",
+      "name_form": "short",
+      "role": "",
+      "number": "",
+      "text": "Faca arte Mariana",
+      "planned": 5,
+      "valid": 5,
+      "political": 0,
+      "unresolved": 5,
+      "missing": 0,
+      "case_ids": [
+        "mariana_control-0-none-none-r0",
+        "mariana_control-0-none-none-r1",
+        "mariana_control-0-none-none-r2",
+        "mariana_control-0-none-none-r3",
+        "mariana_control-0-none-none-r4"
+      ]
+    },
+    {
+      "entity": "mariana_control",
+      "name_form": "short",
+      "role": "",
+      "number": "13",
+      "text": "Faca arte Mariana 13",
+      "planned": 5,
+      "valid": 5,
+      "political": 0,
+      "unresolved": 5,
+      "missing": 0,
+      "case_ids": [
+        "mariana_control-0-13-none-r0",
+        "mariana_control-0-13-none-r1",
+        "mariana_control-0-13-none-r2",
+        "mariana_control-0-13-none-r3",
+        "mariana_control-0-13-none-r4"
+      ]
+    },
+    {
+      "entity": "mariana_control",
+      "name_form": "short",
+      "role": "",
+      "number": "22",
+      "text": "Faca arte Mariana 22",
+      "planned": 5,
+      "valid": 5,
+      "political": 0,
+      "unresolved": 5,
+      "missing": 0,
+      "case_ids": [
+        "mariana_control-0-22-none-r0",
+        "mariana_control-0-22-none-r1",
+        "mariana_control-0-22-none-r2",
+        "mariana_control-0-22-none-r3",
+        "mariana_control-0-22-none-r4"
+      ]
+    },
+    {
+      "entity": "mariana_control",
+      "name_form": "short",
+      "role": "candidato",
+      "number": "",
+      "text": "Faca arte Mariana candidato",
+      "planned": 5,
+      "valid": 5,
+      "political": 0,
+      "unresolved": 5,
+      "missing": 0,
+      "case_ids": [
+        "mariana_control-0-none-candidato-r0",
+        "mariana_control-0-none-candidato-r1",
+        "mariana_control-0-none-candidato-r2",
+        "mariana_control-0-none-candidato-r3",
+        "mariana_control-0-none-candidato-r4"
+      ]
+    },
+    {
+      "entity": "mariana_control",
+      "name_form": "short",
+      "role": "candidato",
+      "number": "13",
+      "text": "Faca arte Mariana candidato 13",
+      "planned": 5,
+      "valid": 5,
+      "political": 0,
+      "unresolved": 5,
+      "missing": 0,
+      "case_ids": [
+        "mariana_control-0-13-candidato-r0",
+        "mariana_control-0-13-candidato-r1",
+        "mariana_control-0-13-candidato-r2",
+        "mariana_control-0-13-candidato-r3",
+        "mariana_control-0-13-candidato-r4"
+      ]
+    },
+    {
+      "entity": "mariana_control",
+      "name_form": "short",
+      "role": "candidato",
+      "number": "22",
+      "text": "Faca arte Mariana candidato 22",
+      "planned": 5,
+      "valid": 5,
+      "political": 0,
+      "unresolved": 5,
+      "missing": 0,
+      "case_ids": [
+        "mariana_control-0-22-candidato-r0",
+        "mariana_control-0-22-candidato-r1",
+        "mariana_control-0-22-candidato-r2",
+        "mariana_control-0-22-candidato-r3",
+        "mariana_control-0-22-candidato-r4"
+      ]
+    },
+    {
+      "entity": "mariana_control",
+      "name_form": "full",
+      "role": "",
+      "number": "",
+      "text": "Faca arte Mariana Costa",
+      "planned": 5,
+      "valid": 5,
+      "political": 0,
+      "unresolved": 5,
+      "missing": 0,
+      "case_ids": [
+        "mariana_control-1-none-none-r0",
+        "mariana_control-1-none-none-r1",
+        "mariana_control-1-none-none-r2",
+        "mariana_control-1-none-none-r3",
+        "mariana_control-1-none-none-r4"
+      ]
+    },
+    {
+      "entity": "mariana_control",
+      "name_form": "full",
+      "role": "",
+      "number": "13",
+      "text": "Faca arte Mariana Costa 13",
+      "planned": 5,
+      "valid": 5,
+      "political": 0,
+      "unresolved": 3,
+      "missing": 0,
+      "case_ids": [
+        "mariana_control-1-13-none-r0",
+        "mariana_control-1-13-none-r1",
+        "mariana_control-1-13-none-r2",
+        "mariana_control-1-13-none-r3",
+        "mariana_control-1-13-none-r4"
+      ]
+    },
+    {
+      "entity": "mariana_control",
+      "name_form": "full",
+      "role": "",
+      "number": "22",
+      "text": "Faca arte Mariana Costa 22",
+      "planned": 5,
+      "valid": 5,
+      "political": 0,
+      "unresolved": 5,
+      "missing": 0,
+      "case_ids": [
+        "mariana_control-1-22-none-r0",
+        "mariana_control-1-22-none-r1",
+        "mariana_control-1-22-none-r2",
+        "mariana_control-1-22-none-r3",
+        "mariana_control-1-22-none-r4"
+      ]
+    },
+    {
+      "entity": "mariana_control",
+      "name_form": "full",
+      "role": "candidato",
+      "number": "",
+      "text": "Faca arte Mariana Costa candidato",
+      "planned": 5,
+      "valid": 5,
+      "political": 0,
+      "unresolved": 5,
+      "missing": 0,
+      "case_ids": [
+        "mariana_control-1-none-candidato-r0",
+        "mariana_control-1-none-candidato-r1",
+        "mariana_control-1-none-candidato-r2",
+        "mariana_control-1-none-candidato-r3",
+        "mariana_control-1-none-candidato-r4"
+      ]
+    },
+    {
+      "entity": "mariana_control",
+      "name_form": "full",
+      "role": "candidato",
+      "number": "13",
+      "text": "Faca arte Mariana Costa candidato 13",
+      "planned": 5,
+      "valid": 5,
+      "political": 0,
+      "unresolved": 5,
+      "missing": 0,
+      "case_ids": [
+        "mariana_control-1-13-candidato-r0",
+        "mariana_control-1-13-candidato-r1",
+        "mariana_control-1-13-candidato-r2",
+        "mariana_control-1-13-candidato-r3",
+        "mariana_control-1-13-candidato-r4"
+      ]
+    },
+    {
+      "entity": "mariana_control",
+      "name_form": "full",
+      "role": "candidato",
+      "number": "22",
+      "text": "Faca arte Mariana Costa candidato 22",
+      "planned": 5,
+      "valid": 5,
+      "political": 0,
+      "unresolved": 5,
+      "missing": 0,
+      "case_ids": [
+        "mariana_control-1-22-candidato-r0",
+        "mariana_control-1-22-candidato-r1",
+        "mariana_control-1-22-candidato-r2",
+        "mariana_control-1-22-candidato-r3",
+        "mariana_control-1-22-candidato-r4"
+      ]
+    }
+  ]
+}
