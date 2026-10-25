@@ -1,5 +1,7 @@
 # Neutral entity-resolution protocol, version 2
 
+> Apêndice de conferência. A leitura principal está no [estudo completo](../README.md).
+
 ## What this can establish
 
 Measure how a specified OpenRouter model identifies names and political roles under matched wording. This is a text classification experiment. It does not generate images or measure political image restrictions.

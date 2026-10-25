@@ -1,5 +1,7 @@
 # Procedência dos dados e escolha da via de acesso
 
+> Apêndice de conferência. A leitura principal está no [estudo completo](../README.md).
+
 ## Evidência exploratória anterior
 
 A investigação começou com uma rodada exploratória preservada no commit `a54a7b6`: notebook com saídas, CSV, resposta a um prompt forense e figuras. A data de autoria do commit é `2026-10-25T04:18:38Z` (01h18 de Brasília). Essa é uma data do histórico de versionamento; os arquivos antigos não permitem fixar o horário de cada chamada à API.
@@ -16,7 +18,7 @@ A rodada v2 ocorreu em 25 de outubro de 2026, entre 07h35 e 07h37 UTC (04h35–0
 
 A v2 mede reconhecimento de nomes e papéis políticos. A rodada anterior pedia também previsões sobre restrições. São etapas distintas: seus resultados não são somados como se medissem o mesmo desfecho.
 
-Os [registros da v2](../results/v2_run1/) preservam o plano, respostas, metadados e fonte do coletor. Veja o [protocolo](methodology.md) e a [explicação do desenho e de sua robustez](estudo-explicado.md).
+Os [registros da v2](../results/v2_run1/) preservam o plano, respostas, metadados e fonte do coletor. Veja o [protocolo](methodology.md) e a [explicação do desenho e de sua robustez](../README.md).
 
 ## Por que usar OpenRouter após os ajustes no WhatsApp
 

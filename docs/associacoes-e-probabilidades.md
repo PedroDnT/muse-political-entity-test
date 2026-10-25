@@ -1,5 +1,7 @@
 # Associações aprendidas, números e probabilidades
 
+> Apêndice de conferência. A leitura principal está no [estudo completo](../README.md).
+
 ## O histórico de um nome pode influenciar sua interpretação
 
 Um modelo de linguagem aprende associações durante o treinamento. Expressões que aparecem repetidamente em contextos relacionados podem adquirir representações que facilitam sua interpretação. Similaridade semântica descreve relações de significado e uso; não é uma contagem de menções nem uma probabilidade de identidade.

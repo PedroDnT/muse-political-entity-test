@@ -1,5 +1,7 @@
 # A explicação pública da Meta e sua relação com o experimento
 
+> Apêndice de conferência. A leitura principal está no [estudo completo](../README.md).
+
 Fonte primária consultada em 25 de outubro de 2026: [A Meta não está interferindo nas eleições brasileiras. Estes são os fatos.](https://about.fb.com/br/news/2026/10/a-meta-nao-esta-interferindo-nas-eleicoes-brasileiras-estes-sao-os-fatos/)
 
 ## O que a Meta declara sobre a geração de imagens
@@ -54,4 +56,4 @@ A Meta também atribui a suspensão temporária de uma conta de anúncios a uma 
 >
 > Não conhecemos a implementação interna nem examinamos os logs da Meta. Podemos apresentar o mecanismo como uma explicação documentada pela empresa e compatível com nossos resultados, preservando a distinção entre essa explicação, as observações e aquilo que ainda permanece hipótese.
 
-Para os conceitos de LLM, similaridade e as etapas possíveis de proteção, veja o [estudo explicado](estudo-explicado.md).
+Para os conceitos de LLM, similaridade e as etapas possíveis de proteção, veja o [estudo explicado](../README.md).

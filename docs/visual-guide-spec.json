@@ -1,7 +1,7 @@
 {
   "claim": "Concrete prompt variations and observed identification answers explain the API study; the product chronology motivates a separate deployment hypothesis.",
   "visual_form": "numbered process plus exact-example table; sourced chronology plus two access routes",
-  "sources": ["results/v2_run1/plan.json", "results/v2_run1/responses.jsonl", "docs/guia-visual.md"],
+  "sources": ["results/v2_run1/plan.json", "results/v2_run1/responses.jsonl", "README.md"],
   "metric": "number of answers with the displayed political-flag and identity-resolution outcome in each selected exact prompt condition",
   "unit": "answers out of five repetitions",
   "direction": "descriptive; no preferred direction",

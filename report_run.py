@@ -43,40 +43,52 @@ def report(root):
 
 def plot_groups(groups, repetitions=5):
     import matplotlib.pyplot as plt
+    from experiment import ENTITIES
     plt.rcParams.update({'font.family':'DejaVu Sans','font.size':11,'axes.labelcolor':'#171717',
                          'text.color':'#171717','xtick.color':'#5E6462','ytick.color':'#171717',
                          'svg.fonttype':'none'})
-    labels = {'lula':'Lula','flavio':'Flávio Bolsonaro','gabriel_control':'Gabriel (control)', 'mariana_control':'Mariana (control)'}
-    fig, ax = plt.subplots(figsize=(10,6.1))
-    fig.subplots_adjust(left=.27,right=.97,top=.76,bottom=.22)
+    fig, ax = plt.subplots(figsize=(11,7.6))
+    fig.subplots_adjust(left=.35,right=.96,top=.75,bottom=.255)
     y = [i+(i//2)*.4 for i in range(len(groups))]
     left = [0]*len(groups)
-    for key, label, color, hatch in [('political','Political flag: yes','#1F6F5F',None),
-                                     ('nonpolitical','Political flag: no','#B6B6B0',None),
-                                     ('missing_or_not_run','Missing / not run','#FFFFFF','////')]:
+    outcomes = [('political','Reconheceu figura política','#1F6F5F',None),
+                ('nonpolitical','Sem classificação política','#B6B6B0',None)]
+    if any(r['missing_or_not_run'] for r in groups):
+        outcomes.append(('missing_or_not_run','Ausente / não executado','#FFFFFF','////'))
+    for key, label, color, hatch in outcomes:
         values = [r[key] for r in groups]
         ax.barh(y, values, left=left, height=.65, color=color, hatch=hatch,
                 edgecolor='#5E6462' if hatch else 'none', linewidth=.6, label=label)
         for ypos, width, start in zip(y,values,left):
             if width >= 2:
-                ax.text(start+width/2,ypos,str(width),ha='center',va='center',color='white' if key=='political' else '#171717',fontsize=10)
+                ax.text(start+width/2,ypos,str(width),ha='center',va='center',
+                        color='white' if key=='political' else '#171717',fontsize=11)
         left = [a+b for a,b in zip(left,values)]
-    ax.set_yticks(y, [f"{labels[r['entity']]} · {r['name_form']}" for r in groups])
+    names = []
+    for row in groups:
+        name = ENTITIES[row['entity']][{'short':0, 'full':1}[row['name_form']]]
+        suffix = ' (controle)' if row['entity'].endswith('_control') else ''
+        names.append(f'“{name}”{suffix}')
+    ax.set_yticks(y, names)
     ax.invert_yaxis()
     limit=max(r['planned'] for r in groups)
     ax.set_xlim(0,limit)
     ax.set_xticks([0,limit/3,2*limit/3,limit])
-    ax.set_xlabel('Number of planned requests')
+    ax.set_xlabel('Número de respostas',labelpad=10)
     for side in ['top','right','left']:ax.spines[side].set_visible(False)
     ax.spines['bottom'].set_color('#E4E7E5')
-    ax.tick_params(axis='y',length=0,pad=9)
-    ax.legend(loc='lower left',bbox_to_anchor=(0,1.04),frameon=False,ncol=3,fontsize=9,borderaxespad=0)
-    fig.text(.27,.94,'API political-person classifications',fontsize=16,weight='semibold')
-    fig.text(.27,.89,'meta/muse-spark-1.1 · low reasoning · temperature 0',fontsize=10,color='#5E6462')
-    fig.text(.27,.10,f'{repetitions} repetitions × 6 number/role conditions per name form. Descriptive counts.',fontsize=10)
-    fig.text(.27,.055,'Direct API only. WhatsApp probably uses different guardrails.',fontsize=10,weight='semibold')
+    ax.tick_params(axis='y',length=0,pad=12)
+    ax.legend(loc='lower left',bbox_to_anchor=(0,1.065),frameon=False,ncol=2,
+              fontsize=10.5,borderaxespad=0)
+    fig.text(.04,.945,'O Muse reconheceu uma figura política?',fontsize=20,weight='semibold')
+    fig.text(.04,.898,'Os rótulos mostram o nome efetivamente escrito no pedido.',fontsize=12,color='#5E6462')
+    fig.text(.04,.151,f'Cada nome: {repetitions} repetições × 6 combinações de número e palavra “candidato”.',fontsize=11)
+    fig.text(.04,.111,'Cinza indica ausência de classificação política; não é uma recusa de imagem.',fontsize=11)
+    fig.text(.04,.071,'Consulte a identidade resolvida para distinguir uma pessoa indefinida de uma pessoa não política.',fontsize=10.5)
+    total=sum(r['valid'] for r in groups)
+    fig.text(.04,.028,f'meta/muse-spark-1.1 · raciocínio baixo · temperatura 0 · {total} respostas válidas · tarefa de texto via API',
+             fontsize=10,color='#5E6462')
     return fig
-
 
 if __name__ == '__main__':
     parser=argparse.ArgumentParser(description=__doc__)
@@ -86,5 +98,7 @@ if __name__ == '__main__':
     result=report(root)
     fig=plot_groups(result['groups'], load_run(root)[0]['repetitions'])
     fig.savefig(root/'political_flags.png',dpi=200)
-    fig.savefig(root/'political_flags.svg')
+    svg_path = root/'political_flags.svg'
+    fig.savefig(svg_path)
+    svg_path.write_text('\n'.join(line.rstrip() for line in svg_path.read_text().splitlines())+'\n')
     print(json.dumps(result,indent=2))

@@ -1,5 +1,7 @@
 # Public claims and a defensible response
 
+> Apêndice de conferência. A leitura principal está no [estudo completo](../README.md).
+
 Sources accessed 25 October 2026. The source pages below were read directly; the X post was verified through X's public oEmbed endpoint. These are currently available pages, some incorporating updates, not archived captures of each article's original publication version. No claims about reach, virality or deleted posts are made.
 
 ## Research chronology and scope of the argument
