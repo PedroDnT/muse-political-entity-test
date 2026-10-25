@@ -1,66 +1,33 @@
-# Registro da investigação anterior e da tese
+# Procedência dos dados e escolha da via de acesso
 
-Registro atualizado em 25 de outubro de 2026, após esclarecimento de Pedro Del Nero Todescan.
+## Evidência exploratória anterior
 
-## A investigação não começou com a rodada revisada
+A investigação começou com uma rodada exploratória preservada no commit `a54a7b6`: notebook com saídas, CSV, resposta a um prompt forense e figuras. A data de autoria do commit é `2026-10-25T04:18:38Z` (01h18 de Brasília). Essa é uma data do histórico de versionamento; os arquivos antigos não permitem fixar o horário de cada chamada à API.
 
-Pedro esclareceu que já havia executado o código e reunido evidências antes da rodada revisada realizada nesta sessão. Isso é consistente com os artefatos que já estavam no repositório no início do trabalho: notebook com saídas, CSV do primeiro experimento, resposta ao prompt forense e figuras.
+O [CSV original](../results/run1_classification.csv) contém 24 registros: 20 classificações válidas e quatro ausentes. Nas oito respostas que identificaram Flavio Bolsonaro, o modelo o classificou como político, mas não como candidato presidencial ou chefe de Estado, e não previu acionamento de uma restrição hipotética de imagens.
 
-O histórico local registra o commit `a54a7b6` com data de autoria `2026-10-25T04:18:38Z` (01h18 de Brasília), contendo esses arquivos. Essa é uma data de commit, não um comprovante do momento de cada chamada à API. Os dados antigos não preservam os metadados necessários para fixar o horário original de execução. Não atribuímos ao experimento anterior uma data anterior às notícias de 13–15 de outubro sem documentação adicional.
+Esses campos eram respostas textuais. Não eram registros de decisões internas de moderação nem resultados de geração de imagens. As instruções incluíam o relato da assimetria no WhatsApp, o que pode ter influenciado as respostas. O [prompt forense](../results/forensic_prompt.txt) e sua [resposta](../results/run1_forensic_answer.json) também contêm hipóteses, não observações da arquitetura da Meta.
 
-As evidências anteriores incluem:
+O experimento fatorial antigo deixou saídas parciais e figuras, mas não todos os registros necessários para recomputar seus resultados. O [notebook original](../notebook/archive/original_exploratory.ipynb) permanece arquivado como evidência histórica, com suas limitações de execução e interpretação.
 
-- **Primeiro experimento:** 24 registros, 20 previsões válidas e 4 ausentes, preservados em `results/run1_classification.csv`.
-- **Distinção relevante já presente:** nas 8 respostas que resolveram a identidade como Flavio Bolsonaro, o modelo o classificou como figura política nas 8, mas previu acionamento da política de imagens em nenhuma. Reconhecimento de uma figura política e previsão de restrição eram campos diferentes. A previsão continuava sendo uma resposta textual do modelo, não a observação de um filtro real.
-- **Análise forense:** resposta e prompt preservados, com hipóteses sobre reconhecimento de entidades e camadas de moderação. São hipóteses produzidas pelo modelo; não constituem acesso à arquitetura da Meta.
-- **Experimento fatorial antigo:** existem saídas parciais e uma figura, mas faltam os registros completos para recomputar seus resultados.
+## Rodada controlada
 
-Essas limitações afetam a força das conclusões; não eliminam a existência de evidência exploratória anterior. A rodada v2 não deve ser apresentada como a primeira investigação de Pedro.
+A rodada v2 ocorreu em 25 de outubro de 2026, entre 07h35 e 07h37 UTC (04h35–04h37 de Brasília). Foram obtidas 240 respostas válidas. O plano fixou as condições antes da coleta, balanceou as variações e retirou das instruções o relato do resultado esperado. Dois pilotos técnicos foram excluídos da rodada principal.
 
-A rodada revisada v2 foi executada em 25 de outubro, de 04h35 a 04h37 de Brasília, com 240 respostas válidas. Ela retirou o relato do resultado esperado das instruções, balanceou as condições e passou a medir reconhecimento de nomes. Não é uma repetição idêntica do primeiro experimento nem uma reprodução do WhatsApp.
+A v2 mede reconhecimento de nomes e papéis políticos. A rodada anterior pedia também previsões sobre restrições. São etapas distintas: seus resultados não são somados como se medissem o mesmo desfecho.
 
-## Por que o OpenRouter é a base do método
+Os [registros da v2](../results/v2_run1/) preservam o plano, respostas, metadados e fonte do coletor. Veja o [protocolo](methodology.md) e a [explicação do desenho e de sua robustez](estudo-explicado.md).
 
-Pedro esclareceu que a escolha do OpenRouter é deliberada: após as reclamações, o WhatsApp poderia já estar aplicando guardrails modificados. Consultar apenas o WhatsApp nesse estado posterior poderia revelar a reação da plataforma, sem esclarecer o comportamento que motivou a investigação. Por isso, ele usa outra via de acesso para investigar hipóteses sobre o reconhecimento de nomes e sua relação com as respostas.
+## Por que usar OpenRouter após os ajustes no WhatsApp
 
-As reportagens citadas em `media-context.md` registram que a Meta anunciou medidas adicionais e que os testes no WhatsApp mudaram em 14 de outubro. Isso dá fundamento à preocupação com mudanças posteriores às reclamações. A suposição adicional do método é que o acesso via OpenRouter não reproduza necessariamente esses ajustes específicos do produto; essa separação não foi confirmada tecnicamente.
+As [reportagens consultadas](media-context.md) registram mudanças no comportamento do WhatsApp em 14 de outubro. A [Meta também declarou](meta-explanation.md) ter corrigido nesse dia uma lacuna de reconhecimento de primeiros nomes comuns combinados com números eleitorais.
 
-Assim, diferenças entre os caminhos de acesso são parte da motivação do experimento, não apenas uma ressalva acrescentada ao resultado. O teste oferece uma investigação por outra via de um mecanismo possível. Não é um grupo de controle validado nem uma reconstrução do WhatsApp anterior: o OpenRouter também pode aplicar filtros, e não há comprovação de que modelo, versão e instruções tenham permanecido iguais entre produtos e datas.
+A escolha do OpenRouter permite investigar reconhecimento por outra via, sem depender exclusivamente do comportamento posterior do WhatsApp. A hipótese de trabalho é que esse acesso não reproduza necessariamente os ajustes específicos do produto. Essa diferença de implantação é parte da motivação metodológica.
 
-## Formulação da tese
+O OpenRouter não foi validado como controle sem intervenção nem como preservação do estado anterior. Ele e o provedor podem aplicar filtros; modelos, versões e instruções podem diferir. Mesmo compartilhar um modelo-base não garantiria compartilhar as mesmas proteções.
 
-**É tecnicamente plausível que o caminho usado pelo WhatsApp para chamar seus modelos aplique guardrails diferentes dos aplicados no acesso via OpenRouter.** As diferenças podem estar no próprio modelo, nas instruções de sistema, no tratamento do pedido, em filtros do produto, na geração de imagens ou em verificações posteriores. São possibilidades, não uma descrição confirmada da implementação.
+## Relação entre as evidências
 
-Mesmo que dois produtos utilizassem o mesmo modelo-base, isso não garantiria o mesmo conjunto de instruções, políticas, ferramentas ou filtros. Neste caso, tampouco verificamos independentemente que o modelo/versão exposto no OpenRouter seja idêntico ao usado pelo WhatsApp para todas as etapas da geração de imagens.
+Os relatos jornalísticos documentam saídas no produto; a Meta apresenta uma explicação para o incidente; o experimento registra respostas de reconhecimento por API. O estudo demonstra sensibilidade à forma do nome na tarefa definida, mas não identifica sozinho a causa interna do episódio no WhatsApp.
 
-Essa tese tem duas consequências:
-
-1. Uma diferença de saída no WhatsApp não identifica, sozinha, a camada responsável nem demonstra favorecimento deliberado. Conclusões que apresentem essas causas como estabelecidas ultrapassam a evidência descrita.
-2. Uma resposta obtida no OpenRouter não permite atribuir automaticamente o mesmo comportamento aos filtros do WhatsApp. Nosso experimento oferece evidência sobre uma hipótese alternativa, mas não determina o mecanismo do incidente no produto.
-
-Não é necessário provar uma arquitetura alternativa para mostrar que a causa está indeterminada. Para afirmar que aquela arquitetura alternativa efetivamente causou o episódio, seriam necessários testes comparáveis ou evidências adicionais da implementação.
-
-## O argumento que pode ser sustentado
-
-0659>
-> A diferença observada no WhatsApp merece investigação. O que considero precipitado é tratá-la, por si só, como prova da 9causa, da intenção da empresa ou de uma preferência política do modelo. Reconhecimento de nomes e regras específicas do produto são explicações alternativas que precisam ser examinadas.
->
-> A rodada revisada acrescentou evidência: com nomes completos, Lula e Flávio Bolsonaro foram classificados como políticos em 30 de 30 respostas cada; a diferença apareceu nos nomes curtos. Isso é compatível com ambiguidade de identificação nesse teste. Não comprova o que ocorreu dentro do WhatsApp.
->
-> Uma falha técnica pode produzir efeitos políticos desiguais e exigir correção. A cobrança pela falha e o cuidado ao atribuir sua causa são compatíveis.
-
-A crítica deve se dirigir às conclusões específicas que excedem a evidência, não à totalidade da cobertura. Relatar uma inconsistência reproduzida não é, em si, uma conclusão precipitada; “viés” também pode descrever efeitos desiguais sem afirmar intenção. Acusações relativas a alcance, anúncios ou distribuição de conteúdo permanecem fora do escopo do nosso teste.
-
-## Fontes do registro
-
-- Relato de Pedro nesta conversa e existência dos artefatos no checkout antes da rodada v2.
-- [CSV anterior](../results/run1_classification.csv) e [notebook original arquivado](../notebook/archive/original_exploratory.ipynb).
-- [Resposta forense anterior](../results/run1_forensic_answer.json).
-- [Registros completos da rodada revisada](../results/v2_run1/).
-- [Notícias e postagens consultadas, com atribuição das alegações](media-context.md).
-
-## Conversa anterior e fonte primária recuperadas
-
-Em seguida, Pedro forneceu a [conversa compartilhada](https://chatgpt.com/share/6addbdfb-817c-83e9-9f47-ee280e844d1e), com perguntas suas de 16–17 de outubro sobre as explicações técnicas para as alegações e sobre os registros de incidentes. Isso documenta que a discussão técnica antecedia a revisão de 25 de outubro. A referência do assistente naquela conversa a um experimento anterior não substitui metadados de execução do código.
-
-O link permitiu localizar e ler diretamente um comunicado da Meta que atribui o caso de imagens a lacunas de reconhecimento de primeiros nomes e números eleitorais e declara um ajuste em 14 de outubro. A direção geral da tese agora conta com essa explicação primária, além dos resultados do experimento; a arquitetura detalhada e a hipótese específica de senador versus candidato continuam não verificadas. Veja [fonte, atribuições e esquema](meta-explanation.md).
+A diferença de resultados não basta para identificar intenção política. Uma explicação alternativa plausível também não basta para excluir toda intencionalidade. A análise mantém separadas observação, explicação do operador e hipótese técnica.

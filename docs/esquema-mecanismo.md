@@ -10,7 +10,7 @@ A assimetria pode decorrer não apenas de deixar de identificar uma pessoa, mas 
 
 Isso não requer presumir uma escala de “político mais ou menos relevante”. O exemplo usa categorias e correspondência com regras. Não sabemos se a Meta implementa essas categorias, regras ou etapas exatamente assim.
 
-Pedro relata que a imagem produzida apresentava Flávio como senador. A imagem não foi localizada entre as conversas e arquivos acessíveis nesta revisão; essa observação permanece atribuída ao autor, sem alegação de inspeção visual independente. Uma descrição produzida pelo gerador também não revela, sozinha, qual classificação foi usada pelo mecanismo de moderação.
+A hipótese de categorias parte dos campos da rodada exploratória: o modelo podia identificar uma figura política sem classificá-la como candidato presidencial. A imagem gerada no produto não integra os registros deste experimento; não é usada como evidência dessa classificação interna.
 
 ## Esquema didático — etapas internas hipotéticas
 
@@ -49,7 +49,7 @@ Na rodada neutra posterior, o primeiro nome Flavio ficou sem identidade definida
 
 > Uma regra só funciona se o sistema conseguir ligar o pedido à situação que ela pretende restringir. Ele pode saber quem é uma pessoa e ainda associá-la a um papel incompleto para aquela decisão.
 >
-> Se Flávio apareceu como senador, isso é compatível com reconhecimento político. A hipótese passa a ser que essa identificação não tenha acionado a mesma condição aplicada a Lula — por exemplo, uma associação com candidato à Presidência ou chefe de Estado. É possível produzir respostas desiguais por esse caminho, sem que o resultado revele uma preferência política deliberada.
+> Identificar Flávio como senador é compatível com reconhecimento político. Uma hipótese é que essa identificação não acione a mesma condição aplicada a Lula — por exemplo, uma associação com candidato à Presidência ou chefe de Estado. É possível produzir respostas desiguais por esse caminho, sem que o resultado revele uma preferência política deliberada.
 >
 > Os testes ajudam a tornar essa possibilidade concreta. Eles mostram que identificar a pessoa, atribuir um papel e prever uma restrição são respostas que podem divergir. Não revelam o funcionamento interno da Meta.
 >
@@ -57,6 +57,6 @@ Na rodada neutra posterior, o primeiro nome Flavio ficou sem identidade definida
 
 ## Grau de confiança
 
-É uma hipótese técnica plausível, compatível com os registros e com o relato da imagem. Esses indícios não permitem estimar que ela seja “altamente provável” em comparação com todas as alternativas: faltam a imagem nesta revisão, decisões internas dos filtros e uma comparação controlada entre as implementações. A hipótese específica de categorias explica uma possibilidade; sua probabilidade e sua participação causal no incidente permanecem desconhecidas.
+É uma hipótese técnica plausível, compatível com os campos da rodada exploratória. Esses indícios não permitem estimar sua probabilidade em comparação com todas as alternativas: faltam decisões internas dos filtros e uma comparação controlada entre as implementações. A hipótese específica de categorias explica uma possibilidade; sua probabilidade e sua participação causal no incidente permanecem desconhecidas.
 
 Fontes: [CSV original](../results/run1_classification.csv), [rodada neutra](../results/v2_run1/), [relatos e notícias consultados](media-context.md), [proveniência e motivo do uso do OpenRouter](provenance-and-thesis.md).
