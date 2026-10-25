@@ -4,11 +4,11 @@ Sources accessed 25 October 2026. The source pages below were read directly; the
 
 ## Research chronology and scope of the argument
 
-Pedro had already executed the original code and gathered evidence before the revised 240-request study. Those earlier artifacts were present at the start of this work. References below to the later 25 October neutral run describe v2, not the start of his investigation. The old records do not establish the original API execution time relative to the news reports. See [the provenance and thesis record](provenance-and-thesis.md).
+The original exploratory study is preserved in the initial repository commit, including its CSV, notebook outputs and model-generated hypotheses. References below to the 25 October neutral run describe the separate v2 study. The old records do not establish the original API execution time relative to the news reports. See [the provenance and thesis record](provenance-and-thesis.md).
 
 The central thesis is technically plausible: WhatsApp can apply different guardrails from the OpenRouter deployment, even if a base model were shared. We have not verified identical model versions or the actual safeguard stacks. The defensible criticism targets premature certainty about mechanism or intent; it does not require denying the reported inconsistency or proving an alternative mechanism first.
 
-OpenRouter is central to Pedro's method: the reported changes after the complaints motivate investigating a possible mechanism through another route rather than relying exclusively on post-change WhatsApp responses. The working assumption is that the OpenRouter route need not share those product-specific changes. This is not evidence that its own model or safeguards remained unchanged, nor a validated pre-change control.
+OpenRouter is central to the study's method: the reported changes after the complaints motivate investigating a possible mechanism through another route rather than relying exclusively on post-change WhatsApp responses. The working assumption is that the OpenRouter route need not share those product-specific changes. This is not evidence that its own model or safeguards remained unchanged, nor a validated pre-change control.
 
 ## Main finding
 
@@ -28,7 +28,7 @@ Defensible response:
 
 > A diferença de resultados merece investigação. Mas ela, isoladamente, não demonstra favorecimento deliberado. No nosso teste separado pela API, os dois nomes completos foram classificados como políticos em 30 de 30 respostas cada. Com “Flavio” sozinho, o modelo deixou a identidade indefinida em todas as 30 respostas. Isso torna plausível uma diferença de reconhecimento de nomes, sem comprovar a causa do episódio no WhatsApp. Nosso teste não avaliou alcance de publicações.
 
-Verification: the public embed identifies PT Brasil, @ptbrasil, and 14 October 2026. No second social post is presented as verified; subsequent social searches encountered a CAPTCHA.
+Verification: the public embed identifies PT Brasil, @ptbrasil, and 14 October 2026. Only this social post is included as verified in this source selection.
 
 ## 2. Campaign allegation reported by Poder360 — 14 October
 
@@ -100,9 +100,9 @@ The two full names had equal political-flag rates in this sample. This does not 
 
 > Houve uma inconsistência real: o g1 e o Projeto Comprova reproduziram diferenças nas imagens geradas pelo WhatsApp. O salto que precisa ser questionado é tratar essa diferença, sozinha, como prova de favorecimento político deliberado.
 >
-> Eu já havia executado o código e reunido evidências exploratórias antes da rodada revisada. Depois, fiz um teste separado, com 240 pedidos pela API e instruções neutras. Os nomes completos de Lula e Flávio Bolsonaro foram classificados como políticos em 30 de 30 respostas cada. Com os nomes curtos, “Lula” foi identificado como político em 28 de 30 respostas; “Flavio” ficou sem identidade definida nas 30. O resultado é compatível com uma diferença de reconhecimento de nomes.
+> Após uma etapa exploratória, foi realizado um teste separado, com 240 pedidos pela API e instruções neutras. Os nomes completos de Lula e Flávio Bolsonaro foram classificados como políticos em 30 de 30 respostas cada. Com os nomes curtos, “Lula” foi identificado como político em 28 de 30 respostas; “Flavio” ficou sem identidade definida nas 30. O resultado é compatível com uma diferença de reconhecimento de nomes.
 >
-> Escolhi o OpenRouter justamente porque o WhatsApp poderia já ter alterado seus guardrails após as reclamações. A hipótese é que esse outro acesso não reproduza necessariamente os ajustes específicos do WhatsApp. Isso permite investigar uma explicação possível por outra via, mas não recria o produto antes das mudanças nem comprova o mecanismo da falha anterior. O teste também não avaliou anúncios, alcance de publicações ou intenção da empresa.
+> O OpenRouter foi escolhido porque o WhatsApp poderia já ter alterado seus guardrails após as reclamações. A hipótese é que esse outro acesso não reproduza necessariamente os ajustes específicos do WhatsApp. Isso permite investigar uma explicação possível por outra via, mas não recria o produto antes das mudanças nem comprova o mecanismo da falha anterior. O teste também não avaliou anúncios, alcance de publicações ou intenção da empresa.
 >
 > Portanto, a falha merece cobrança, mas a explicação exige mais evidência. O mesmo critério deve valer para qualquer candidato ou partido.
 
