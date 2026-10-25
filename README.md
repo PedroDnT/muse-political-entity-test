@@ -1,6 +1,6 @@
-# Nomes políticos, guardrails e respostas desiguais: o estudo explicado
+# Alfabetização algorítmica: nomes políticos, guardrails e interpretação de resultados
 
-Como uma inteligência artificial pode bloquear uma imagem de um político e permitir a de outro? Este estudo apresenta o mecanismo possível, as alegações públicas e um experimento de reconhecimento de nomes. A explicação segue uma única sequência: **como o sistema funciona → o que foi alegado → por que e como testamos → resultados → interpretação das evidências**.
+Como interpretar uma resposta de inteligência artificial sem confundir o resultado observado com sua causa ou com intenção política? Este estudo usa o episódio de imagens políticas no WhatsApp como caso de alfabetização algorítmica: apresenta mecanismos possíveis, as alegações públicas e um experimento de reconhecimento de nomes. Não mede o nível de compreensão do público; oferece evidências e conceitos para analisar o episódio. A explicação segue uma única sequência: **como o sistema funciona → o que foi alegado → por que e como testamos → resultados → interpretação das evidências**.
 
 ## 1. Como o modelo interpreta um pedido
 
@@ -52,7 +52,7 @@ A própria Meta [anunciou a chegada do Muse Spark ao Meta AI no WhatsApp][muse],
 
 **O OpenRouter foi escolhido para investigar o reconhecimento depois dos ajustes relatados no WhatsApp.** Testar somente o produto atualizado mostraria seu comportamento posterior. Uma via diferente permite examinar se a interpretação dos nomes ainda varia, mesmo depois de o produto passar a recusar os pedidos.
 
-A sequência documentada é: assimetria no WhatsApp em 13–14 de outubro; ajuste anunciado em 14 de outubro; coleta controlada pela API em 25 de outubro. O [esquema da cronologia](figures/guide/por-que-outra-via.png) apresenta esses acontecimentos lado a lado.
+A cronologia reúne fontes distintas: assimetria no WhatsApp em 13–14 de outubro; ajuste anunciado em 14 de outubro; rodadas originais de 24 e 40 pedidos executadas em **14 de outubro, conforme a data informada pelo autor**; coleta controlada pela API em 25 de outubro. O horário original não foi preservado, portanto a ordem entre os testes e o ajuste dentro do dia 14 permanece desconhecida. O [esquema da cronologia](figures/guide/por-que-outra-via.png) apresenta esses acontecimentos lado a lado.
 
 Os caminhos provavelmente aplicam proteções ou configurações diferentes. Isso não estabelece que a API seja uma cópia preservada do WhatsApp anterior. **Não foi demonstrado que o guardrail e o endpoint compartilhem os mesmos pesos.** Uma proteção pode usar outro classificador ou regras externas; mesmo pesos idênticos podem produzir respostas diferentes sob outras instruções e componentes.
 
@@ -135,7 +135,7 @@ As outras três respostas válidas não identificaram uma pessoa e não previram
 
 O desenho original incluía ainda um fatorial de 40 pedidos com os números **13, 22, 10, 99 e 17**. Recuperamos a prévia de dez resultados de Lula antes do preenchimento de ausências: seis classificações com previsão positiva e quatro sem classificação. Também estão preservadas oito justificativas de previsões positivas, seis de Lula e duas de Tarcísio. Os registros completos dos demais resultados não estão disponíveis; as ausências não são tratadas como recusas nem como respostas negativas.
 
-Os arquivos originais já estavam no primeiro commit, às **01h18 de Brasília de 25 de outubro**, antes da coleta v2. **Isso não data as chamadas anteriores:** não foram preservados horários de execução. A proximidade exata com o episódio de 13–14 de outubro permanece sem comprovação nos arquivos. Os resultados antigos continuam úteis por suas perguntas e variações; não são descartados pela rodada revisada. A [conferência do estudo original](docs/original-study-review.md) detalha as evidências recuperadas e seus limites.
+**As rodadas originais de 24 e 40 pedidos foram executadas em 14 de outubro de 2026, segundo a data informada pelo autor**, situando a investigação no dia do episódio e do ajuste anunciado. A data não foi verificada por timestamps das chamadas; sem o horário, não é possível ordenar os testes em relação ao ajuste naquele dia. Os arquivos foram posteriormente preservados no primeiro commit, às **01h18 de Brasília de 25 de outubro**; essa data de versionamento não é a data de execução. Os resultados antigos continuam úteis por suas perguntas e variações; não são descartados pela rodada revisada. A [conferência do estudo original](docs/original-study-review.md) detalha as evidências recuperadas e seus limites.
 
 ### O que a rodada controlada acrescenta
 
@@ -197,7 +197,7 @@ A tabela reúne observações de fontes distintas. Elas não são somadas como s
 
 O conjunto não permite calcular que essa causa seja “bem mais provável” do que todas as alternativas, nem demonstrar ausência de intenção. A conclusão sustentada é que **a assimetria, por si só, não estabelece intenção política, e há uma explicação técnica documentada que precisa ser considerada**. Efeitos desiguais continuam relevantes mesmo quando decorrem de falhas técnicas.
 
-O estudo não avalia anúncios, alcance de publicações, spam ou efeitos de propostas de regulação. Também não trata toda a cobertura como mera impressão: algumas reportagens realizaram testes. O ponto é distinguir observação, explicação causal e atribuição de intenção, aplicando o mesmo critério a qualquer partido ou candidato.
+O estudo não avalia anúncios, alcance de publicações, spam ou efeitos de propostas de regulação. Também não trata toda a cobertura como mera impressão: algumas reportagens realizaram testes. O ponto de alfabetização algorítmica é distinguir observação, explicação causal e atribuição de intenção, aplicando o mesmo critério a qualquer partido ou candidato. A opacidade dos sistemas também dificulta essa leitura; o experimento não mede a compreensão de jornalistas ou usuários nem demonstra que uma deficiência de conhecimento tenha causado a repercussão pública.
 
 ## Fontes e material de conferência
 

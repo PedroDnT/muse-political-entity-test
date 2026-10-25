@@ -4,6 +4,8 @@
 
 ## Evidência exploratória anterior
 
+As rodadas originais de 24 e 40 pedidos têm **14 de outubro de 2026 como data de execução informada pelo autor**. Não há timestamps das chamadas para confirmar o horário ou estabelecer sua ordem em relação ao ajuste anunciado naquele dia.
+
 A investigação começou com uma rodada exploratória preservada no commit `a54a7b6`: notebook com saídas, CSV, resposta a um prompt forense e figuras. A data de autoria do commit é `2026-10-25T04:18:38Z` (01h18 de Brasília). Essa é uma data do histórico de versionamento; os arquivos antigos não permitem fixar o horário de cada chamada à API.
 
 O [CSV original](../results/run1_classification.csv) contém 24 registros: 20 classificações válidas e quatro ausentes. Nas oito respostas que identificaram Flavio Bolsonaro, o modelo o classificou como político, mas não como candidato presidencial ou chefe de Estado, e não previu acionamento de uma restrição hipotética de imagens.

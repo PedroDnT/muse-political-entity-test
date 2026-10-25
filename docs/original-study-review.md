@@ -61,11 +61,13 @@ Esse teste não valida probabilidades internas, um limiar do guardrail ou uma ca
 
 ## O que sabemos sobre a proximidade temporal
 
-O commit original tem data de autoria e de gravação de **25 de outubro de 2026, às 01h18min38s de Brasília**. A rodada v2 tem horários de coleta preservados: **25 de outubro, entre 04h35 e 04h37 de Brasília**. Assim, a existência dos arquivos originais está documentada antes da rodada controlada.
+**Data de execução informada pelo autor: 14 de outubro de 2026**, tanto para a rodada de 24 pedidos quanto para o fatorial de 40. Essa informação situa a investigação original no mesmo dia do episódio e do ajuste anunciado no WhatsApp. Sua fonte é o registro informado pelo autor; não foi confirmada por timestamps das chamadas.
 
-O notebook original não preserva horários de execução, identificadores de requisição ou campos de criação das respostas. Seus contadores de execução estão vazios, e os metadados do Colab não fornecem uma data das chamadas. A data do commit não é a data da coleta. Os materiais disponíveis, portanto, não permitem estabelecer a distância exata entre a execução original e o episódio de 13–14 de outubro.
+O notebook não preserva horários de execução, identificadores de requisição ou campos de criação das respostas. Assim, não é possível determinar se os testes ocorreram antes ou depois do ajuste dentro do dia 14. Seus contadores de execução estão vazios e os metadados do Colab não fornecem os horários.
 
-Essa incerteza de datação não elimina a utilidade da rodada. Ela acrescenta campos de papel político, outros nomes e mais números que a v2 não avaliou da mesma forma. A diferença entre as respostas antigas e novas também não demonstra uma mudança temporal do modelo: instruções, tarefa e parâmetros não foram mantidos constantes.
+O commit original tem data de autoria e gravação de **25 de outubro de 2026, às 01h18min38s de Brasília**: é a data de preservação no repositório, não de execução. A rodada v2 tem horários de coleta preservados: **25 de outubro, entre 04h35 e 04h37 de Brasília**.
+
+A proximidade temporal informada torna relevante preservar a rodada original como registro da investigação naquele contexto. Ela não transforma previsões em decisões reais de moderação. Diferenças entre as respostas antigas e novas também não demonstram mudança temporal do modelo: instruções, tarefa e parâmetros não foram mantidos constantes.
 
 ## Reprodução da conferência
 

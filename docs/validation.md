@@ -44,5 +44,7 @@ The count chart uses the exact input names from `experiment.ENTITIES`, Portugues
 
 - The archived notebook, Run 1 CSV and forensic JSON match their initial-commit versions byte for byte. The CSV was also checked field by field against the literal result list embedded in the notebook: 24 attempts, 20 valid classifications, two null parsed objects and two error dictionaries.
 - `review_original.py` recomputes role/policy-prediction counts and records the duplicate full-name Flavio prompt. It verifies all 40 printed factorial requests against the original design and extracts the ten-row pre-fill preview plus eight printed positive cases without executing collection code. Missing preview fields remain null and truncated reasons remain marked by their original ellipses.
-- Original API timestamps, request IDs and response creation fields were not found. The original commit date establishes artifact availability before v2, not collection proximity to the incident.
+- Original API timestamps, request IDs and response creation fields were not found. The original commit date establishes artifact availability before v2. The author dates both original runs to 14 October; this is separately labeled as author-reported, without independently preserved call timestamps or within-day ordering.
 - README counts, partial-record indices, local links and Markdown fences were checked. No source responses, original notebook bytes or v2 measurements were changed, and no new API calls were made.
+
+The reported execution date is preserved in the audit generator and JSON metadata. The README frames the experiment as a case for algorithmic literacy, without claiming to measure public knowledge or prove the cause of public reactions.
