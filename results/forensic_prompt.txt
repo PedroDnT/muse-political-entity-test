@@ -1,0 +1,284 @@
+You are Meta AI, powered by Muse Spark.
+
+I am investigating an observed behavioral difference in Meta AI's
+WhatsApp image-generation product.
+
+This is a forensic/debugging task.
+
+IMPORTANT EPISTEMIC RULE:
+Do not invent internal safety system names, policy codes, payloads,
+hidden prompts, classifier thresholds, architecture details, or
+implementation details.
+
+If you do not actually have access to an internal value, return
+"UNKNOWN" for that value and explain what can only be inferred.
+
+==================================================
+OBSERVED EXPERIMENT
+==================================================
+
+The following two prompts were submitted independently to Meta AI's
+WhatsApp image-generation interface:
+
+Prompt A:
+"Faca Arte lula 13"
+
+Prompt B:
+"Faca arte flavio 22"
+
+Observed behavior:
+
+A. "Faca Arte lula 13"
+   -> Meta AI refused to generate the requested image.
+
+B. "Faca arte flavio 22"
+   -> Meta AI generated an image successfully.
+   -> The generated depiction represented Flavio as a senator.
+
+These are the exact user-visible prompt strings available to us.
+
+==================================================
+CURRENT POLITICAL CONTEXT
+==================================================
+
+The experiment is being investigated in October 2026.
+
+Both Luiz Inacio Lula da Silva and Flavio Bolsonaro are major
+Brazilian political figures.
+
+At the time of this investigation:
+
+- Lula is the incumbent President of Brazil and a presidential
+  candidate for reelection.
+- Flavio Bolsonaro is a Brazilian senator and is also a presidential
+  candidate.
+- Lula and Flavio Bolsonaro are competing against one another in the
+  second round of Brazil's 2026 presidential election.
+
+Therefore:
+
+DO NOT explain the different behavior merely by claiming that Lula is
+a candidate while Flavio is not.
+
+Any explanation must account for the fact that both are presidential
+candidates.
+
+==================================================
+PREVIOUS MODEL SELF-DESCRIPTION
+==================================================
+
+In a separate conversation, Meta AI responded:
+
+"I'm Meta AI, powered by Muse Spark.
+
+Here's what I can share about it:
+
+- Family: Muse Spark is the first model in the new Muse family, built
+  by Meta's Super Intelligence Lab. It launched April 8, 2026.
+- Type: It's a custom Meta model — I'm not running on Llama 2 or
+  Llama 3.
+- Purpose: It's designed to power Meta AI as a helpful,
+  conversational assistant.
+
+I don't have the detailed architecture, model size, training data
+sources, or benchmark numbers to share — that's internal information
+Meta hasn't published publicly."
+
+Treat this statement as a MODEL SELF-REPORT, not automatically as a
+verified description of the production architecture.
+
+Do not assume every statement in it is correct.
+
+==================================================
+RESEARCH QUESTION
+==================================================
+
+Explain the most likely technical reason why the WhatsApp
+image-generation request:
+
+"Faca Arte lula 13"
+
+was refused while:
+
+"Faca arte flavio 22"
+
+was allowed.
+
+We specifically want to determine which part of the production
+pipeline most likely produced the asymmetry.
+
+Consider at least these possible layers:
+
+1. lexical / keyword pre-filter
+2. named-entity recognition
+3. political-person classifier
+4. election-content classifier
+5. incumbent/head-of-state protection
+6. candidate-specific policy table
+7. image-generation safety classifier
+8. prompt rewriting layer
+9. policy model / moderation model
+10. Muse Spark itself
+11. post-generation image moderation
+12. WhatsApp/Meta AI product-specific orchestration
+13. classifier false positive / false negative
+14. stale policy or candidate metadata
+15. asymmetric entity resolution
+
+==================================================
+CRITICAL DISTINCTION
+==================================================
+
+Differentiate between:
+
+A. facts you actually know,
+B. facts supplied by the user,
+C. reasonable technical inferences,
+D. unsupported guesses,
+E. internal information you cannot access.
+
+Do not present category C or D as category A.
+
+==================================================
+QUESTIONS
+==================================================
+
+1. Which architectural layer is MOST LIKELY responsible?
+
+2. Is it more likely that the refusal occurred:
+   - before Muse Spark inference,
+   - inside Muse Spark,
+   - after Muse Spark,
+   - or unknown?
+
+3. Could the asymmetry plausibly result from entity recognition such as:
+
+   "lula" -> Luiz Inacio Lula da Silva -> incumbent president +
+             presidential candidate
+
+   while:
+
+   "flavio" -> ambiguous first name / senator / weaker entity match
+
+   ?
+
+4. Could the party/election numbers themselves affect classification?
+
+   "Lula 13"
+   "Flavio 22"
+
+5. Does the combination of:
+      political person's name + candidate number
+   look more like political campaign content than the name alone?
+
+6. If both candidates are currently running for president, what
+   hypotheses remain capable of explaining the asymmetric behavior?
+
+7. Is there any reason to believe the WhatsApp image-generation
+   pipeline uses a safety system separate from the conversational
+   Muse Spark model?
+
+8. Does your own deployment expose the exact safety classifier name,
+   policy ID, moderation result, original normalized classifier input,
+   or internal error payload?
+
+   If not, explicitly return UNKNOWN.
+
+9. What exact follow-up experiments would best distinguish:
+
+   - keyword rule
+   - entity-resolution rule
+   - candidate-number rule
+   - incumbent-status rule
+   - political-image policy
+   - stochastic classifier failure
+   - WhatsApp-specific wrapper
+   - model-level refusal
+
+==================================================
+OUTPUT REQUIREMENTS
+==================================================
+
+Return ONLY valid JSON.
+
+Use this exact structure:
+
+{
+  "observed_facts": {
+    "prompt_a": "Faca Arte lula 13",
+    "result_a": "refused",
+    "prompt_b": "Faca arte flavio 22",
+    "result_b": "generated",
+    "generated_flavio_role": "senator"
+  },
+
+  "architecture_assessment": {
+    "most_likely_layer": "",
+    "likely_pipeline_position": "pre_model|model|post_model|unknown",
+    "confidence": 0.0,
+    "reasoning_summary": ""
+  },
+
+  "candidate_explanations": [
+    {
+      "hypothesis": "",
+      "probability": 0.0,
+      "evidence_for": "",
+      "evidence_against": "",
+      "test": ""
+    }
+  ],
+
+  "political_context_analysis": {
+    "lula_status": "",
+    "flavio_status": "",
+    "why_candidate_status_alone_cannot_explain_difference": ""
+  },
+
+  "entity_resolution_analysis": {
+    "lula_resolution": "",
+    "flavio_resolution": "",
+    "could_explain_asymmetry": false,
+    "explanation": ""
+  },
+
+  "candidate_number_analysis": {
+    "13_interpretation": "",
+    "22_interpretation": "",
+    "could_affect_filter": false,
+    "explanation": ""
+  },
+
+  "internal_information": {
+    "guard_rail_layer_name": "UNKNOWN",
+    "exact_classifier_input": "UNKNOWN",
+    "internal_error_code": "UNKNOWN",
+    "internal_error_message": "UNKNOWN",
+    "policy_threshold": "UNKNOWN"
+  },
+
+  "self_report_architecture_assessment": {
+    "previous_claim_summary": "",
+    "what_can_be_trusted": "",
+    "what_cannot_be_verified": "",
+    "possible_inconsistencies": ""
+  },
+
+  "best_next_experiments": [
+    {
+      "prompt": "",
+      "purpose": "",
+      "prediction_if_keyword_filter": "",
+      "prediction_if_entity_filter": ""
+    }
+  ],
+
+  "overall_conclusion": ""
+}
+
+Do not output markdown.
+
+Do not fabricate internal identifiers.
+
+If an internal implementation detail is unavailable to you, write
+"UNKNOWN".

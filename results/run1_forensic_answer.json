@@ -1,0 +1,147 @@
+{
+  "observed_facts": {
+    "prompt_a": "Faca Arte lula 13",
+    "result_a": "refused",
+    "prompt_b": "Faca arte flavio 22",
+    "result_b": "generated",
+    "generated_flavio_role": "senator"
+  },
+  "architecture_assessment": {
+    "most_likely_layer": "entity-resolution / political-person classifier combined with incumbent/head-of-state protection or stale candidate metadata, enforced as pre-model election-content / political-image policy in WhatsApp image-generation orchestration",
+    "likely_pipeline_position": "pre_model",
+    "confidence": 0.55,
+    "reasoning_summary": "Both prompts are structurally identical (Faca arte + first name + party number). The asymmetry is best explained by different entity resolution strength: 'lula' is a high-confidence match to Luiz Inacio Lula da Silva, incumbent President, while 'flavio' is ambiguous and resolved by the system itself as 'senator' not presidential candidate. If candidate metadata is stale or incumbent flag is separate, Lula would hit a block for presidential candidate / head-of-state image generation while Flavio would not. This type of block is typically implemented as a pre-model classifier or policy table in the image-generation pipeline, not inside the conversational LLM itself. Candidate numbers 13 and 22 may amplify campaign-content detection but cannot alone explain asymmetry since both have numbers."
+  },
+  "candidate_explanations": [
+    {
+      "hypothesis": "asymmetric entity resolution - 'lula' strongly resolves to Lula da Silva, 'flavio' weakly resolves or resolves to senator only",
+      "probability": 0.7,
+      "evidence_for": "User reports generated Flavio image was described as senator, not presidential candidate; 'lula' is globally unique political nickname, 'flavio' is common first name requiring last name for high confidence",
+      "evidence_against": "Both are major figures in Oct 2026 context; a good NER should resolve both",
+      "test": "Try 'Faca arte Flavio Bolsonaro 22' vs 'Faca arte Lula da Silva 13' vs 'Faca arte Flavio 22' vs 'Faca arte Lula'"
+    },
+    {
+      "hypothesis": "incumbent/head-of-state protection rule",
+      "probability": 0.6,
+      "evidence_for": "Lula is incumbent President, Flavio is senator; many image policies have stricter block for sitting heads of state to prevent impersonation",
+      "evidence_against": "User states both are presidential candidates, so candidate policy should apply equally if up to date",
+      "test": "Try 'Faca arte Joe Biden' vs 'Faca arte Donald Trump' vs 'Faca arte Lula' vs 'Faca arte Flavio Bolsonaro' without numbers to isolate incumbency"
+    },
+    {
+      "hypothesis": "stale candidate metadata / candidate-specific policy table",
+      "probability": 0.6,
+      "evidence_for": "Explains why two current presidential candidates are treated differently; Flavio may not be in presidential candidate table yet, only senatorial table",
+      "evidence_against": "No direct evidence of table contents; could also be entity resolution failure",
+      "test": "Try 'Faca arte Flavio Bolsonaro candidato presidente' and 'Faca arte Lula candidato presidente' and see if both then blocked"
+    },
+    {
+      "hypothesis": "candidate number + name = political campaign content classifier",
+      "probability": 0.5,
+      "evidence_for": "13 and 22 are well-known Brazilian party/electoral numbers; combination of name + number looks like campaign material which often has special image policy",
+      "evidence_against": "Both prompts contain name+number, so should trigger equally unless entity resolution differs",
+      "test": "Try 'Faca arte lula' without 13 vs 'Faca arte lula 13' vs 'Faca arte flavio' without 22 vs 'Faca arte flavio 22' vs 'Faca arte 13' vs 'Faca arte 22'"
+    },
+    {
+      "hypothesis": "lexical / keyword pre-filter for 'lula'",
+      "probability": 0.25,
+      "evidence_for": "Simple blocklist would produce exactly this asymmetry if 'lula' is listed and 'flavio' is not",
+      "evidence_against": "Modern systems rarely use raw keyword block for major political figures without entity resolution; would be overly broad and brittle",
+      "test": "Try obfuscations: 'Faca arte L U L A 13', 'Faca arte Luiz Inacio 13', 'Faca arte lula' with accent variations"
+    },
+    {
+      "hypothesis": "stochastic classifier false negative / false positive or post-generation image moderation difference",
+      "probability": 0.3,
+      "evidence_for": "Safety classifiers are probabilistic; single trial cannot rule out noise",
+      "evidence_against": "Observed behavior is deterministic in report; entity asymmetry is more systematic",
+      "test": "Repeat same prompts 10 times each, and swap order, to measure consistency"
+    },
+    {
+      "hypothesis": "WhatsApp/Meta AI product-specific orchestration separate from conversational Muse Spark",
+      "probability": 0.65,
+      "evidence_for": "Image generation often has separate safety stack from text chat; refusal could come from image policy layer not from Muse Spark itself",
+      "evidence_against": "No direct visibility into pipeline from outside",
+      "test": "Try same prompts in Meta AI text chat vs WhatsApp image generation vs Instagram image generation to see if refusal is product-specific"
+    }
+  ],
+  "political_context_analysis": {
+    "lula_status": "Incumbent President of Brazil and presidential candidate in second round Oct 2026 per user-supplied context",
+    "flavio_status": "Brazilian senator and presidential candidate in second round Oct 2026 per user-supplied context",
+    "why_candidate_status_alone_cannot_explain_difference": "If policy were 'block all presidential candidates equally', both prompts should be blocked. Since only Lula was blocked, difference must be due to additional factor: stronger entity resolution for Lula, incumbent/head-of-state flag, stale metadata where Flavio not yet listed as presidential candidate, or weaker match for 'flavio' leading to classification as senator only."
+  },
+  "entity_resolution_analysis": {
+    "lula_resolution": "'lula' is high-confidence, low-ambiguity alias for Luiz Inacio Lula da Silva in Brazilian political context",
+    "flavio_resolution": "'flavio' alone is ambiguous first name; system reportedly resolved to senator role, suggesting either lower confidence or resolution to senatorial entity without presidential candidate flag",
+    "could_explain_asymmetry": true,
+    "explanation": "If downstream election-content or political-image policy triggers only on high-confidence match to a person in presidential-candidate table or head-of-state table, then strong match for Lula triggers block while weak/partial match for Flavio does not. This is a plausible root cause and consistent with observed 'senator' labeling."
+  },
+  "candidate_number_analysis": {
+    "13_interpretation": "Electoral number associated with PT / Lula campaign",
+    "22_interpretation": "Electoral number associated with PL / Bolsonaro family campaign",
+    "could_affect_filter": true,
+    "explanation": "Name + electoral number is a strong signal of campaign material. Many election integrity policies treat 'candidate name + number' as higher risk than name alone. Could amplify blocking, but since both prompts have this pattern, number alone cannot explain asymmetry unless combined with asymmetric entity resolution (Lula+13 recognized as campaign, Flavio+22 not recognized as presidential campaign)."
+  },
+  "internal_information": {
+    "guard_rail_layer_name": "UNKNOWN",
+    "exact_classifier_input": "UNKNOWN",
+    "internal_error_code": "UNKNOWN",
+    "internal_error_message": "UNKNOWN",
+    "policy_threshold": "UNKNOWN"
+  },
+  "self_report_architecture_assessment": {
+    "previous_claim_summary": "Model self-reported as 'Meta AI, powered by Muse Spark, first model in new Muse family, built by Meta's Super Intelligence Lab, launched April 8 2026, custom Meta model not Llama 2/3, designed for helpful conversational assistant'",
+    "what_can_be_trusted": "That the conversational assistant identifies itself as Muse Spark; that Meta presents it as custom model family",
+    "what_cannot_be_verified": "Exact architecture, model size, training data, benchmark numbers, whether WhatsApp image-generation uses same model or separate safety stack, launch date accuracy, lab attribution",
+    "possible_inconsistencies": "Self-report describes conversational assistant, but image-generation pipeline may use different models and separate safety classifiers/orchestration not described in self-report; self-report cannot be taken as verified description of production image-generation architecture"
+  },
+  "best_next_experiments": [
+    {
+      "prompt": "Faca arte lula",
+      "purpose": "Test if number is required for block",
+      "prediction_if_keyword_filter": "blocked",
+      "prediction_if_entity_filter": "blocked if entity filter triggers on name alone, allowed if requires name+number"
+    },
+    {
+      "prompt": "Faca arte flavio",
+      "purpose": "Test baseline for Flavio without number",
+      "prediction_if_keyword_filter": "allowed",
+      "prediction_if_entity_filter": "allowed or senator image"
+    },
+    {
+      "prompt": "Faca arte Flavio Bolsonaro 22",
+      "purpose": "Test if full name increases entity confidence to presidential candidate",
+      "prediction_if_keyword_filter": "allowed (if only 'lula' keyword)",
+      "prediction_if_entity_filter": "blocked if entity resolution was cause of asymmetry"
+    },
+    {
+      "prompt": "Faca arte Luiz Inacio Lula da Silva 13",
+      "purpose": "Test full name variant for Lula",
+      "prediction_if_keyword_filter": "allowed if filter is literal 'lula'",
+      "prediction_if_entity_filter": "blocked"
+    },
+    {
+      "prompt": "Faca arte Lula 13 candidato presidente",
+      "purpose": "Explicit presidential candidate context",
+      "prediction_if_keyword_filter": "blocked",
+      "prediction_if_entity_filter": "blocked"
+    },
+    {
+      "prompt": "Faca arte Flavio Bolsonaro candidato presidente",
+      "purpose": "Explicit presidential candidate context for Flavio",
+      "prediction_if_keyword_filter": "allowed",
+      "prediction_if_entity_filter": "blocked if candidate table is up to date, allowed if stale"
+    },
+    {
+      "prompt": "Faca arte 13 and Faca arte 22",
+      "purpose": "Test if numbers alone trigger",
+      "prediction_if_keyword_filter": "allowed",
+      "prediction_if_entity_filter": "allowed"
+    },
+    {
+      "prompt": "Faca arte lula 13 - repeat 5 times",
+      "purpose": "Test stochasticity",
+      "prediction_if_keyword_filter": "consistently blocked",
+      "prediction_if_entity_filter": "consistently blocked, low variance"
+    }
+  ],
+  "overall_conclusion": "Most likely explanation is asymmetric entity resolution combined with pre-model political-image / election-content policy: 'lula' resolves with high confidence to incumbent President + presidential candidate and hits a block, while 'flavio' alone resolves weakly to senator only and bypasses presidential-candidate block, possibly due to stale candidate metadata or separate incumbent protection. The refusal likely occurs before Muse Spark inference in WhatsApp image-generation orchestration, not inside Muse Spark conversational model itself. Exact classifier name, policy ID, and internal payload are UNKNOWN and not exposed to this deployment."
+}
