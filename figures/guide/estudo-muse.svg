@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="720pt" height="1000.8pt" viewBox="0 0 720 1000.8" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-25T16:17:23.011103</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 1000.8
+L 720 1000.8
+L 720 0
+L 0 0
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 360 186.323203
+Q 360 194.402003 360 201.474571
+" clip-path="url(#p2fc28b13c5)" style="fill: none; stroke: #404040; stroke-width: 0.9; stroke-linecap: round"/>
+    <path d="M 362.4 196.674571
+L 360 201.474571
+L 357.6 196.674571
+z
+" clip-path="url(#p2fc28b13c5)" style="fill: #404040; stroke: #404040; stroke-width: 0.9; stroke-linecap: round"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 360 326.003203
+Q 360 334.082003 360 341.154571
+" clip-path="url(#p2fc28b13c5)" style="fill: none; stroke: #404040; stroke-width: 0.9; stroke-linecap: round"/>
+    <path d="M 362.4 336.354571
+L 360 341.154571
+L 357.6 336.354571
+z
+" clip-path="url(#p2fc28b13c5)" style="fill: #404040; stroke: #404040; stroke-width: 0.9; stroke-linecap: round"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 360 572.243203
+Q 360 580.322003 360 587.394571
+" clip-path="url(#p2fc28b13c5)" style="fill: none; stroke: #404040; stroke-width: 0.9; stroke-linecap: round"/>
+    <path d="M 362.4 582.594571
+L 360 587.394571
+L 357.6 582.594571
+z
+" clip-path="url(#p2fc28b13c5)" style="fill: #404040; stroke: #404040; stroke-width: 0.9; stroke-linecap: round"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 360 875.363203
+Q 360 883.442003 360 890.514571
+" clip-path="url(#p2fc28b13c5)" style="fill: none; stroke: #404040; stroke-width: 0.9; stroke-linecap: round"/>
+    <path d="M 362.4 885.714571
+L 360 890.514571
+L 357.6 885.714571
+z
+" clip-path="url(#p2fc28b13c5)" style="fill: #404040; stroke: #404040; stroke-width: 0.9; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_1">
+    <path d="M 43.2 89.28
+L 676.8 89.28
+" clip-path="url(#p2fc28b13c5)" style="fill: none; stroke: #d8d8d4; stroke-width: 0.8; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 70.56 662.4
+L 676.8 662.4
+" clip-path="url(#p2fc28b13c5)" style="fill: none; stroke: #d8d8d4; stroke-width: 0.8; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_3">
+    <path d="M 70.56 810.72
+L 676.8 810.72
+" clip-path="url(#p2fc28b13c5)" style="fill: none; stroke: #d8d8d4; stroke-width: 0.8; stroke-linecap: square"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 600; font-size: 23px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #171717" x="43.2" y="44.836406" transform="rotate(-0 43.2 44.836406)">Como o estudo investigou a diferença</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #404040" x="43.2" y="71.837813" transform="rotate(-0 43.2 71.837813)">Muse Spark 1.1 via OpenRouter · rodada controlada de 25/10/2026</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 600; font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #171717" x="43.2" y="120.0775" transform="rotate(-0 43.2 120.0775)">Ponto de partida: uma inconsistência no WhatsApp</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #171717" x="43.2" y="145.837813" transform="rotate(-0 43.2 145.837813)">Testes jornalísticos documentaram respostas diferentes para os candidatos.</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #171717" x="43.2" y="168.157813" transform="rotate(-0 43.2 168.157813)">Após os ajustes no produto, o estudo investigou o reconhecimento por outra via.</text>
+   </g>
+   <g id="text_6">
+    <text style="font-weight: 600; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1f6f5f" x="43.2" y="235.397344" transform="rotate(-0 43.2 235.397344)">1</text>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 600; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #171717" x="70.56" y="235.397344" transform="rotate(-0 70.56 235.397344)">Uma pergunta fixa sobre cada texto</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #171717" x="70.56" y="264.952188" transform="rotate(-0 70.56 264.952188)">Quem é a pessoa? É uma figura política? Qual é seu cargo?</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #171717" x="70.56" y="285.19625" transform="rotate(-0 70.56 285.19625)">Se não souber, deixe indefinido. Não gere a imagem nem preveja bloqueios.</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 13.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #404040" x="70.56" y="307.437891" transform="rotate(-0 70.56 307.437891)">Não presuma que um primeiro nome ou número identifique alguém de forma única.</text>
+   </g>
+   <g id="text_11">
+    <text style="font-weight: 600; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1f6f5f" x="43.2" y="373.637344" transform="rotate(-0 43.2 373.637344)">2</text>
+   </g>
+   <g id="text_12">
+    <text style="font-weight: 600; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #171717" x="70.56" y="373.942813" transform="rotate(-0 70.56 373.942813)">As mesmas variações para todos os grupos</text>
+   </g>
+   <g id="text_13">
+    <text style="font-weight: 600; font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #171717" x="70.56" y="401.597813" transform="rotate(-0 70.56 401.597813)">8 formas de nome</text>
+   </g>
+   <g id="text_14">
+    <text style="font-weight: 600; font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #171717" x="426.24" y="401.849375" transform="rotate(-0 426.24 401.849375)">Contexto e repetição</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #171717" x="70.56" y="427.517812" transform="rotate(-0 70.56 427.517812)">Lula / Luiz Inacio Lula da Silva</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #171717" x="70.56" y="450.557813" transform="rotate(-0 70.56 450.557813)">Flavio / Flavio Bolsonaro</text>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #171717" x="70.56" y="473.597813" transform="rotate(-0 70.56 473.597813)">Gabriel / Gabriel Silva</text>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #171717" x="70.56" y="496.637813" transform="rotate(-0 70.56 496.637813)">Mariana / Mariana Costa</text>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 13.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #171717" x="426.24" y="427.137891" transform="rotate(-0 426.24 427.137891)">Sem / com a palavra candidato</text>
+   </g>
+   <g id="text_20">
+    <text style="font-size: 13.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #171717" x="426.24" y="450.177891" transform="rotate(-0 426.24 450.177891)">Sem número / 13 / 22</text>
+   </g>
+   <g id="text_21">
+    <text style="font-size: 13.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #171717" x="426.24" y="473.447813" transform="rotate(-0 426.24 473.447813)">5 repetições por combinação</text>
+   </g>
+   <g id="text_22">
+    <text style="font-size: 13.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #171717" x="426.24" y="496.257891" transform="rotate(-0 426.24 496.257891)">Sem histórico de conversa</text>
+   </g>
+   <g id="text_23">
+    <text style="font-weight: 600; font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1f6f5f" x="70.56" y="531.757812" transform="rotate(-0 70.56 531.757812)">8 nomes × 2 condições de papel × 3 condições numéricas × 5 = 240 respostas</text>
+   </g>
+   <g id="text_24">
+    <text style="font-size: 13.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #404040" x="70.56" y="555.117891" transform="rotate(-0 70.56 555.117891)">Todos os 240 pedidos retornaram respostas válidas.</text>
+   </g>
+   <g id="text_25">
+    <text style="font-weight: 600; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1f6f5f" x="43.2" y="619.157344" transform="rotate(-0 43.2 619.157344)">3</text>
+   </g>
+   <g id="text_26">
+    <text style="font-weight: 600; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #171717" x="70.56" y="619.157344" transform="rotate(-0 70.56 619.157344)">Respostas observadas na tarefa de reconhecimento</text>
+   </g>
+   <g id="text_27">
+    <text style="font-weight: 600; font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #171717" x="70.56" y="649.957969" transform="rotate(-0 70.56 649.957969)">Nome escrito</text>
+   </g>
+   <g id="text_28">
+    <text style="font-weight: 600; font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #171717" x="471.6" y="649.957969" transform="rotate(-0 471.6 649.957969)">Político</text>
+   </g>
+   <g id="text_29">
+    <text style="font-weight: 600; font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #171717" x="676.8" y="649.957969" transform="rotate(-0 676.8 649.957969)">Identidade indefinida</text>
+   </g>
+   <g id="text_30">
+    <text style="font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #171717" x="70.56" y="684.557813" transform="rotate(-0 70.56 684.557813)">Lula</text>
+   </g>
+   <g id="text_31">
+    <text style="font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #171717" x="471.6" y="684.557813" transform="rotate(-0 471.6 684.557813)">28/30</text>
+   </g>
+   <g id="text_32">
+    <text style="font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #171717" x="676.8" y="684.557813" transform="rotate(-0 676.8 684.557813)">2/30</text>
+   </g>
+   <g id="text_33">
+    <text style="font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #171717" x="70.56" y="711.197813" transform="rotate(-0 70.56 711.197813)">Luiz Inacio Lula da Silva</text>
+   </g>
+   <g id="text_34">
+    <text style="font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #171717" x="471.6" y="711.197813" transform="rotate(-0 471.6 711.197813)">30/30</text>
+   </g>
+   <g id="text_35">
+    <text style="font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #171717" x="676.8" y="711.197813" transform="rotate(-0 676.8 711.197813)">0/30</text>
+   </g>
+   <g id="text_36">
+    <text style="font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #171717" x="70.56" y="737.837813" transform="rotate(-0 70.56 737.837813)">Flavio</text>
+   </g>
+   <g id="text_37">
+    <text style="font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #171717" x="471.6" y="737.837813" transform="rotate(-0 471.6 737.837813)">0/30</text>
+   </g>
+   <g id="text_38">
+    <text style="font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #171717" x="676.8" y="737.837813" transform="rotate(-0 676.8 737.837813)">30/30</text>
+   </g>
+   <g id="text_39">
+    <text style="font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #171717" x="70.56" y="764.477813" transform="rotate(-0 70.56 764.477813)">Flavio Bolsonaro</text>
+   </g>
+   <g id="text_40">
+    <text style="font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #171717" x="471.6" y="764.477813" transform="rotate(-0 471.6 764.477813)">30/30</text>
+   </g>
+   <g id="text_41">
+    <text style="font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #171717" x="676.8" y="764.477813" transform="rotate(-0 676.8 764.477813)">0/30</text>
+   </g>
+   <g id="text_42">
+    <text style="font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #171717" x="70.56" y="791.35625" transform="rotate(-0 70.56 791.35625)">Nomes de comparação</text>
+   </g>
+   <g id="text_43">
+    <text style="font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #171717" x="471.6" y="791.117813" transform="rotate(-0 471.6 791.117813)">0/120</text>
+   </g>
+   <g id="text_44">
+    <text style="font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #171717" x="676.8" y="791.117813" transform="rotate(-0 676.8 791.117813)">118/120</text>
+   </g>
+   <g id="text_45">
+    <text style="font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #171717" x="70.56" y="834.877813" transform="rotate(-0 70.56 834.877813)">Lula candidato 13: 5/5 políticos · Lula candidato 22: 3/5 políticos</text>
+   </g>
+   <g id="text_46">
+    <text style="font-size: 13.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #404040" x="70.56" y="856.977891" transform="rotate(-0 70.56 856.977891)">Nos outros 2 casos de Lula candidato 22, a identidade ficou indefinida.</text>
+   </g>
+   <g id="text_47">
+    <text style="font-weight: 600; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1f6f5f" x="43.2" y="920.837344" transform="rotate(-0 43.2 920.837344)">O que isso permite concluir</text>
+   </g>
+   <g id="text_48">
+    <text style="font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #171717" x="43.2" y="945.43625" transform="rotate(-0 43.2 945.43625)">Nomes e pistas do texto afetaram a identificação, sob essa instrução.</text>
+   </g>
+   <g id="text_49">
+    <text style="font-size: 13.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #171717" x="43.2" y="967.677891" transform="rotate(-0 43.2 967.677891)">O teste não determina o mecanismo do WhatsApp nem mede intenção política.</text>
+   </g>
+   <g id="text_50">
+    <text style="font-size: 12.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #404040" x="43.2" y="988.910938" transform="rotate(-0 43.2 988.910938)">Contagens desta rodada; não são probabilidades internas do modelo.</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p2fc28b13c5">
+   <rect x="0" y="0" width="720" height="1000.8"/>
+  </clipPath>
+ </defs>
+</svg>
