@@ -6,7 +6,7 @@ Sources accessed 25 October 2026. The source pages below were read directly; the
 
 ## Research chronology and scope of the argument
 
-The original exploratory study is preserved in the initial repository commit, including its CSV, notebook outputs and model-generated hypotheses. References below to the 25 October neutral run describe the separate v2 study. The old records do not establish the original API execution time relative to the news reports. See [the provenance and thesis record](provenance-and-thesis.md).
+The original exploratory study is preserved in the initial repository commit, including its CSV, notebook outputs and model-generated hypotheses. References below to the 25 October neutral run describe the separate v2 study. The author dates both original runs to 14 October 2026. This is an author-reported date; preserved records do not independently timestamp the calls or establish their order relative to the product adjustment that day. See [the provenance and thesis record](provenance-and-thesis.md).
 
 The central thesis is technically plausible: WhatsApp can apply different guardrails from the OpenRouter deployment, even if a base model were shared. We have not verified identical model versions or the actual safeguard stacks. The defensible criticism targets premature certainty about mechanism or intent; it does not require denying the reported inconsistency or proving an alternative mechanism first.
 
