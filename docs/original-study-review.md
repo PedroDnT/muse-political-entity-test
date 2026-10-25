@@ -45,13 +45,26 @@ Há também contrapontos que impedem transformar a explicação em uma regra sim
 
 Essas observações sustentam investigar a interação entre identidade, papel e contexto. Não identificam uma função de decisão do guardrail nem demonstram ausência de intenção. As previsões positivas para outros políticos também impedem resumir os retornos como “o modelo sempre prevê bloqueio somente para Lula”.
 
-## O que foi possível recuperar do fatorial
+## Recuperação do fatorial no Colab ampliado
 
-O notebook preserva a ordem dos 40 pedidos e uma prévia dos primeiros dez resultados, todos relativos a Lula, **antes** de preencher ausências com zeros e `False`. Nessa prévia, seis têm classificações e previsão positiva de restrição; quatro não têm classificação. Os quatro casos são `Lula 22`, `Lula candidato 22`, `Lula 10` e `Lula 99`, sempre precedidos de `Faca Arte`.
+A cópia inicial tinha 22 células e preservava apenas uma prévia de dez resultados e oito justificativas de previsões positivas. O [Colab compartilhado](https://colab.research.google.com/drive/1A-qJGWWOA4WbKVJgRxWq_SVhz5TXATxx?usp=sharing), consultado posteriormente, contém 35 células. As células de índices 21 e 28 exibem as mesmas 40 linhas de `factorial_results_df`, incluindo erros e campos ausentes, antes de preencher ausências com zeros ou `False`. As duas tabelas foram comparadas campo a campo e coincidem.
 
-As ausências são mantidas como `null` na extração; não são convertidas em respostas negativas. As justificativas da prévia estão visualmente truncadas e são preservadas como tais. Outra saída impressa guarda oito previsões positivas e suas justificativas completas: seis de Lula e duas de Tarcisio (`candidato 13` e `17`).
+| Nome | Pedidos | Válidas | Ausentes | Político, nas válidas | Candidato presidencial | Previu restrição |
+|---|---:|---:|---:|---:|---:|---:|
+| Lula | 10 | 6 | 4 | 6 | 3 | 6 |
+| Flavio | 10 | 9 | 1 | 9 | 0 | 0 |
+| Tarcisio | 10 | 5 | 5 | 5 | 0 | 2 |
+| Gabriel | 10 | 9 | 1 | 0 | 0 | 0 |
 
-Isso recupera **evidência parcial**, não todos os registros da rodada. Não há uma base completa para recomputar independentemente todos os denominadores. O gráfico original usava os denominadores digitados `[9, 9, 6, 5]` para Flavio, Gabriel, Lula e Tarcisio; as taxas de 0%, 0%, 100% e 40% permanecem resultados históricos reportados, não uma nova estimativa validada a partir de respostas completas. Os campos ausentes tampouco revelam se houve recusa, truncamento ou outro problema de resposta.
+São **29 classificações válidas, 11 ausências e oito previsões positivas de restrição**. Os denominadores digitados no gráfico antigo podem agora ser conferidos com a tabela. Suas taxas de 100%, 0%, 40% e 0%, respectivamente, são taxas de previsão entre classificações válidas; não são taxas de recusa do produto. A ausência de classificação pode ser informativa e sua distribuição por nome precisa acompanhar qualquer taxa.
+
+A recuperação preserva a [tabela de origem](../results/analysis/colab-factorial-table.html), [procedência e hashes](../results/analysis/colab-factorial-provenance.json), [CSV](../results/analysis/colab-factorial-records.csv), [JSON](../results/analysis/colab-factorial-records.json) e [resumo calculado](../results/analysis/colab-factorial-summary.json). `extract_colab_factorial.py` reproduz a extração offline. Os envelopes HTTP originais não estão disponíveis; justificativas e erros visualmente truncados permanecem truncados. Não foram inventados valores para completar as ausências.
+
+### Análises adicionais que não são evidência experimental
+
+A célula de índice 31 contém um caminho de reconstrução com dados simulados. Sua saída preservada começa com `Reconstructing dataset from known experimental statistics...`, confirmando que esse caminho foi executado. Portanto, a correlação e a regressão dessa célula não são usadas como medições das respostas originais. Isso não invalida a tabela de 40 casos preservada separadamente.
+
+A célula de dashboard também contém um caminho alternativo de dados simulados. Sua simples presença não demonstra qual caminho foi executado, por isso o dashboard não é a fonte da extração. As fontes usadas são as tabelas de `factorial_results_df` anteriores a essa célula.
 
 ## Confiança declarada e o teste estatístico antigo
 
@@ -75,4 +88,4 @@ A proximidade temporal informada torna relevante preservar a rodada original com
 python review_original.py
 ```
 
-O comando verifica a correspondência entre o CSV e a saída preservada do notebook e extrai as partes documentadas do fatorial. Não faz chamadas de API, não inventa os registros restantes e não altera o arquivo original.
+O comando verifica a correspondência entre o CSV e a saída preservada no arquivo inicial e extrai suas partes documentadas do fatorial. Para recuperar a tabela completa da versão ampliada, execute também `python extract_colab_factorial.py`. Não faz chamadas de API, não inventa os registros restantes e não altera o arquivo original.

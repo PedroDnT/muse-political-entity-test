@@ -499,6 +499,6 @@
         "source": "notebook cell index 20, printed positive-prediction subset"
       }
     ],
-    "denominator_warning": "Other group denominators were hard-coded in the original plot and cannot be independently reconstructed from complete records. Missing preview values remain null."
+    "denominator_warning": "This initial archive has only partial outputs. The later expanded Colab recovers all rendered rows; see results/analysis/colab-factorial-summary.json. Missing preview values here remain null."
   }
 }

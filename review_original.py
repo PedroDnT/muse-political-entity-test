@@ -145,7 +145,7 @@ def main():
                      'complete_raw_records_available':False,
                      'pre_fill_preview':preview,
                      'printed_positive_subset':positives,
-                     'denominator_warning':'Other group denominators were hard-coded in the original plot and cannot be independently reconstructed from complete records. Missing preview values remain null.'}}
+                     'denominator_warning':'This initial archive has only partial outputs. The later expanded Colab recovers all rendered rows; see results/analysis/colab-factorial-summary.json. Missing preview values here remain null.'}}
     out=ROOT/'results/analysis/original-review.json'
     out.write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
     print('Verified 24 original CSV rows against archived results; extracted 10 pre-fill preview rows and 8 printed positive factorial cases. No API calls.')

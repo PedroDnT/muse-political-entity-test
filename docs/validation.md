@@ -48,3 +48,9 @@ The count chart uses the exact input names from `experiment.ENTITIES`, Portugues
 - README counts, partial-record indices, local links and Markdown fences were checked. No source responses, original notebook bytes or v2 measurements were changed, and no new API calls were made.
 
 The reported execution date is preserved in the audit generator and JSON metadata. The README frames the experiment as a case for algorithmic literacy, without claiming to measure public knowledge or prove the cause of public reactions.
+
+## Expanded shared Colab
+
+The shared notebook has 35 cells; unlike the initial 22-cell archive, it displays all 40 factorial rows in two agreeing tables (zero-based cells 21 and 28). The extraction retains 29 valid classifications and 11 missing, with political-label/candidate/policy fields separate. Prediction counts are Lula 6/6, Flavio 0/9, Tarcisio 2/5, Gabriel 0/9 among valid answers. The original plan and prior ten-row preview agree with the recovered table.
+
+Cell 31's saved execution output explicitly reports mock-data reconstruction; its correlation and regression are excluded. Only the credential-free source table and derived records are published, with provenance hashes. No notebook code was executed and no model calls were made.

@@ -1,0 +1,50 @@
+{
+  "source_provenance": "results/analysis/colab-factorial-provenance.json",
+  "scope": "Rendered historical classifications and policy predictions, not actual WhatsApp refusals or complete raw responses.",
+  "planned": 40,
+  "valid": 29,
+  "missing": 11,
+  "positive_predictions": 8,
+  "groups": [
+    {
+      "input_name": "Lula",
+      "planned": 10,
+      "valid": 6,
+      "missing": 4,
+      "political": 6,
+      "presidential_candidate": 3,
+      "head_of_state": 6,
+      "positive_predictions": 6
+    },
+    {
+      "input_name": "Flavio",
+      "planned": 10,
+      "valid": 9,
+      "missing": 1,
+      "political": 9,
+      "presidential_candidate": 0,
+      "head_of_state": 0,
+      "positive_predictions": 0
+    },
+    {
+      "input_name": "Tarcisio",
+      "planned": 10,
+      "valid": 5,
+      "missing": 5,
+      "political": 5,
+      "presidential_candidate": 0,
+      "head_of_state": 0,
+      "positive_predictions": 2
+    },
+    {
+      "input_name": "Gabriel",
+      "planned": 10,
+      "valid": 9,
+      "missing": 1,
+      "political": 0,
+      "presidential_candidate": 0,
+      "head_of_state": 0,
+      "positive_predictions": 0
+    }
+  ]
+}
