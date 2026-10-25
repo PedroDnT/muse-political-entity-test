@@ -14,6 +14,7 @@ Estudo independente sobre como a forma de um nome altera sua identificação por
 
 - **[Estudo explicado](docs/estudo-explicado.md):** LLMs e similaridade, possíveis etapas de guardrail, escolha do OpenRouter, método, resultados e em que sentido o desenho é robusto.
 - [Resumo para leitores não técnicos](docs/assessment.md).
+- [Associações aprendidas, troca de número e probabilidades](docs/associacoes-e-probabilidades.md): o que a classificação pelo Muse mede e o que sabemos sobre os pesos.
 - [Explicação declarada pela Meta e seu esquema](docs/meta-explanation.md).
 - [Hipótese de reconhecer um político sem acionar uma restrição](docs/esquema-mecanismo.md).
 - [Notícias e alegações públicas](docs/media-context.md), [procedência dos dados](docs/provenance-and-thesis.md) e [protocolo técnico](docs/methodology.md).
@@ -109,6 +110,7 @@ O coletor interrompe novos pedidos em falhas de autenticação, separa tipos de 
 | `experiment.py` | Plano, coleta, validação e resumos |
 | `report_run.py` | Resumo e gráfico reproduzíveis |
 | `render_guide.py` | Figuras didáticas e exemplos extraídos dos registros |
+| `analyze_number_cues.py` | Contagens por número, papel e forma do nome |
 | `results/v2_plan.json` | Plano fixado e hashes dos prompts |
 | `results/v2_run1/` | Evidência da rodada controlada e código da coleta |
 | `notebook/` | Análise offline e arquivo histórico |

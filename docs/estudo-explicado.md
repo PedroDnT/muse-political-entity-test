@@ -20,6 +20,8 @@ Uma analogia útil é a de uma recepção: ouvir “Flávio” pode ser insufici
 
 As associações aprendidas podem ser incompletas ou desatualizadas. Informações adicionais no pedido podem mudar uma resposta. Isso torna erros de identificação tecnicamente plausíveis; não permite deduzir o conteúdo exato do treinamento a partir de uma saída isolada. A frequência e a origem desses erros precisam ser medidas.
 
+O histórico público de Lula é uma explicação plausível para uma associação forte com o apelido; não há medição da frequência desse nome nos dados de treinamento. O teste distingue a ambiguidade de “Flavio” isolado do reconhecimento consistente de “Flavio Bolsonaro”. A [análise de números e probabilidades](associacoes-e-probabilidades.md) mostra as variações com 13 e 22 e explica por que frequências observadas não são probabilidades internas.
+
 ## 2. Modelo e produto são coisas diferentes
 
 O modelo é um componente de um serviço. Um produto como o WhatsApp pode acrescentar instruções, políticas por região, classificadores, ferramentas de imagem e verificações posteriores. **Guardrails** são mecanismos destinados a limitar determinados comportamentos; podem estar no treinamento, nas instruções ou em componentes externos ao modelo.

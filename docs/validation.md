@@ -26,3 +26,10 @@ Inspected the final color and grayscale PNGs: readable counts and captions, no c
 - The timeline cites Meta's May launch-post update, its October incident statement and product reporting. It does not claim identical model versions or a paired image-generation experiment.
 - Figures were inspected at 960 px width in color and grayscale on 25 October 2026, with all labels and denominators readable and no clipped text. The renderer checks canvas text bounds. No information depends on color alone.
 - SVG and 2× PNG versions are preserved, along with editable source and `docs/visual-guide-spec.json`. Scientific review checked task differences, selected-example denominators and source attribution; visual review checked reading order, direct labels, contrast and spacing.
+
+## Number cues and probability availability
+
+- `analyze_number_cues.py` regenerated all 48 number/role/name-form strata from 240 unique preserved cases. Totals reconcile to 88 political flags and 150 unresolved identities; every stratum contains five valid responses and no missing cases.
+- The eight political-name rows in the detailed table were checked against the records. Only `Lula candidato 22` mixes political flags (3/5) within this set; the other short-Lula conditions and all full-name conditions are 5/5, and all short-Flavio conditions are 0/5 with unresolved identities.
+- No returned choice contains non-null logprobs. A dated public endpoint-capability snapshot lists supported parameters and does not advertise logprobs. This check made no paid model call and does not establish historical backend or guardrail weight identity.
+- Documentation links and code fences passed validation. The subgroup analysis is labeled descriptive and post-collection; original evidence and figures are unchanged.

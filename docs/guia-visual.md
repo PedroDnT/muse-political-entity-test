@@ -39,6 +39,25 @@ O mesmo cruzamento foi aplicado a Lula e a dois grupos de nomes de controle. Cad
 
 A figura seleciona cinco exemplos para explicar o procedimento; não substitui os resultados completos. Considerando todas as condições, Lula curto teve 28/30 classificações políticas; Flavio curto, 0/30, com identidade indefinida em todas. Ambos os nomes completos tiveram 30/30 classificações políticas. Os controles tiveram 0/120. Os dois casos de Lula indefinido ocorreram com `Lula candidato 22`. Veja o [resumo completo](../results/v2_run1/summary.json).
 
+## Similaridade, histórico dos nomes e troca de número
+
+O modelo aprende associações a partir dos exemplos de treinamento. O longo histórico público de Lula torna plausível uma associação forte entre o apelido e a figura política. Mas não temos acesso ao corpus para contar essas menções. O que medimos foi a resposta: “Lula” foi classificado como político em 28/30 casos. A ambiguidade apareceu principalmente em **“Flavio” sozinho**; com “Flavio Bolsonaro”, houve reconhecimento político em 30/30.
+
+Os números também são pistas. Trocá-los permite investigar se o contexto muda a identificação. Nos pedidos com a palavra `candidato`, obtivemos:
+
+| Nome no texto | Sem número | Com 13 | Com 22 |
+|---|---:|---:|---:|
+| Lula | 5/5 | 5/5 | 3/5 |
+| Luiz Inacio Lula da Silva | 5/5 | 5/5 | 5/5 |
+| Flavio | 0/5 | 0/5 | 0/5 |
+| Flavio Bolsonaro | 5/5 | 5/5 | 5/5 |
+
+Cada célula conta classificações políticas em cinco repetições. Os casos negativos deixaram a identidade indefinida. A mudança foi no texto experimental, não uma afirmação de mudança do número oficial do candidato. Esse padrão localizado sugere sensibilidade à combinação de pistas; não estabelece uma regra geral.
+
+**Pedir ao Muse para classificar é um teste de seu comportamento.** A comparação usa a mesma instrução e varia o texto. Sua validade não exige presumir que o guardrail do WhatsApp use os mesmos pesos — os parâmetros aprendidos do modelo. Esse compartilhamento não foi verificado, e uma proteção pode usar regras ou outro classificador.
+
+**Frequência não é certeza interna:** 5/5 não significa “100% de confiança”. O endpoint consultado não anuncia suporte a probabilidades de tokens (`logprobs`), e elas não estão nos registros. Pedir uma porcentagem escrita pelo modelo não resolve essa falta. Veja a [explicação sobre dados, probabilidades e pesos](associacoes-e-probabilidades.md), com todas as combinações e fontes.
+
 ## Por que testar o Muse pelo OpenRouter
 
 ![Cronologia documentada e comparação entre os caminhos do WhatsApp e do OpenRouter](../figures/guide/por-que-outra-via.png)
