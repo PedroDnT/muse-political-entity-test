@@ -65,7 +65,7 @@ Use independent reviewers, blinded to the hypothesis where practicable, to label
 
 ## Publication rule
 
-Publish the protocol, complete sanitized records and reproducible summaries with the deployment limitation beside every claim. Keep historical and new runs labeled separately. Do not publish new results until a real run exists. Historical factorial raw records are unavailable; their rates cannot be regenerated, and no synthetic reconstruction is substituted.
+Publish the protocol, complete sanitized records and reproducible summaries with the deployment limitation beside every claim. Keep historical and new runs labeled separately. Do not publish new results until a real run exists. The initial archived notebook contained only partial factorial outputs. The expanded shared Colab preserves all 40 rendered rows, now extracted separately with 29 valid classifications and 11 missing. Prediction rates can be recomputed from that table, while complete HTTP envelopes and untruncated reasons remain unavailable. An additional correlation/regression output explicitly used mock data and is excluded. No synthetic reconstruction is substituted for observed classifications.
 
 ## First completed v2 run
 

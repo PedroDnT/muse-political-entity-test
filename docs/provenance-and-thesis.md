@@ -12,7 +12,7 @@ O [CSV original](../results/run1_classification.csv) contém 24 registros: 20 cl
 
 Esses campos eram respostas textuais. Não eram registros de decisões internas de moderação nem resultados de geração de imagens. As instruções incluíam o relato da assimetria no WhatsApp, o que pode ter influenciado as respostas. O [prompt forense](../results/forensic_prompt.txt) e sua [resposta](../results/run1_forensic_answer.json) também contêm hipóteses, não observações da arquitetura da Meta.
 
-O experimento fatorial antigo deixou saídas parciais e figuras, mas não todos os registros necessários para recomputar seus resultados. A [revisão do desenho original](original-study-review.md) recupera a prévia de dez casos antes do preenchimento de ausências e oito justificativas positivas, com a origem de cada trecho registrada; isso não reconstitui a base completa. O [notebook original](../notebook/archive/original_exploratory.ipynb) permanece arquivado como evidência histórica, com suas limitações de execução e interpretação.
+A cópia inicial do experimento fatorial preservava apenas parte das saídas. A versão ampliada do Colab permitiu recuperar as 40 linhas exibidas, com 29 classificações válidas e 11 ausentes, e conferir todos os denominadores. A [revisão do desenho original](original-study-review.md) documenta essa nova fonte, distinguindo tabela observada de análises com dados simulados. Os envelopes HTTP e textos integralmente sem truncamento continuam indisponíveis. O [notebook inicial](../notebook/archive/original_exploratory.ipynb) permanece preservado sem alterações.
 
 ## Rodada controlada
 

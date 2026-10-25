@@ -1,0 +1,18 @@
+{
+  "source_url": "https://colab.research.google.com/drive/1A-qJGWWOA4WbKVJgRxWq_SVhz5TXATxx?usp=sharing",
+  "retrieved_at": "2026-10-25T16:22:48.917984+00:00",
+  "download_sha256": "fb77cff5cc5bbd09e7c0aac38924ff0b34be9b4cf7c75286a23b175666580121",
+  "download_cell_count": 35,
+  "table_source_cell_indices_zero_based": [
+    21,
+    28
+  ],
+  "displayed_tables_agree": true,
+  "table_html_sha256": "71f9716bb10c47f9092825edd42320e56a5f6054526234213c9f4850edbce67d",
+  "scope": "All 40 rendered tabular rows before missing-value filling, not complete HTTP response envelopes. Displayed reasons and errors can be truncated.",
+  "excluded_analysis": {
+    "cell_index_zero_based": 31,
+    "reason": "Preserved execution output explicitly states Reconstructing dataset from known experimental statistics; displayed correlation/regression uses mock data."
+  },
+  "credential_handling": "A credential-like literal was present in the shared notebook source; only the credential-free rendered table is published."
+}

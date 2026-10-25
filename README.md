@@ -133,7 +133,18 @@ As outras três respostas válidas não identificaram uma pessoa e não previram
 
 **O ponto adicional é reconhecer Flávio como político e, ainda assim, não associá-lo a candidato presidencial nem prever restrição.** Isso torna concreta a distinção entre identidade, papel e política. As previsões positivas para Jair Bolsonaro e Tarcísio também mostram que, nesses exemplos, a previsão de bloqueio não estava limitada a Lula. São poucos casos e a pergunta informava a assimetria esperada; não constituem um teste de intenção política.
 
-O desenho original incluía ainda um fatorial de 40 pedidos com os números **13, 22, 10, 99 e 17**. Recuperamos a prévia de dez resultados de Lula antes do preenchimento de ausências: seis classificações com previsão positiva e quatro sem classificação. Também estão preservadas oito justificativas de previsões positivas, seis de Lula e duas de Tarcísio. Os registros completos dos demais resultados não estão disponíveis; as ausências não são tratadas como recusas nem como respostas negativas.
+O desenho original já incluía um fatorial de **40 pedidos**: quatro nomes × cinco números (**13, 22, 10, 99 e 17**) × com/sem `candidato`. A versão ampliada do [Colab compartilhado](https://colab.research.google.com/drive/1A-qJGWWOA4WbKVJgRxWq_SVhz5TXATxx?usp=sharing) preserva as 40 linhas da tabela antes do preenchimento de ausências. Seus resultados podem ser conferidos diretamente:
+
+| Nome no fatorial original | Pedidos | Classificações válidas | Sem classificação | Previsões positivas de restrição |
+|---|---:|---:|---:|---:|
+| Lula | 10 | 6 | 4 | 6/6 válidas |
+| Flavio | 10 | 9 | 1 | 0/9 válidas |
+| Tarcisio | 10 | 5 | 5 | 2/5 válidas |
+| Gabriel | 10 | 9 | 1 | 0/9 válidas |
+
+Portanto, o teste original **já cruzava nomes, números e a indicação de candidatura**. Nas nove classificações válidas de Flávio, o modelo o classificou como político, mas não como candidato presidencial, e não previu restrição. O [CSV recuperado](results/analysis/colab-factorial-records.csv) e o [resumo calculado](results/analysis/colab-factorial-summary.json) preservam as 11 ausências, sem transformá-las em respostas negativas. São previsões textuais do modelo, não bloqueios observados no WhatsApp.
+
+A recuperação é da tabela exibida: os envelopes HTTP originais continuam indisponíveis e alguns textos estão truncados. Uma célula posterior de correlação/regressão registra explicitamente que executou com dados simulados; seus resultados não são usados como evidência experimental.
 
 **As rodadas originais de 24 e 40 pedidos foram executadas em 14 de outubro de 2026, segundo a data informada pelo autor**, situando a investigação no dia do episódio e do ajuste anunciado. A data não foi verificada por timestamps das chamadas; sem o horário, não é possível ordenar os testes em relação ao ajuste naquele dia. Os arquivos foram posteriormente preservados no primeiro commit, às **01h18 de Brasília de 25 de outubro**; essa data de versionamento não é a data de execução. Os resultados antigos continuam úteis por suas perguntas e variações; não são descartados pela rodada revisada. A [conferência do estudo original](docs/original-study-review.md) detalha as evidências recuperadas e seus limites.
 
@@ -222,6 +233,7 @@ python report_run.py results/v2_run1
 python render_guide.py
 python analyze_number_cues.py
 python review_original.py
+python extract_colab_factorial.py
 jupyter notebook notebook/muse_political_entity_test.ipynb
 ```
 
@@ -236,7 +248,7 @@ python experiment.py summarize results/runs/v2-001
 
 O coletor separa falhas, interrompe novos pedidos em problemas de autenticação e não sobrescreve diretórios de evidência. Mudanças de instruções ou configurações exigem um plano separado. Pilotos não são misturados com a rodada principal.
 
-A etapa exploratória está preservada no [CSV original](results/run1_classification.csv), no [prompt forense](results/forensic_prompt.txt), na [resposta do modelo](results/run1_forensic_answer.json) e no [notebook arquivado](notebook/archive/original_exploratory.ipynb). Os 20 registros válidos tiveram oito previsões positivas e 12 negativas de restrição: não eram recusas reais de imagens. O fatorial antigo não preservou todos os registros; a revisão recupera uma prévia de dez casos e oito justificativas positivas, mas suas taxas completas não são recalculáveis independentemente. As figuras antigas em `figures/` são artefatos históricos, com essa limitação. A rodada controlada tem evidência própria em `results/v2_run1/`.
+A etapa exploratória está preservada no [CSV original](results/run1_classification.csv), no [prompt forense](results/forensic_prompt.txt), na [resposta do modelo](results/run1_forensic_answer.json) e no [notebook arquivado](notebook/archive/original_exploratory.ipynb). Os 20 registros válidos tiveram oito previsões positivas e 12 negativas de restrição: não eram recusas reais de imagens. A cópia inicial do fatorial preservava apenas parte das saídas. O Colab ampliado permitiu recuperar as 40 linhas exibidas e recalcular as taxas; não recuperou os envelopes completos nem todos os textos sem truncamento. As figuras antigas em `figures/` são artefatos históricos e usam rótulos de recusa para previsões textuais. A rodada controlada tem evidência própria em `results/v2_run1/`.
 
 </details>
 
