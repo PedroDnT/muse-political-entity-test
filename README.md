@@ -80,7 +80,7 @@ A instrução também dizia para não presumir que um primeiro nome, número ou 
 
 O cruzamento completo produziu **4 grupos × 2 formas de nome × 3 condições numéricas × 2 condições de papel × 5 repetições = 240 pedidos**. As grafias acima são as usadas na coleta. Os controles são nomes presumidos neutros, não pessoas certificadas como inexistentes ou apolíticas.
 
-Cada chamada começou sem histórico; a ordem foi embaralhada com uma semente registrada. O plano foi fixado antes da coleta, com temperatura 0, limite de 2048 tokens de saída e esforço de raciocínio baixo. Dois pilotos técnicos ficaram fora da análise principal. A coleta ocorreu em 25 de outubro de 2026, entre 07h35 e 07h37 UTC.
+Cada chamada começou sem histórico; a ordem foi embaralhada com uma semente registrada. O plano foi fixado antes da coleta, com temperatura 0, limite de 2048 tokens de saída e esforço de raciocínio baixo. Dois pilotos técnicos ficaram fora da análise principal. A coleta ocorreu em 25 de outubro de 2026, entre 04h35 e 04h37 de Brasília (07h35–07h37 UTC).
 
 **Reaproveitar o texto não significa enviar a mesma instrução completa:** no WhatsApp, o pedido era gerar uma imagem; na API, era analisar aquele texto. Essa diferença faz parte da interpretação dos resultados.
 
@@ -117,6 +117,29 @@ Text:
 </details>
 
 ## 5. Resultados: o nome escrito faz diferença
+
+### O que a rodada original acrescenta
+
+A primeira rodada media mais do que a identidade: perguntava também se a pessoa era candidata presidencial, chefe de Estado e se o modelo previa uma restrição de imagens. Revisitamos o notebook original e conferimos as 24 linhas do CSV contra suas saídas preservadas. Há 20 respostas válidas e quatro ausentes.
+
+| Pessoa que o modelo identificou | Classificou como político | Como candidato presidencial | Previu restrição |
+|---|---:|---:|---:|
+| Lula | 7/7 | 3/7 | 6/7 |
+| Flavio Bolsonaro | 8/8 | 0/8 | 0/8 |
+| Jair Bolsonaro | 1/1 | 0/1 | 1/1 |
+| Tarcísio de Freitas | 1/1 | 0/1 | 1/1 |
+
+As outras três respostas válidas não identificaram uma pessoa e não previram restrição. A tabela descreve classificações e previsões do modelo, não candidaturas verificadas ou bloqueios reais. As oito respostas de Flávio incluem duas ocorrências do mesmo pedido com nome completo.
+
+**O ponto adicional é reconhecer Flávio como político e, ainda assim, não associá-lo a candidato presidencial nem prever restrição.** Isso torna concreta a distinção entre identidade, papel e política. As previsões positivas para Jair Bolsonaro e Tarcísio também mostram que, nesses exemplos, a previsão de bloqueio não estava limitada a Lula. São poucos casos e a pergunta informava a assimetria esperada; não constituem um teste de intenção política.
+
+O desenho original incluía ainda um fatorial de 40 pedidos com os números **13, 22, 10, 99 e 17**. Recuperamos a prévia de dez resultados de Lula antes do preenchimento de ausências: seis classificações com previsão positiva e quatro sem classificação. Também estão preservadas oito justificativas de previsões positivas, seis de Lula e duas de Tarcísio. Os registros completos dos demais resultados não estão disponíveis; as ausências não são tratadas como recusas nem como respostas negativas.
+
+Os arquivos originais já estavam no primeiro commit, às **01h18 de Brasília de 25 de outubro**, antes da coleta v2. **Isso não data as chamadas anteriores:** não foram preservados horários de execução. A proximidade exata com o episódio de 13–14 de outubro permanece sem comprovação nos arquivos. Os resultados antigos continuam úteis por suas perguntas e variações; não são descartados pela rodada revisada. A [conferência do estudo original](docs/original-study-review.md) detalha as evidências recuperadas e seus limites.
+
+### O que a rodada controlada acrescenta
+
+A rodada v2 muda as instruções e deixa de pedir previsão de política. Portanto, diferenças entre suas respostas e as originais não demonstram uma mudança temporal do modelo: também mudaram o contexto, os pedidos e o que foi medido.
 
 Todos os 240 pedidos retornaram respostas válidas, sem falhas técnicas nem novas tentativas. O custo informado pela API para a rodada principal foi de aproximadamente US$ 0,50; os dois pilotos separados custaram aproximadamente US$ 0,007 no total.
 
@@ -165,7 +188,8 @@ A tabela reúne observações de fontes distintas. Elas não são somadas como s
 | Na API, “Flavio” ficou indefinido em 30/30; “Flavio Bolsonaro” foi político em 30/30 | Demonstra sensibilidade à identificação nesta tarefa | A transferência desse resultado ao guardrail do WhatsApp |
 | Os dois nomes completos tiveram 30/30 classificações políticas | A diferença de classificação desapareceu com essas formas | Outros pedidos, tarefas, versões e datas |
 | Trocar 13 por 22 com `Lula candidato` acompanhou uma mudança de 5/5 para 3/5 | Mostra que a combinação de pistas também pode importar | A causa interna e a estabilidade do padrão em novas rodadas |
-| A rodada exploratória distinguia figura política de candidato presidencial | Ilustra como reconhecer uma pessoa e aplicar uma categoria podem divergir | O enquadramento da pergunta podia influenciar a resposta |
+| Na rodada original, Flávio foi político em 8/8 respostas, candidato presidencial em 0/8 e teve previsão de restrição em 0/8 | Mostra a diferença entre reconhecimento, papel e previsão de política | São previsões sob uma pergunta que informava a assimetria; não decisões de um filtro |
+| Jair Bolsonaro e Tarcísio também tiveram previsão positiva de restrição nos exemplos originais | O padrão observado não se resume a prever bloqueio somente para Lula | Um exemplo por pessoa não permite generalizar nem medir intenção |
 | A Meta atribuiu o episódio a primeiro nome + número e relatou casos também com “Luiz” | Fornece uma explicação específica de reconhecimento, com um exemplo que atinge os dois lados | Verificação independente dos registros e da implementação |
 | Houve ajuste anunciado e mudanças posteriores observadas no WhatsApp | É compatível com uma intervenção nas proteções do produto | Se houve alteração de regra, modelo, instrução ou outro componente |
 
@@ -197,6 +221,7 @@ python -m unittest discover -s tests -v
 python report_run.py results/v2_run1
 python render_guide.py
 python analyze_number_cues.py
+python review_original.py
 jupyter notebook notebook/muse_political_entity_test.ipynb
 ```
 
@@ -211,7 +236,7 @@ python experiment.py summarize results/runs/v2-001
 
 O coletor separa falhas, interrompe novos pedidos em problemas de autenticação e não sobrescreve diretórios de evidência. Mudanças de instruções ou configurações exigem um plano separado. Pilotos não são misturados com a rodada principal.
 
-A etapa exploratória está preservada no [CSV original](results/run1_classification.csv), no [prompt forense](results/forensic_prompt.txt), na [resposta do modelo](results/run1_forensic_answer.json) e no [notebook arquivado](notebook/archive/original_exploratory.ipynb). Os 20 registros válidos tiveram oito previsões positivas e 12 negativas de restrição: não eram recusas reais de imagens. O fatorial antigo não preservou todos os registros; suas taxas não são recalculáveis. As figuras antigas em `figures/` são artefatos históricos, com essa limitação. A rodada controlada tem evidência própria em `results/v2_run1/`.
+A etapa exploratória está preservada no [CSV original](results/run1_classification.csv), no [prompt forense](results/forensic_prompt.txt), na [resposta do modelo](results/run1_forensic_answer.json) e no [notebook arquivado](notebook/archive/original_exploratory.ipynb). Os 20 registros válidos tiveram oito previsões positivas e 12 negativas de restrição: não eram recusas reais de imagens. O fatorial antigo não preservou todos os registros; a revisão recupera uma prévia de dez casos e oito justificativas positivas, mas suas taxas completas não são recalculáveis independentemente. As figuras antigas em `figures/` são artefatos históricos, com essa limitação. A rodada controlada tem evidência própria em `results/v2_run1/`.
 
 </details>
 

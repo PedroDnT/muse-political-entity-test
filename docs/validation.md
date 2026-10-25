@@ -39,3 +39,10 @@ Inspected the final color and grayscale PNGs: readable counts and captions, no c
 The README now contains the complete reader-facing narrative, from model and guardrail concepts through allegations, methods, results and the evidence synthesis. Former overview pages retain their URLs and point to this single narrative; technical appendices are labeled as such.
 
 The count chart uses the exact input names from `experiment.ENTITIES`, Portuguese labels and the original counts. Unused missingness legend entries are hidden only when every case is valid; partial runs retain missingness bars. The 1100 × 760 px render was inspected in color and grayscale, and all text bounds were checked. SVG and 2× PNG exports and the notebook figure were refreshed. The saved numerical summary is unchanged.
+
+## Reinspection of original evidence
+
+- The archived notebook, Run 1 CSV and forensic JSON match their initial-commit versions byte for byte. The CSV was also checked field by field against the literal result list embedded in the notebook: 24 attempts, 20 valid classifications, two null parsed objects and two error dictionaries.
+- `review_original.py` recomputes role/policy-prediction counts and records the duplicate full-name Flavio prompt. It verifies all 40 printed factorial requests against the original design and extracts the ten-row pre-fill preview plus eight printed positive cases without executing collection code. Missing preview fields remain null and truncated reasons remain marked by their original ellipses.
+- Original API timestamps, request IDs and response creation fields were not found. The original commit date establishes artifact availability before v2, not collection proximity to the incident.
+- README counts, partial-record indices, local links and Markdown fences were checked. No source responses, original notebook bytes or v2 measurements were changed, and no new API calls were made.
