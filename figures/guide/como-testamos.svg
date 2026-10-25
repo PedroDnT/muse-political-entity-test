@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="691.2pt" height="806.4pt" viewBox="0 0 691.2 806.4" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-25T13:01:56.196432</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 806.4 
+L 691.2 806.4 
+L 691.2 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="line2d_1">
+    <path d="M 28.8 92.16 
+L 662.4 92.16 
+" clip-path="url(#pda4c0d4c59)" style="fill: none; stroke: #d8d8d4; stroke-width: 0.8; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 28.8 229.68 
+L 662.4 229.68 
+" clip-path="url(#pda4c0d4c59)" style="fill: none; stroke: #d8d8d4; stroke-width: 0.8; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_3">
+    <path d="M 28.8 361.44 
+L 662.4 361.44 
+" clip-path="url(#pda4c0d4c59)" style="fill: none; stroke: #d8d8d4; stroke-width: 0.8; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_4">
+    <path d="M 28.8 435.6 
+L 662.4 435.6 
+" clip-path="url(#pda4c0d4c59)" style="fill: none; stroke: #d8d8d4; stroke-width: 0.8; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_5">
+    <path d="M 28.8 477.36 
+L 662.4 477.36 
+" clip-path="url(#pda4c0d4c59)" style="fill: none; stroke: #d8d8d4; stroke-width: 0.8; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_6">
+    <path d="M 28.8 517.68 
+L 662.4 517.68 
+" clip-path="url(#pda4c0d4c59)" style="fill: none; stroke: #d8d8d4; stroke-width: 0.8; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_7">
+    <path d="M 28.8 558 
+L 662.4 558 
+" clip-path="url(#pda4c0d4c59)" style="fill: none; stroke: #d8d8d4; stroke-width: 0.8; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_8">
+    <path d="M 28.8 598.32 
+L 662.4 598.32 
+" clip-path="url(#pda4c0d4c59)" style="fill: none; stroke: #d8d8d4; stroke-width: 0.8; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_9">
+    <path d="M 28.8 638.64 
+L 662.4 638.64 
+" clip-path="url(#pda4c0d4c59)" style="fill: none; stroke: #d8d8d4; stroke-width: 0.8; stroke-linecap: square"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 23.04px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #171717" x="28.8" y="42.5268" transform="rotate(-0 28.8 42.5268)">O que perguntamos ao Muse?</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 15.12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #5e6462" x="28.8" y="72.22635" transform="rotate(-0 28.8 72.22635)">Variações reais de texto → identificação da pessoa</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 17.28px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1f6f5f" x="28.8" y="123.2901" transform="rotate(-0 28.8 123.2901)">1. Variamos nome, número e contexto</text>
+   </g>
+   <g id="text_4">
+    <text style="font-weight: 700; font-size: 14.4px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #171717" x="28.8" y="155.66175" transform="rotate(-0 28.8 155.66175)">Nome</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 14.4px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #171717" x="151.2" y="155.66175" transform="rotate(-0 151.2 155.66175)">Flavio  ↔  Flavio Bolsonaro</text>
+   </g>
+   <g id="text_6">
+    <text style="font-weight: 700; font-size: 14.4px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #171717" x="28.8" y="181.58175" transform="rotate(-0 28.8 181.58175)">Número</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 14.4px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #171717" x="151.2" y="181.58175" transform="rotate(-0 151.2 181.58175)">Sem número  /  13  /  22</text>
+   </g>
+   <g id="text_8">
+    <text style="font-weight: 700; font-size: 14.4px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #171717" x="28.8" y="207.50175" transform="rotate(-0 28.8 207.50175)">Papel</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 14.4px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #171717" x="151.2" y="207.50175" transform="rotate(-0 151.2 207.50175)">Sem a palavra  /  candidato</text>
+   </g>
+   <g id="text_10">
+    <text style="font-weight: 700; font-size: 17.28px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1f6f5f" x="28.8" y="259.47" transform="rotate(-0 28.8 259.47)">2. Enviamos cada texto com a mesma instrução</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 15.12px; font-family: 'DejaVu Sans'; fill: #171717" transform="translate(28.8 294.068363)">“Quem é a pessoa? É uma figura política? Qual é seu cargo?</text>
+    <text style="font-size: 15.12px; font-family: 'DejaVu Sans'; fill: #171717" transform="translate(28.8 313.65774)">Se não souber, deixe indefinido. Analise; não gere imagem.”</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 12.96px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #5e6462" x="28.8" y="340.845975" transform="rotate(-0 28.8 340.845975)">Resumo traduzido. A instrução completa foi enviada em inglês.</text>
+   </g>
+   <g id="text_13">
+    <text style="font-weight: 700; font-size: 17.28px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1f6f5f" x="28.8" y="391.8501" transform="rotate(-0 28.8 391.8501)">3. O modelo respondeu — exemplos reais</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 12.96px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #5e6462" x="28.8" y="422.407575" transform="rotate(-0 28.8 422.407575)">Texto analisado</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 12.96px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #5e6462" x="352.8" y="422.407575" transform="rotate(-0 352.8 422.407575)">Resposta resumida</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 12.96px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #5e6462" x="662.4" y="422.407575" transform="rotate(-0 662.4 422.407575)">Vezes</text>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 13.68px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #171717" x="28.8" y="458.954662" transform="rotate(-0 28.8 458.954662)">Faca arte Flavio</text>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 13.68px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #171717" x="352.8" y="458.954662" transform="rotate(-0 352.8 458.954662)">Identidade indefinida</text>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 14.4px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #171717" x="662.4" y="459.50175" transform="rotate(-0 662.4 459.50175)">5/5</text>
+   </g>
+   <g id="text_20">
+    <text style="font-size: 13.68px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #171717" x="28.8" y="499.274662" transform="rotate(-0 28.8 499.274662)">Faca arte Flavio 22</text>
+   </g>
+   <g id="text_21">
+    <text style="font-size: 13.68px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #171717" x="352.8" y="499.274662" transform="rotate(-0 352.8 499.274662)">Identidade indefinida</text>
+   </g>
+   <g id="text_22">
+    <text style="font-size: 14.4px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #171717" x="662.4" y="499.82175" transform="rotate(-0 662.4 499.82175)">5/5</text>
+   </g>
+   <g id="text_23">
+    <text style="font-size: 13.68px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #171717" x="28.8" y="539.594662" transform="rotate(-0 28.8 539.594662)">Faca arte Flavio candidato 22</text>
+   </g>
+   <g id="text_24">
+    <text style="font-size: 13.68px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #171717" x="352.8" y="539.594662" transform="rotate(-0 352.8 539.594662)">Identidade indefinida</text>
+   </g>
+   <g id="text_25">
+    <text style="font-size: 14.4px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #171717" x="662.4" y="540.14175" transform="rotate(-0 662.4 540.14175)">5/5</text>
+   </g>
+   <g id="text_26">
+    <text style="font-size: 13.68px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #171717" x="28.8" y="579.914662" transform="rotate(-0 28.8 579.914662)">Faca arte Flavio Bolsonaro 22</text>
+   </g>
+   <g id="text_27">
+    <text style="font-size: 13.68px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #171717" x="352.8" y="579.914662" transform="rotate(-0 352.8 579.914662)">Flávio Bolsonaro · senador</text>
+   </g>
+   <g id="text_28">
+    <text style="font-size: 14.4px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #171717" x="662.4" y="580.46175" transform="rotate(-0 662.4 580.46175)">5/5</text>
+   </g>
+   <g id="text_29">
+    <text style="font-size: 13.68px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #171717" x="28.8" y="620.234663" transform="rotate(-0 28.8 620.234663)">Faca arte Lula 13</text>
+   </g>
+   <g id="text_30">
+    <text style="font-size: 13.68px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #171717" x="352.8" y="620.234663" transform="rotate(-0 352.8 620.234663)">Lula · presidente</text>
+   </g>
+   <g id="text_31">
+    <text style="font-size: 14.4px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #171717" x="662.4" y="620.78175" transform="rotate(-0 662.4 620.78175)">5/5</text>
+   </g>
+   <g id="text_32">
+    <text style="font-size: 13.68px; font-family: 'DejaVu Sans'; fill: #5e6462" transform="translate(28.8 676.62765)">5 repetições por combinação. 240 pedidos no estudo completo.</text>
+    <text style="font-size: 13.68px; font-family: 'DejaVu Sans'; fill: #5e6462" transform="translate(28.8 694.351373)">As mesmas variações foram aplicadas a Lula, Flavio e aos controles.</text>
+   </g>
+   <g id="text_33">
+    <text style="font-weight: 700; font-size: 17.28px; font-family: 'DejaVu Sans'; fill: #1f6f5f" transform="translate(28.8 734.5413)">Não reconhecer “Flavio” não é decidir que</text>
+    <text style="font-weight: 700; font-size: 17.28px; font-family: 'DejaVu Sans'; fill: #1f6f5f" transform="translate(28.8 757.48482)">Flávio Bolsonaro não é político.</text>
+   </g>
+   <g id="text_34">
+    <text style="font-size: 12.96px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #5e6462" x="28.8" y="789.607575" transform="rotate(-0 28.8 789.607575)">API: meta/muse-spark-1.1 · 25/10/2026 · Fontes: plano e respostas preservados</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pda4c0d4c59">
+   <rect x="0" y="0" width="691.2" height="806.4"/>
+  </clipPath>
+ </defs>
+</svg>

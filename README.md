@@ -4,6 +4,12 @@ Estudo independente sobre como a forma de um nome altera sua identificação por
 
 **Na rodada controlada, os nomes completos de Lula e Flávio Bolsonaro foram classificados como políticos em 30 de 30 respostas cada. A diferença apareceu nos nomes curtos.** A coleta usou a API do OpenRouter e não mediu geração ou recusa de imagens no WhatsApp.
 
+## Entenda o teste em um minuto
+
+![Exemplos reais de variações, pergunta ao Muse e respostas](figures/guide/como-testamos.png)
+
+**[Guia visual: o que perguntamos, as respostas e por que usamos outra via](docs/guia-visual.md).** Inclui a cronologia do ajuste no WhatsApp, a fonte oficial sobre Muse Spark e a diferença entre reaproveitar um texto e enviar uma instrução idêntica.
+
 ## Comece por aqui
 
 - **[Estudo explicado](docs/estudo-explicado.md):** LLMs e similaridade, possíveis etapas de guardrail, escolha do OpenRouter, método, resultados e em que sentido o desenho é robusto.
@@ -26,7 +32,7 @@ flowchart LR
 
 Em texto: **pedido → reconhecimento → categoria → regra → resposta**. O produto pode acrescentar instruções, filtros de entrada e verificações da imagem gerada. Uma falha de reconhecimento pode mudar a aplicação de uma regra uniforme.
 
-O acesso pelo OpenRouter provavelmente não usa exatamente os mesmos guardrails do WhatsApp. Essa diferença é a motivação para investigar por outra via após os ajustes relatados no produto. Não foi verificado que os dois acessos compartilhem modelo, versão ou proteções, nem que a API preserve o estado anterior do WhatsApp.
+O acesso pelo OpenRouter provavelmente não usa exatamente os mesmos guardrails do WhatsApp. Essa diferença é a motivação para investigar por outra via após os ajustes relatados no produto. A Meta anunciou Muse Spark no WhatsApp, mas não foram verificadas versões ou proteções idênticas nos dois acessos, nem que a API preserve o estado anterior do produto. Veja a [fonte oficial e a cronologia ilustrada](docs/guia-visual.md#por-que-testar-o-muse-pelo-openrouter).
 
 A [Meta declarou](docs/meta-explanation.md) que algumas combinações de primeiro nome comum e número eleitoral escapavam às proteções, inclusive com “Flávio” e “Luiz”, e que corrigiu a lacuna em 14 de outubro. O comunicado é uma fonte primária sobre a explicação da empresa; o experimento não auditou seus registros internos.
 
@@ -102,6 +108,7 @@ O coletor interrompe novos pedidos em falhas de autenticação, separa tipos de 
 | `docs/` | Explicações, fontes, metodologia e validação |
 | `experiment.py` | Plano, coleta, validação e resumos |
 | `report_run.py` | Resumo e gráfico reproduzíveis |
+| `render_guide.py` | Figuras didáticas e exemplos extraídos dos registros |
 | `results/v2_plan.json` | Plano fixado e hashes dos prompts |
 | `results/v2_run1/` | Evidência da rodada controlada e código da coleta |
 | `notebook/` | Análise offline e arquivo histórico |

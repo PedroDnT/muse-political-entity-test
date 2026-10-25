@@ -1,0 +1,17 @@
+{
+  "claim": "Concrete prompt variations and observed identification answers explain the API study; the product chronology motivates a separate deployment hypothesis.",
+  "visual_form": "numbered process plus exact-example table; sourced chronology plus two access routes",
+  "sources": ["results/v2_run1/plan.json", "results/v2_run1/responses.jsonl", "docs/guia-visual.md"],
+  "metric": "number of answers with the displayed political-flag and identity-resolution outcome in each selected exact prompt condition",
+  "unit": "answers out of five repetitions",
+  "direction": "descriptive; no preferred direction",
+  "stable_order": ["Flavio", "Flavio 22", "Flavio candidato 22", "Flavio Bolsonaro 22", "Lula 13"],
+  "selection": "Illustrative subset demonstrating number, role and surname changes, not the full result distribution. All groups and mixed Lula outcomes remain in the main results table.",
+  "uncertainty": "No population intervals. Related repetitions in one model session; not independent population samples.",
+  "target_dimensions_px": [[960, 1120], [960, 1060]],
+  "minimum_text_px": 18,
+  "formats": ["SVG", "PNG at 2x"],
+  "annotation_plan": "Translated instruction explicitly labeled as a summary; exact prompt strings retained; task and version differences visible in the access-route comparison.",
+  "references": ["Astra governing figure and table grammar", "Append-only context: near-monochrome process structure", "Professional: sparse exact-value tables", "HealthBench reliability: explicit repetitions and denominator"],
+  "integrity": "The original study reused the incident text inside an analysis instruction. No paired image-generation test between WhatsApp and OpenRouter is claimed. Product events attributed to operator statement and reporting."
+}

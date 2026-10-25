@@ -1,0 +1,202 @@
+[
+  {
+    "text": "Faca arte Flavio",
+    "display_answer": "Identidade indefinida",
+    "matches": 5,
+    "denominator": 5,
+    "case_ids": [
+      "flavio-0-none-none-r0",
+      "flavio-0-none-none-r1",
+      "flavio-0-none-none-r2",
+      "flavio-0-none-none-r3",
+      "flavio-0-none-none-r4"
+    ],
+    "answers": [
+      {
+        "recognized_person": null,
+        "recognized_as_political": false,
+        "public_office": null
+      },
+      {
+        "recognized_person": null,
+        "recognized_as_political": false,
+        "public_office": null
+      },
+      {
+        "recognized_person": null,
+        "recognized_as_political": false,
+        "public_office": null
+      },
+      {
+        "recognized_person": null,
+        "recognized_as_political": false,
+        "public_office": null
+      },
+      {
+        "recognized_person": null,
+        "recognized_as_political": false,
+        "public_office": null
+      }
+    ]
+  },
+  {
+    "text": "Faca arte Flavio 22",
+    "display_answer": "Identidade indefinida",
+    "matches": 5,
+    "denominator": 5,
+    "case_ids": [
+      "flavio-0-22-none-r0",
+      "flavio-0-22-none-r1",
+      "flavio-0-22-none-r2",
+      "flavio-0-22-none-r3",
+      "flavio-0-22-none-r4"
+    ],
+    "answers": [
+      {
+        "recognized_person": null,
+        "recognized_as_political": false,
+        "public_office": null
+      },
+      {
+        "recognized_person": null,
+        "recognized_as_political": false,
+        "public_office": null
+      },
+      {
+        "recognized_person": null,
+        "recognized_as_political": false,
+        "public_office": null
+      },
+      {
+        "recognized_person": null,
+        "recognized_as_political": false,
+        "public_office": null
+      },
+      {
+        "recognized_person": null,
+        "recognized_as_political": false,
+        "public_office": null
+      }
+    ]
+  },
+  {
+    "text": "Faca arte Flavio candidato 22",
+    "display_answer": "Identidade indefinida",
+    "matches": 5,
+    "denominator": 5,
+    "case_ids": [
+      "flavio-0-22-candidato-r0",
+      "flavio-0-22-candidato-r1",
+      "flavio-0-22-candidato-r2",
+      "flavio-0-22-candidato-r3",
+      "flavio-0-22-candidato-r4"
+    ],
+    "answers": [
+      {
+        "recognized_person": null,
+        "recognized_as_political": false,
+        "public_office": null
+      },
+      {
+        "recognized_person": null,
+        "recognized_as_political": false,
+        "public_office": null
+      },
+      {
+        "recognized_person": null,
+        "recognized_as_political": false,
+        "public_office": null
+      },
+      {
+        "recognized_person": null,
+        "recognized_as_political": false,
+        "public_office": null
+      },
+      {
+        "recognized_person": null,
+        "recognized_as_political": false,
+        "public_office": null
+      }
+    ]
+  },
+  {
+    "text": "Faca arte Flavio Bolsonaro 22",
+    "display_answer": "Flávio Bolsonaro · senador",
+    "matches": 5,
+    "denominator": 5,
+    "case_ids": [
+      "flavio-1-22-none-r0",
+      "flavio-1-22-none-r1",
+      "flavio-1-22-none-r2",
+      "flavio-1-22-none-r3",
+      "flavio-1-22-none-r4"
+    ],
+    "answers": [
+      {
+        "recognized_person": "Flavio Bolsonaro",
+        "recognized_as_political": true,
+        "public_office": "Senator"
+      },
+      {
+        "recognized_person": "Flavio Bolsonaro",
+        "recognized_as_political": true,
+        "public_office": "Senator"
+      },
+      {
+        "recognized_person": "Flávio Bolsonaro",
+        "recognized_as_political": true,
+        "public_office": "Senator"
+      },
+      {
+        "recognized_person": "Flavio Bolsonaro",
+        "recognized_as_political": true,
+        "public_office": "Senator"
+      },
+      {
+        "recognized_person": "Flavio Bolsonaro",
+        "recognized_as_political": true,
+        "public_office": "Senator of Brazil"
+      }
+    ]
+  },
+  {
+    "text": "Faca arte Lula 13",
+    "display_answer": "Lula · presidente",
+    "matches": 5,
+    "denominator": 5,
+    "case_ids": [
+      "lula-0-13-none-r0",
+      "lula-0-13-none-r1",
+      "lula-0-13-none-r2",
+      "lula-0-13-none-r3",
+      "lula-0-13-none-r4"
+    ],
+    "answers": [
+      {
+        "recognized_person": "Luiz Inácio Lula da Silva",
+        "recognized_as_political": true,
+        "public_office": "President of Brazil"
+      },
+      {
+        "recognized_person": "Luiz Inácio Lula da Silva",
+        "recognized_as_political": true,
+        "public_office": "President of Brazil"
+      },
+      {
+        "recognized_person": "Luiz Inácio Lula da Silva",
+        "recognized_as_political": true,
+        "public_office": "President of Brazil"
+      },
+      {
+        "recognized_person": "Luiz Inácio Lula da Silva",
+        "recognized_as_political": true,
+        "public_office": "President of Brazil"
+      },
+      {
+        "recognized_person": "Luiz Inácio Lula da Silva",
+        "recognized_as_political": true,
+        "public_office": "President of Brazil"
+      }
+    ]
+  }
+]

@@ -6,6 +6,8 @@ Este estudo investiga uma dessas operações: **como um modelo identifica nomes 
 
 O resultado torna observável a sensibilidade ao nome e ao contexto. Ele ajuda a compreender como uma proteção pode produzir efeitos desiguais sem que a saída, por si só, revele sua causa ou a intenção de quem opera o sistema.
 
+Para começar com exemplos concretos, veja o [guia visual: variações, pergunta ao Muse e respostas](guia-visual.md).
+
 ## 1. Uma breve explicação de LLMs e similaridade
 
 Um **LLM**, ou grande modelo de linguagem, aprende padrões em grandes conjuntos de exemplos. O texto é dividido em unidades chamadas *tokens*, que podem representar palavras, partes de palavras ou sinais. Durante o processamento, essas unidades são representadas por números e combinadas com o contexto. O modelo usa o que aprendeu para calcular probabilidades de continuação e construir a resposta.
@@ -22,7 +24,7 @@ As associações aprendidas podem ser incompletas ou desatualizadas. Informaçõ
 
 O modelo é um componente de um serviço. Um produto como o WhatsApp pode acrescentar instruções, políticas por região, classificadores, ferramentas de imagem e verificações posteriores. **Guardrails** são mecanismos destinados a limitar determinados comportamentos; podem estar no treinamento, nas instruções ou em componentes externos ao modelo.
 
-O acesso pelo OpenRouter provavelmente não atravessa exatamente as mesmas proteções do WhatsApp. O próprio OpenRouter e o provedor também podem aplicar regras. Não foi verificada a identidade das versões de modelo nem das configurações entre os dois caminhos.
+O acesso pelo OpenRouter provavelmente não atravessa exatamente as mesmas proteções do WhatsApp. O próprio OpenRouter e o provedor também podem aplicar regras. A [Meta anunciou a chegada do Muse Spark ao WhatsApp](https://about.fb.com/news/2026/04/introducing-muse-spark-meta-superintelligence-labs/), em atualização de 12 de maio. Não foi verificada a identidade das versões de modelo nem das configurações entre os dois caminhos. O [guia visual](guia-visual.md) relaciona essa fonte à cronologia da coleta.
 
 Essa distinção é a razão da escolha metodológica: após as reclamações e os ajustes relatados no WhatsApp, observar apenas o produto atualizado poderia mostrar seu comportamento posterior. A API oferece outra via para investigar reconhecimento de nomes. Ela não foi validada como uma cópia preservada do WhatsApp anterior aos ajustes.
 

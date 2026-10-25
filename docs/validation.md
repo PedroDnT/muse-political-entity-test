@@ -18,3 +18,11 @@ Form: horizontal stacked counts, 10 × 6.1 inches; exported PNG at 200 dpi and e
 The figure uses a restrained palette, common zero baseline, direct counts, readable typography and an explicit denominator. The same visual encoding is applied to each political figure and control.
 
 Inspected the final color and grayscale PNGs: readable counts and captions, no clipped labels, sufficient contrast and no political-party color assignment. Counts reconcile to the raw records. The notebook contains the same reproducible figure; a full browser inspection of the notebook HTML was not performed.
+
+## Accessible visual guide
+
+- `render_guide.py` reads the frozen plan and raw answers; `figures/guide/example-records.json` maps every displayed example to all five case IDs and answers. The selected conditions are illustrative, not a replacement for aggregate results.
+- The displayed instruction summary is labeled as translated; the full English instruction in `docs/guia-visual.md` was checked against the collector, and both JSON examples against their raw records.
+- The timeline cites Meta's May launch-post update, its October incident statement and product reporting. It does not claim identical model versions or a paired image-generation experiment.
+- Figures were inspected at 960 px width in color and grayscale on 25 October 2026, with all labels and denominators readable and no clipped text. The renderer checks canvas text bounds. No information depends on color alone.
+- SVG and 2× PNG versions are preserved, along with editable source and `docs/visual-guide-spec.json`. Scientific review checked task differences, selected-example denominators and source attribution; visual review checked reading order, direct labels, contrast and spacing.

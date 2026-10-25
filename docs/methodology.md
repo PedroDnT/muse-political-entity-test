@@ -18,7 +18,7 @@ The reported product changes support that motivation; independence of the API de
 
 The original code had already been run and exploratory evidence collected before v2. The original CSV, notebook outputs and forensic response are preserved in the initial repository commit. V2 extends that investigation with a different, neutral endpoint; it must not be described as the first evidence gathered. See [provenance and thesis](provenance-and-thesis.md).
 
-Different WhatsApp and OpenRouter guardrails are a plausible deployment hypothesis, not a confirmed architecture. Shared base-model identity would not establish identical product safeguards; identical underlying versions have also not been independently verified. This hypothesis supports caution about causal attribution without asserting that it explains the observed incident.
+Meta publicly announced Muse Spark deployment to Meta AI on WhatsApp in its [12 May launch-post update](https://about.fb.com/news/2026/04/introducing-muse-spark-meta-superintelligence-labs/). This supports the family-level connection; it does not identify the version or every component serving a particular image request. Different WhatsApp and OpenRouter guardrails are a plausible deployment hypothesis, not a confirmed architecture. Shared base-model identity would not establish identical product safeguards; identical underlying versions have also not been independently verified. This hypothesis supports caution about causal attribution without asserting that it explains the observed incident.
 
 ## Fixed design before collection
 
