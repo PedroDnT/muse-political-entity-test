@@ -6,6 +6,8 @@ Como interpretar uma resposta de inteligência artificial sem confundir o result
 
 **White paper:** [Da assimetria observada à atribuição de intenção](docs/white-paper-alfabetizacao-algoritmica.md), versão 1.0, com referências acadêmicas e tabela de limites inferenciais. [Registro e opção de depósito no Zenodo](docs/publicacao.md).
 
+**Manuscrito em inglês (preprint):** [Markdown](paper/manuscript.md) e [PDF](paper/manuscript.pdf), gerados com `python paper/make_figure.py && python paper/build.py` (requer pandoc e pdflatex).
+
 ## 1. Como o modelo interpreta um pedido
 
 Um grande modelo de linguagem, ou **LLM**, aprende padrões a partir de exemplos de treinamento. O texto recebido é dividido em pequenas unidades chamadas *tokens*. O modelo combina essas unidades com o contexto para produzir uma resposta. Os **pesos** são os parâmetros numéricos aprendidos durante o treinamento; não são uma lista explícita de pessoas e regras.
