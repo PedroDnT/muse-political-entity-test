@@ -287,11 +287,11 @@ The evidence permits a move from the perception of a difference to a better desc
 
 ## Statements
 
-**AI assistance.** The text was prepared with the assistance of artificial intelligence tools.
+**AI assistance.** The text was prepared with the assistance of artificial intelligence tools. The author reviewed the text and takes responsibility for it.
 
 **Prior version.** This manuscript is an English edition of the Portuguese white paper "Da assimetria observada à atribuição de intenção", version 1.0, 25 October 2026, available in the repository [1]. The English edition adds the access-route rationale, the stratum table and the prompt appendix from the repository documentation. It reports no new data.
 
-**Licence.** The text and Figure 1 are released under the [Creative Commons Attribution 4.0 International licence (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/). Cited third-party material keeps its own licence.
+**Licence.** The text and Figure 1 are released under the [Creative Commons Attribution 4.0 International licence (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/). The code in the repository is released under the MIT licence. Cited third-party material keeps its own licence.
 
 **Funding.** The author received no funding for this work.
 
