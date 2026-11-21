@@ -291,6 +291,12 @@ The evidence permits a move from the perception of a difference to a better desc
 
 **Prior version.** This manuscript is an English edition of the Portuguese white paper "Da assimetria observada à atribuição de intenção", version 1.0, 25 October 2026, available in the repository [1]. The English edition adds the access-route rationale, the stratum table and the prompt appendix from the repository documentation. It reports no new data.
 
+**Licence.** The text and Figure 1 are released under the [Creative Commons Attribution 4.0 International licence (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/). Cited third-party material keeps its own licence.
+
+**Funding.** The author received no funding for this work.
+
+**Competing interests.** The author declares no competing interests. The author has no link to Meta and holds no role in any political campaign or party.
+
 ## References
 
 [1] Todescan, P. D. N. (2026). *muse-political-entity-test* (repository). <https://github.com/PedroDnT/muse-political-entity-test>. Documentary revision `e020e9e`. Includes the public context (`docs/media-context.md`), provenance (`docs/provenance-and-thesis.md`) and the explanation attributed to Meta (`docs/meta-explanation.md`), which points to the original statement: [*A Meta não está interferindo nas eleições brasileiras. Estes são os fatos.*](https://about.fb.com/br/news/2026/10/a-meta-nao-esta-interferindo-nas-eleicoes-brasileiras-estes-sao-os-fatos/)
